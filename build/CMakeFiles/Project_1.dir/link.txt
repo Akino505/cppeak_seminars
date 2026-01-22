@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Werror=return-type CMakeFiles/Project_1.dir/src/main.cpp.o CMakeFiles/Project_1.dir/src/mult.cpp.o -o Project_1 
