@@ -3,7 +3,7 @@ In this project, a small C++ calculator is implemented, capable of performing mu
 # Build
 ### Configuration (setup) of the project  
 ```bash
-cmake -S . -B Build
+cmake -S . -B build
 ```
 ### Build the project
 ```bash
