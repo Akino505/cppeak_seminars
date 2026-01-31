@@ -12,6 +12,8 @@ TEST_CASE("Testing multiplication function")
     SECTION("Lenght")
     {
         REQUIRE(check_len("Hi!1") == false);
+        REQUIRE(check_len("Lennn=7") == false);
+        REQUIRE(check_len("Length=8") == true);
         REQUIRE(check_len("Hello!It`s_me1") == true);
     }
 
