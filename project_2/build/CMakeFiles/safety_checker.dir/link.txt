@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsafety_checker.a CMakeFiles/safety_checker.dir/src/check.cpp.o CMakeFiles/safety_checker.dir/src/check_len.cpp.o CMakeFiles/safety_checker.dir/src/check_big.cpp.o CMakeFiles/safety_checker.dir/src/check_small.cpp.o CMakeFiles/safety_checker.dir/src/check_digit.cpp.o CMakeFiles/safety_checker.dir/src/check_specials.cpp.o CMakeFiles/safety_checker.dir/src/check_bad_specials.cpp.o CMakeFiles/safety_checker.dir/src/main.cpp.o
+/usr/bin/ranlib libsafety_checker.a
