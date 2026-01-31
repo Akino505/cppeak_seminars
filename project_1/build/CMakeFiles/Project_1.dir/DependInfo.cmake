@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/akino/c++/project_1/src/main.cpp" "CMakeFiles/Project_1.dir/src/main.cpp.o" "gcc" "CMakeFiles/Project_1.dir/src/main.cpp.o.d"
-  "/home/akino/c++/project_1/src/mult.cpp" "CMakeFiles/Project_1.dir/src/mult.cpp.o" "gcc" "CMakeFiles/Project_1.dir/src/mult.cpp.o.d"
+  "/home/akino/cppeak_seminars/project_1/src/main.cpp" "CMakeFiles/Project_1.dir/src/main.cpp.o" "gcc" "CMakeFiles/Project_1.dir/src/main.cpp.o.d"
+  "/home/akino/cppeak_seminars/project_1/src/mult.cpp" "CMakeFiles/Project_1.dir/src/mult.cpp.o" "gcc" "CMakeFiles/Project_1.dir/src/mult.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,4 +1,4 @@
-# Install script for directory: /home/akino/c++/project_1/build/_deps/catch2-subbuild
+# Install script for directory: /home/akino/cppeak_seminars/project_1/build/_deps/catch2-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/akino/c++/project_1/build/_deps/catch2-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/akino/cppeak_seminars/project_1/build/_deps/catch2-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

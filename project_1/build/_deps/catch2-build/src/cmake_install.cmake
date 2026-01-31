@@ -1,4 +1,4 @@
-# Install script for directory: /home/akino/c++/project_1/build/_deps/catch2-src/src
+# Install script for directory: /home/akino/cppeak_seminars/project_1/build/_deps/catch2-src/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

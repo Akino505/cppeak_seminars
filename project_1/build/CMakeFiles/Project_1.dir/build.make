@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/akino/c++/project_1
+CMAKE_SOURCE_DIR = /home/akino/cppeak_seminars/project_1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/akino/c++/project_1/build
+CMAKE_BINARY_DIR = /home/akino/cppeak_seminars/project_1/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Project_1.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/Project_1.dir/progress.make
 include CMakeFiles/Project_1.dir/flags.make
 
 CMakeFiles/Project_1.dir/src/main.cpp.o: CMakeFiles/Project_1.dir/flags.make
-CMakeFiles/Project_1.dir/src/main.cpp.o: /home/akino/c++/project_1/src/main.cpp
+CMakeFiles/Project_1.dir/src/main.cpp.o: /home/akino/cppeak_seminars/project_1/src/main.cpp
 CMakeFiles/Project_1.dir/src/main.cpp.o: CMakeFiles/Project_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/c++/project_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project_1.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project_1.dir/src/main.cpp.o -MF CMakeFiles/Project_1.dir/src/main.cpp.o.d -o CMakeFiles/Project_1.dir/src/main.cpp.o -c /home/akino/c++/project_1/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project_1.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project_1.dir/src/main.cpp.o -MF CMakeFiles/Project_1.dir/src/main.cpp.o.d -o CMakeFiles/Project_1.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_1/src/main.cpp
 
 CMakeFiles/Project_1.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/c++/project_1/src/main.cpp > CMakeFiles/Project_1.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_1/src/main.cpp > CMakeFiles/Project_1.dir/src/main.cpp.i
 
 CMakeFiles/Project_1.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/c++/project_1/src/main.cpp -o CMakeFiles/Project_1.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_1/src/main.cpp -o CMakeFiles/Project_1.dir/src/main.cpp.s
 
 CMakeFiles/Project_1.dir/src/mult.cpp.o: CMakeFiles/Project_1.dir/flags.make
-CMakeFiles/Project_1.dir/src/mult.cpp.o: /home/akino/c++/project_1/src/mult.cpp
+CMakeFiles/Project_1.dir/src/mult.cpp.o: /home/akino/cppeak_seminars/project_1/src/mult.cpp
 CMakeFiles/Project_1.dir/src/mult.cpp.o: CMakeFiles/Project_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/c++/project_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project_1.dir/src/mult.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project_1.dir/src/mult.cpp.o -MF CMakeFiles/Project_1.dir/src/mult.cpp.o.d -o CMakeFiles/Project_1.dir/src/mult.cpp.o -c /home/akino/c++/project_1/src/mult.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project_1.dir/src/mult.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Project_1.dir/src/mult.cpp.o -MF CMakeFiles/Project_1.dir/src/mult.cpp.o.d -o CMakeFiles/Project_1.dir/src/mult.cpp.o -c /home/akino/cppeak_seminars/project_1/src/mult.cpp
 
 CMakeFiles/Project_1.dir/src/mult.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/src/mult.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/c++/project_1/src/mult.cpp > CMakeFiles/Project_1.dir/src/mult.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_1/src/mult.cpp > CMakeFiles/Project_1.dir/src/mult.cpp.i
 
 CMakeFiles/Project_1.dir/src/mult.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/src/mult.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/c++/project_1/src/mult.cpp -o CMakeFiles/Project_1.dir/src/mult.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_1/src/mult.cpp -o CMakeFiles/Project_1.dir/src/mult.cpp.s
 
 # Object files for target Project_1
 Project_1_OBJECTS = \
@@ -109,7 +109,7 @@ Project_1: CMakeFiles/Project_1.dir/src/main.cpp.o
 Project_1: CMakeFiles/Project_1.dir/src/mult.cpp.o
 Project_1: CMakeFiles/Project_1.dir/build.make
 Project_1: CMakeFiles/Project_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/akino/c++/project_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Project_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/akino/cppeak_seminars/project_1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Project_1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/Project_1.dir/clean:
 .PHONY : CMakeFiles/Project_1.dir/clean
 
 CMakeFiles/Project_1.dir/depend:
-	cd /home/akino/c++/project_1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akino/c++/project_1 /home/akino/c++/project_1 /home/akino/c++/project_1/build /home/akino/c++/project_1/build /home/akino/c++/project_1/build/CMakeFiles/Project_1.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/akino/cppeak_seminars/project_1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/akino/cppeak_seminars/project_1 /home/akino/cppeak_seminars/project_1 /home/akino/cppeak_seminars/project_1/build /home/akino/cppeak_seminars/project_1/build /home/akino/cppeak_seminars/project_1/build/CMakeFiles/Project_1.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Project_1.dir/depend
 

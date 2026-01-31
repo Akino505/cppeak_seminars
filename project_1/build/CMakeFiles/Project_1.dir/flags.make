@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/akino/c++/project_1/include
+CXX_INCLUDES = -I/home/akino/cppeak_seminars/project_1/include
 
 CXX_FLAGS = -g -O0 -Werror=return-type -std=gnu++17
 

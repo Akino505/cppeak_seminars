@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/akino/c++/project_1/include -I/home/akino/c++/project_1/build/_deps/catch2-src/src/catch2/.. -I/home/akino/c++/project_1/build/_deps/catch2-build/generated-includes
+CXX_INCLUDES = -I/home/akino/cppeak_seminars/project_1/include -I/home/akino/cppeak_seminars/project_1/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_1/build/_deps/catch2-build/generated-includes
 
 CXX_FLAGS = -g -O0 -Werror=return-type -std=gnu++17
 

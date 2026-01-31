@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/akino/c++/project_1/build/_deps/catch2-src"
-  "/home/akino/c++/project_1/build/_deps/catch2-build"
-  "/home/akino/c++/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix"
-  "/home/akino/c++/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/tmp"
-  "/home/akino/c++/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp"
-  "/home/akino/c++/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/src"
-  "/home/akino/c++/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp"
+  "/home/akino/cppeak_seminars/project_1/build/_deps/catch2-src"
+  "/home/akino/cppeak_seminars/project_1/build/_deps/catch2-build"
+  "/home/akino/cppeak_seminars/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix"
+  "/home/akino/cppeak_seminars/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/tmp"
+  "/home/akino/cppeak_seminars/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp"
+  "/home/akino/cppeak_seminars/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/src"
+  "/home/akino/cppeak_seminars/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/akino/c++/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/akino/cppeak_seminars/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/akino/c++/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/akino/cppeak_seminars/project_1/build/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()
