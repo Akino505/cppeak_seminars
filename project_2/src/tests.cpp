@@ -7,7 +7,7 @@
 #include "check_bad_specials.h++"
 #include "specials.h++"
 
-TEST_CASE("Testing multiplication function")
+TEST_CASE("Testing password checker function")
 {
     SECTION("Lenght")
     {
