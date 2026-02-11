@@ -1,0 +1,14 @@
+/home/akino/cppeak_seminars/project_3/build/CMakeFiles/matrix_arithm.dir
+/home/akino/cppeak_seminars/project_3/build/CMakeFiles/project_3.dir
+/home/akino/cppeak_seminars/project_3/build/CMakeFiles/tests.dir
+/home/akino/cppeak_seminars/project_3/build/CMakeFiles/test.dir
+/home/akino/cppeak_seminars/project_3/build/CMakeFiles/edit_cache.dir
+/home/akino/cppeak_seminars/project_3/build/CMakeFiles/rebuild_cache.dir
+/home/akino/cppeak_seminars/project_3/build/_deps/catch2-build/CMakeFiles/test.dir
+/home/akino/cppeak_seminars/project_3/build/_deps/catch2-build/CMakeFiles/edit_cache.dir
+/home/akino/cppeak_seminars/project_3/build/_deps/catch2-build/CMakeFiles/rebuild_cache.dir
+/home/akino/cppeak_seminars/project_3/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir
+/home/akino/cppeak_seminars/project_3/build/_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir
+/home/akino/cppeak_seminars/project_3/build/_deps/catch2-build/src/CMakeFiles/test.dir
+/home/akino/cppeak_seminars/project_3/build/_deps/catch2-build/src/CMakeFiles/edit_cache.dir
+/home/akino/cppeak_seminars/project_3/build/_deps/catch2-build/src/CMakeFiles/rebuild_cache.dir

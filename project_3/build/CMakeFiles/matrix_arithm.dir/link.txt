@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmatrix_arithm.a CMakeFiles/matrix_arithm.dir/src/appropriateSize.cpp.o CMakeFiles/matrix_arithm.dir/src/inputSample.cpp.o CMakeFiles/matrix_arithm.dir/src/meanDeviation.cpp.o CMakeFiles/matrix_arithm.dir/src/median.cpp.o CMakeFiles/matrix_arithm.dir/src/mode.cpp.o CMakeFiles/matrix_arithm.dir/src/safeInput.cpp.o CMakeFiles/matrix_arithm.dir/src/main.cpp.o
+/usr/bin/ranlib libmatrix_arithm.a

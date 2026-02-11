@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Werror=return-type CMakeFiles/project_3.dir/src/main.cpp.o -o project_3  libmatrix_arithm.a 
