@@ -7,18 +7,18 @@ bool isInt(double val)
     return val == std::trunc(val);
 }
 
-int safeInput(double value)
+bool safeInput(double value)
 {
-    int flag = 1;
+    bool flag = true;
     if(!isInt(value))
     {
         std::cout << "ERROR: Size must be integer";
-        flag = 0;
+        flag = false;
     }
     if(value <= 0)
     {
         std::cout << "ERROR: Size must be positive.";
-        flag = 0;
+        flag = false;
     }
     return flag;
 }

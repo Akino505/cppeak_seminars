@@ -1,2 +1,2 @@
 #
-int safeInput(double value);
+bool safeInput(double value);
