@@ -44,30 +44,37 @@ TEST_CASE("Testing median function")
 {
     SECTION("One element")
     {
-        REQUIRE(median({3.14}) == {3.14, 0.0});
-        REQUIRE(median({1}) == (1.0, NULL));
-        REQUIRE(median({-2}) == (-2.0, NULL));
+        auto result = median({0.5});
+        REQUIRE(result.first == 0.5);
+        REQUIRE(result.second == 0.5);
     }
 
     SECTION("Even amount")
     {
-        REQUIRE(median({3.14, -2.13, 4.0, 2}) == (3.14, 2.0));
-        REQUIRE(median({1, 2, 3, 4}) == (2.0, 3.0));
-        REQUIRE(median({-12.0, 3.0, 0, 1}) == (0.0, 1.0));
+        auto result = median({1, 3.0, 2.0, -4.0});
+        REQUIRE(result.first == 1.0);
+        REQUIRE(result.second == 2.0);
     }
 
     SECTION("Odd amount")
     {
-        REQUIRE(median({3.14, -2.13, 4.0}) == (3.14, NULL));
-        REQUIRE(median({1, 2, 3}) == (2.0, NULL));
-        REQUIRE(median({-12.0, 3.0, 0}) == (0.0, NULL));
+        auto result = median({5.0, 2.0, 8, -1.0, 9.0});
+        REQUIRE(result.first == 5.0);
+        REQUIRE(result.second == 5.0);
     }
 
-    SECTION("Duplicates inside")
+    SECTION("Duplicates inside - odd")
     {
-        REQUIRE(median({0, 0, 0, 0}) == (0.0, 0.0));
-        REQUIRE(median({2, 2, 1}) == (2.0, NULL));
-        REQUIRE(median({-12.0, 3.0, 3.0, 1}) == (1.0, 3.0));
+        auto result = median({-1.0, 2.0, 3, 2, 3.0});
+        REQUIRE(result.first == 2.0);
+        REQUIRE(result.second == 2.0);
+    }
+
+    SECTION("Duplicates inside - even")
+    {
+        auto result = median({-1.0, 2.0, 3, 2, 3.0, 4.0});
+        REQUIRE(result.first == 2.0);
+        REQUIRE(result.second == 3.0);
     }
 }
 
