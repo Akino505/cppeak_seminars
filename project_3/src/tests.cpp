@@ -16,7 +16,33 @@ TEST_CASE("Testing mode function"){
 
 TEST_CASE("Testing median function")
 {
+    SECTION("One element")
+    {
+        REQUIRE(median(3.14) == (3.14, NULL));
+        REQUIRE(median(1) == (1, NULL));
+        REQUIRE(median(-2) == (-2, NULL));
+    }
 
+    SECTION("Even amount")
+    {
+        REQUIRE(median(3.14, -2.13, 4.0, 2) == (3.14, 2.0));
+        REQUIRE(median(1, 2, 3, 4) == (2.0, 3.0));
+        REQUIRE(median(-12.0, 3.0, 0, 1) == (0.0, 1.0));
+    }
+
+    SECTION("Odd amount")
+    {
+        REQUIRE(median(3.14, -2.13, 4.0) == (3.14, NULL));
+        REQUIRE(median(1, 2, 3) == (2.0, NULL));
+        REQUIRE(median(-12.0, 3.0, 0) == (0.0, NULL));
+    }
+
+    SECTION("Duplicates inside")
+    {
+        REQUIRE(median(0, 0, 0, 0) == (0.0, 0.0));
+        REQUIRE(median(2, 2, 1) == (2.0, NULL));
+        REQUIRE(median(-12.0, 3.0, 3.0, 1) == (1.0, 3.0));
+    }
 }
 
 TEST_CASE("Testing mean deviation function")
