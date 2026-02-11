@@ -3,11 +3,13 @@
 std::vector<double> inputSample(int rows, int columns)
 {   
     double value = 0;
-    std::vector<double> storage(rows * columns);
-    for(int idx = 0; idx < rows * columns; ++idx)
+    std::vector<double> storage;
+    std::string row;
+    std::getline(std::cin, row);
+    std::stringstream streamRow(row);
+    while(streamRow >> value)
     {
-        std::cin >> value;
-        storage[idx] = value;
+        storage.push_back(value);
     }
     return storage;
 }

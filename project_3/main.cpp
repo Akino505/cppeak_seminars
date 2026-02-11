@@ -5,6 +5,7 @@
 #include "median.hpp"
 #include "inputSample.hpp"
 #include "safeInput.hpp"
+#include "apropriateSize.hpp"
 
 int main()
 {
@@ -13,8 +14,10 @@ int main()
     std::cout << "Input rows and columns:" << "\n";
     std::cin >> rows >> columns;
     if(!safeInput(rows) || !safeInput(columns)) return 0;
+    int expected = rows * columns;
     std::cout << "Input " << rows << " rows and " << columns << " columns:" << "\n";
     std::vector<double> matrix = inputSample(rows, columns);
+    if(!apropriateSize(matrix, rows * columns)) return 0;
     double meanDev = meanDeviation(matrix, rows, columns);
     double modeVal = mode(matrix);
     std::pair medianVals = median(matrix);
