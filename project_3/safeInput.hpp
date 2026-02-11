@@ -1,0 +1,2 @@
+#
+int safeInput(double value);
