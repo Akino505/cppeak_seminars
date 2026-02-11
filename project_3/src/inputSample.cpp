@@ -9,7 +9,8 @@ std::vector<double> inputSample(int rows, int columns)
     double value = 0;
     std::vector<double> storage;
     std::string row;
-    while (rows){
+    while (rows)
+    {
         std::getline(std::cin, row);
         std::stringstream streamRow(row);
         while(streamRow >> value)
