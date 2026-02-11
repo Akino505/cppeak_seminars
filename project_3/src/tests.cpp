@@ -9,3 +9,23 @@ TEST_CASE("Testing mode function"){
         REQUIRE(muode(2, 0, 1, 3, 4, 3) == 3);
     }
 }
+
+TEST_CASE("Testing median function")
+{
+
+}
+
+TEST_CASE("Testing mean deviation function")
+{
+    
+}
+
+TEST_CASE("Testing safety of rows and calumns values")
+{
+    
+}
+
+TEST_CASE("Testing appropriate amount of digits in matrix")
+{
+    
+}
