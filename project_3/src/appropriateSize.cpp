@@ -1,8 +1,8 @@
-#include "apropriateSize.hpp"
+#include "appropriateSize.hpp"
 #include <vector>
 #include <iostream>
 
-bool apropriateSize(std::vector<double> matrix, size_t expect)
+bool appropriateSize(std::vector<double> matrix, size_t expect)
 {
     bool flag = true;
     if(matrix.size() > expect)
