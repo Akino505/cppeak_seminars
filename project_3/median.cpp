@@ -2,7 +2,7 @@
 #include <vector>
 #include <utility>
 #include <algorithm>
-#include <median.hpp>
+#include "median.hpp"
 
 
 std::pair<double, double> median(std::vector<double> matrix)

@@ -1,5 +1,5 @@
 #include <catch2/catch_test_macros.hpp>
-#include "mode.h"
+#include "mode.hpp"
 
 TEST_CASE("Testing mode function"){
     SECTION("Simple"){

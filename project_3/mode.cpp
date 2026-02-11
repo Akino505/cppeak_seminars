@@ -1,4 +1,4 @@
-#include "mode.h"
+#include "mode.hpp"
 
 double temp;
 

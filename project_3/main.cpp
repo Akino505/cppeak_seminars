@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <mode.h>
+#include "mode.hpp"
 #include "meanDeviation.hpp"
 #include "median.hpp"
 #include "inputSample.hpp"
