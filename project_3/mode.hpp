@@ -1,7 +1,6 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <cstddef>
-#include <cmath>
+#ifndef MODE_HPP
+#define MODE_HPP
 
 double mode(const std::vector<double> &matrix);
+
+#endif

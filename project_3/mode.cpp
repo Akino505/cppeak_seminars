@@ -1,7 +1,11 @@
 #include "mode.hpp"
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cstddef>
+#include <cmath>
 
 double temp;
-
 auto is_equal = [](auto a)
 {
     return a == temp;

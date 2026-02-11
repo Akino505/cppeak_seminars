@@ -1,7 +1,6 @@
-#include <iostream>
-#include <vector>
-#include <utility>
-#include <algorithm>
-
+#ifndef MEDIAN_HPP
+#define MEDIAN_HPP
 
 std::pair<double, double> median(std::vector<double> matrix);
+
+ #endif

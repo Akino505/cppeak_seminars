@@ -1,4 +1,6 @@
 #include "safeInput.hpp"
+#include <cmath>
+#include <iostream>
 
 bool isInt(double val)
 {
