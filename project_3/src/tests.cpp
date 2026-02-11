@@ -51,8 +51,20 @@ TEST_CASE("Testing mean deviation function")
 }
 
 TEST_CASE("Testing safety of rows and calumns values")
-{
-    
+{   
+    SECTION("Is integer")
+    {
+        REQUIRE(safeInput(3.14) == false);
+        REQUIRE(safeInput(3) == true);
+    }
+
+    SECTION("Is positive")
+    {
+        REQUIRE(safeInput(-3) == false);
+        REQUIRE(safeInput(0) == false);
+        REQUIRE(safeInput(-3.14) == false);
+        REQUIRE(safeInput(3) == true);
+    }
 }
 
 TEST_CASE("Testing appropriate amount of digits in matrix")
