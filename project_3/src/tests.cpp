@@ -6,11 +6,18 @@
 #include "appropriateSize.hpp"
 
 TEST_CASE("Testing mode function"){
-    SECTION("Simple"){
-        REQUIRE(mode(1, 1, 1, 1, 0, 0, 1, 1, 1) == 1);
-        REQUIRE(mode(1, 1, 2, 2) == 1);
-        REQUIRE(muode(2, 0, 1, 3, 4, 5) == 2);
-        REQUIRE(muode(2, 0, 1, 3, 4, 3) == 3);
+    SECTION("One element")
+    {
+        REQUIRE(mode({3.14}) == 3.14);
+        REQUIRE(mode({1}) == 1.0);
+        REQUIRE(mode({-2}) == -2.0);
+    }
+
+    SECTION("Duplicates inside")
+    {
+        REQUIRE(mode({0.0, 0.0, 0.0, 0.0}) == 0.0);
+        REQUIRE(mode({2.0, 2.0, 1.0}) == 2.0);
+        REQUIRE(mode({-12.0, 3.0, 3.0, 1.0, 1.0}) == 1.0);
     }
 }
 
@@ -71,19 +78,19 @@ TEST_CASE("Testing appropriate amount of digits in matrix")
 {
     SECTION("More than expected")
     {
-        REQUIRE(appropriateSize((1, 2, 3, 4), 3) == false);
-        REQUIRE(appropriateSize((1.2, -2, -3.123, 4), 0) == false);
+        REQUIRE(appropriateSize({1, 2, 3, 4}, 3) == false);
+        REQUIRE(appropriateSize({1.2, -2, -3.123, 4}, 0) == false);
     }
 
     SECTION("Less than expected")
     {
-        REQUIRE(appropriateSize((1, 2, 3, 4), 6) == false);
-        REQUIRE(appropriateSize((-1.232, 2, -3, 4.0), 9) == false);
+        REQUIRE(appropriateSize({1, 2, 3, 4}, 6) == false);
+        REQUIRE(appropriateSize({-1.232, 2, -3, 4.0}, 9) == false);
     }
 
     SECTION("Equal expected")
     {
-        REQUIRE(appropriateSize((1, 2, 3, 4), 4) == true);
-        REQUIRE(appropriateSize((1.0, -2, -3.232, 4), 4) == true);
+        REQUIRE(appropriateSize({1, 2, 3, 4}, 4) == true);
+        REQUIRE(appropriateSize({1.0, -2, -3.232, 4}, 4) == true);
     }
 }
