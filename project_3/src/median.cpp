@@ -18,6 +18,8 @@ std::pair<double, double> median(std::vector<double> matrix)
     else
     {
         medians.first = matrix[lenVect / 2];
+        medians.second = matrix[lenVect / 2];
+
     }
     return medians;
 }
