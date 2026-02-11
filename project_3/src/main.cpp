@@ -13,6 +13,7 @@ int main()
     int columns = 0;
     std::cout << "Input rows and columns:" << "\n";
     std::cin >> rows >> columns;
+    std::cin.ignore();
     if(!safeInput(rows) || !safeInput(columns)) return 0;
     int expected = rows * columns;
     std::cout << "Input " << rows << " rows and " << columns << " columns:" << "\n";
