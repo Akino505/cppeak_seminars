@@ -69,5 +69,21 @@ TEST_CASE("Testing safety of rows and calumns values")
 
 TEST_CASE("Testing appropriate amount of digits in matrix")
 {
-    
+    SECTION("More than expected")
+    {
+        REQUIRE(appropriateSize((1, 2, 3, 4), 3) == false);
+        REQUIRE(appropriateSize((1.2, -2, -3.123, 4), 0) == false);
+    }
+
+    SECTION("Less than expected")
+    {
+        REQUIRE(appropriateSize((1, 2, 3, 4), 6) == false);
+        REQUIRE(appropriateSize((-1.232, 2, -3, 4.0), 9) == false);
+    }
+
+    SECTION("Equal expected")
+    {
+        REQUIRE(appropriateSize((1, 2, 3, 4), 4) == true);
+        REQUIRE(appropriateSize((1.0, -2, -3.232, 4), 4) == true);
+    }
 }
