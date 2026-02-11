@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmatrixOperations.a CMakeFiles/matrixOperations.dir/src/appropriateSize.cpp.o CMakeFiles/matrixOperations.dir/src/inputSample.cpp.o CMakeFiles/matrixOperations.dir/src/meanDeviation.cpp.o CMakeFiles/matrixOperations.dir/src/median.cpp.o CMakeFiles/matrixOperations.dir/src/mode.cpp.o CMakeFiles/matrixOperations.dir/src/safeInput.cpp.o CMakeFiles/matrixOperations.dir/src/main.cpp.o
+/usr/bin/ranlib libmatrixOperations.a
