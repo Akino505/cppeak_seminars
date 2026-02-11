@@ -1,3 +1,4 @@
+#include <vector>
 #ifndef MEAN_DEVIATION_HPP
 #define MEAN_DEVIATION_HPP
 

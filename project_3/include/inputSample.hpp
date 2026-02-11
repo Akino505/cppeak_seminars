@@ -1,3 +1,4 @@
+#include <vector>
 #ifndef INPUT_SAMPLE_HPP
 #define INPUT_SAMPLE_HPP
 

@@ -1,3 +1,4 @@
+#include <vector>
 #ifndef MEDIAN_HPP
 #define MEDIAN_HPP
 

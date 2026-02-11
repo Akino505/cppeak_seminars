@@ -44,9 +44,9 @@ TEST_CASE("Testing median function")
 {
     SECTION("One element")
     {
-        REQUIRE(median({3.14}) == (3.14, NULL));
-        REQUIRE(median({1}) == (1, NULL));
-        REQUIRE(median({-2}) == (-2, NULL));
+        REQUIRE(median({3.14}) == {3.14, 0.0});
+        REQUIRE(median({1}) == (1.0, NULL));
+        REQUIRE(median({-2}) == (-2.0, NULL));
     }
 
     SECTION("Even amount")

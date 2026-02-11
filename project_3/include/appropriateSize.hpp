@@ -1,3 +1,4 @@
+#include <vector>
 #ifndef APPROPRIATE_SIZE_HPP
 #define APPROPRIATE_SIZE_HPP
 

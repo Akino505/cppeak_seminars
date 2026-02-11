@@ -1,3 +1,5 @@
+#include <vector>
+#include <iostream>
 #include "mode.hpp"
 #include "meanDeviation.hpp"
 #include "median.hpp"
