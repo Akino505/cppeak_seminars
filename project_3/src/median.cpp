@@ -1,10 +1,10 @@
-#include "median.hpp"
+#include "../include/median.hpp"
 
 std::pair<double, double> median(std::vector<double> matrix)
 {
     std::sort(matrix.begin(), matrix.end());
     size_t lenVect = matrix.size();
-    std::pair<double, double> medians = {NULL, NULL};
+    std::pair<double, double> medians = {0.0, 0.0};
     if(lenVect % 2 == 0)
     {
         medians.first = matrix[lenVect / 2 - 1];

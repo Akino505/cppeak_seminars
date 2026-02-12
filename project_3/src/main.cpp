@@ -1,8 +1,8 @@
-#include "mode.hpp"
-#include "meanDeviation.hpp"
-#include "median.hpp"
-#include "inputSample.hpp"
-#include "safeInput.hpp"
+#include "../include/mode.hpp"
+#include "../include/meanDeviation.hpp"
+#include "../include/median.hpp"
+#include "../include/inputSample.hpp"
+#include "../include/safeInput.hpp"
 #include "appropriateSize.hpp"
 
 int main()
@@ -11,6 +11,7 @@ int main()
     int columns = 0;
     std::cout << "Input rows and columns:" << "\n";
     std::cin >> rows >> columns;
+    std::cin.ignore();
     if(!safeInput(rows) || !safeInput(columns)) return 0;
     int expected = rows * columns;
     std::cout << "Input " << rows << " rows and " << columns << " columns:" << "\n";

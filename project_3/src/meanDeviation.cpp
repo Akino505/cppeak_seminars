@@ -1,4 +1,4 @@
-#include "meanDeviation.hpp"
+#include "../include/meanDeviation.hpp"
 
 int mean(std::vector<double> vect, int length) 
 {

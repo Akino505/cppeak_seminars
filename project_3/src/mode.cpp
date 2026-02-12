@@ -1,4 +1,4 @@
-#include "mode.hpp"
+#include "../include/mode.hpp"
 
 double temp;
 auto is_equal = [](auto a)

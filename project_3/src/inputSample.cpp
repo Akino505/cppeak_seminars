@@ -1,16 +1,19 @@
-#include "inputSample.hpp"
-
+#include "../include/inputSample.hpp"
 
 std::vector<double> inputSample(int rows, int columns)
 {   
     double value = 0;
     std::vector<double> storage;
     std::string row;
-    std::getline(std::cin, row);
-    std::stringstream streamRow(row);
-    while(streamRow >> value)
+    while (rows)
     {
-        storage.push_back(value);
+        std::getline(std::cin, row);
+        std::stringstream streamRow(row);
+        while(streamRow >> value)
+        {
+            storage.push_back(value);
+        }
+        rows--;
     }
     return storage;
 }

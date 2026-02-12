@@ -1,4 +1,4 @@
-#include "appropriateSize.hpp"
+#include "../include/appropriateSize.hpp"
 
 bool appropriateSize(std::vector<double> matrix, size_t expect)
 {
