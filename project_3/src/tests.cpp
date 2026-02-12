@@ -1,4 +1,5 @@
 #include <catch2/catch_test_macros.hpp>
+#include <cmath>
 #include "mode.hpp"
 #include "median.hpp"
 #include "meanDeviation.hpp"
@@ -94,7 +95,7 @@ TEST_CASE("Testing mean deviation function")
         REQUIRE(meanDeviation({-5.0, -5.0}, 1, 2) == 0.0);
     }
 
-    SSECTION("Random")
+    SECTION("Random")
     {
         std::vector<double> vec = {1.0, 3.0, 8.0};
         double result = meanDeviation(vec, 1, 3);
