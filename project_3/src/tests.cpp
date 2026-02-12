@@ -80,7 +80,14 @@ TEST_CASE("Testing median function")
 
 TEST_CASE("Testing mean deviation function")
 {
-    
+    SECTION("One element")
+    {
+        REQUIRE(meanDeviation({5.0}, 1, 1) == 0.0);
+        REQUIRE(meanDeviation({42}, 1, 1) == 0.0);
+        REQUIRE(meanDeviation({-5.0}, 1, 1) == 0.0);
+
+    }
+
 }
 
 TEST_CASE("Testing safety of rows and calumns values")
