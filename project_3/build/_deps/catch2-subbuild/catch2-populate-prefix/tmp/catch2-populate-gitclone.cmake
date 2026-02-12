@@ -52,13 +52,13 @@ endif()
 
 execute_process(
   COMMAND "/usr/bin/git"
-          checkout "v3.4.0" --
+          checkout "v3.5.0" --
   WORKING_DIRECTORY "/home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build/_deps/catch2-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'v3.4.0'")
+  message(FATAL_ERROR "Failed to checkout tag: 'v3.5.0'")
 endif()
 
 set(init_submodules TRUE)

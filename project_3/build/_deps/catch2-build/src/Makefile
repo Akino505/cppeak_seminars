@@ -178,6 +178,30 @@ catch2/benchmark/catch_chronometer.cpp.s:
 	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.s
 .PHONY : catch2/benchmark/catch_chronometer.cpp.s
 
+catch2/benchmark/detail/catch_analyse.o: catch2/benchmark/detail/catch_analyse.cpp.o
+.PHONY : catch2/benchmark/detail/catch_analyse.o
+
+# target to build an object file
+catch2/benchmark/detail/catch_analyse.cpp.o:
+	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.o
+.PHONY : catch2/benchmark/detail/catch_analyse.cpp.o
+
+catch2/benchmark/detail/catch_analyse.i: catch2/benchmark/detail/catch_analyse.cpp.i
+.PHONY : catch2/benchmark/detail/catch_analyse.i
+
+# target to preprocess a source file
+catch2/benchmark/detail/catch_analyse.cpp.i:
+	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.i
+.PHONY : catch2/benchmark/detail/catch_analyse.cpp.i
+
+catch2/benchmark/detail/catch_analyse.s: catch2/benchmark/detail/catch_analyse.cpp.s
+.PHONY : catch2/benchmark/detail/catch_analyse.s
+
+# target to generate assembly for a file
+catch2/benchmark/detail/catch_analyse.cpp.s:
+	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.s
+.PHONY : catch2/benchmark/detail/catch_analyse.cpp.s
+
 catch2/benchmark/detail/catch_benchmark_function.o: catch2/benchmark/detail/catch_benchmark_function.cpp.o
 .PHONY : catch2/benchmark/detail/catch_benchmark_function.o
 
@@ -1281,6 +1305,30 @@ catch2/internal/catch_istream.s: catch2/internal/catch_istream.cpp.s
 catch2/internal/catch_istream.cpp.s:
 	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.s
 .PHONY : catch2/internal/catch_istream.cpp.s
+
+catch2/internal/catch_jsonwriter.o: catch2/internal/catch_jsonwriter.cpp.o
+.PHONY : catch2/internal/catch_jsonwriter.o
+
+# target to build an object file
+catch2/internal/catch_jsonwriter.cpp.o:
+	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.o
+.PHONY : catch2/internal/catch_jsonwriter.cpp.o
+
+catch2/internal/catch_jsonwriter.i: catch2/internal/catch_jsonwriter.cpp.i
+.PHONY : catch2/internal/catch_jsonwriter.i
+
+# target to preprocess a source file
+catch2/internal/catch_jsonwriter.cpp.i:
+	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.i
+.PHONY : catch2/internal/catch_jsonwriter.cpp.i
+
+catch2/internal/catch_jsonwriter.s: catch2/internal/catch_jsonwriter.cpp.s
+.PHONY : catch2/internal/catch_jsonwriter.s
+
+# target to generate assembly for a file
+catch2/internal/catch_jsonwriter.cpp.s:
+	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.s
+.PHONY : catch2/internal/catch_jsonwriter.cpp.s
 
 catch2/internal/catch_lazy_expr.o: catch2/internal/catch_lazy_expr.cpp.o
 .PHONY : catch2/internal/catch_lazy_expr.o
@@ -2458,6 +2506,30 @@ catch2/reporters/catch_reporter_helpers.cpp.s:
 	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.s
 .PHONY : catch2/reporters/catch_reporter_helpers.cpp.s
 
+catch2/reporters/catch_reporter_json.o: catch2/reporters/catch_reporter_json.cpp.o
+.PHONY : catch2/reporters/catch_reporter_json.o
+
+# target to build an object file
+catch2/reporters/catch_reporter_json.cpp.o:
+	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.o
+.PHONY : catch2/reporters/catch_reporter_json.cpp.o
+
+catch2/reporters/catch_reporter_json.i: catch2/reporters/catch_reporter_json.cpp.i
+.PHONY : catch2/reporters/catch_reporter_json.i
+
+# target to preprocess a source file
+catch2/reporters/catch_reporter_json.cpp.i:
+	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.i
+.PHONY : catch2/reporters/catch_reporter_json.cpp.i
+
+catch2/reporters/catch_reporter_json.s: catch2/reporters/catch_reporter_json.cpp.s
+.PHONY : catch2/reporters/catch_reporter_json.s
+
+# target to generate assembly for a file
+catch2/reporters/catch_reporter_json.cpp.s:
+	cd /home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.s
+.PHONY : catch2/reporters/catch_reporter_json.cpp.s
+
 catch2/reporters/catch_reporter_junit.o: catch2/reporters/catch_reporter_junit.cpp.o
 .PHONY : catch2/reporters/catch_reporter_junit.o
 
@@ -2664,6 +2736,9 @@ help:
 	@echo "... catch2/benchmark/catch_chronometer.o"
 	@echo "... catch2/benchmark/catch_chronometer.i"
 	@echo "... catch2/benchmark/catch_chronometer.s"
+	@echo "... catch2/benchmark/detail/catch_analyse.o"
+	@echo "... catch2/benchmark/detail/catch_analyse.i"
+	@echo "... catch2/benchmark/detail/catch_analyse.s"
 	@echo "... catch2/benchmark/detail/catch_benchmark_function.o"
 	@echo "... catch2/benchmark/detail/catch_benchmark_function.i"
 	@echo "... catch2/benchmark/detail/catch_benchmark_function.s"
@@ -2802,6 +2877,9 @@ help:
 	@echo "... catch2/internal/catch_istream.o"
 	@echo "... catch2/internal/catch_istream.i"
 	@echo "... catch2/internal/catch_istream.s"
+	@echo "... catch2/internal/catch_jsonwriter.o"
+	@echo "... catch2/internal/catch_jsonwriter.i"
+	@echo "... catch2/internal/catch_jsonwriter.s"
 	@echo "... catch2/internal/catch_lazy_expr.o"
 	@echo "... catch2/internal/catch_lazy_expr.i"
 	@echo "... catch2/internal/catch_lazy_expr.s"
@@ -2949,6 +3027,9 @@ help:
 	@echo "... catch2/reporters/catch_reporter_helpers.o"
 	@echo "... catch2/reporters/catch_reporter_helpers.i"
 	@echo "... catch2/reporters/catch_reporter_helpers.s"
+	@echo "... catch2/reporters/catch_reporter_json.o"
+	@echo "... catch2/reporters/catch_reporter_json.i"
+	@echo "... catch2/reporters/catch_reporter_json.s"
 	@echo "... catch2/reporters/catch_reporter_junit.o"
 	@echo "... catch2/reporters/catch_reporter_junit.i"
 	@echo "... catch2/reporters/catch_reporter_junit.s"
