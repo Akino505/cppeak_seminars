@@ -1,7 +1,4 @@
 #include "meanDeviation.hpp"
-#include <iostream>
-#include <vector>
-#include <cmath>
 
 int mean(std::vector<double> vect, int length) 
 {

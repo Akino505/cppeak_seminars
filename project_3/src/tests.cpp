@@ -13,11 +13,30 @@ TEST_CASE("Testing mode function"){
         REQUIRE(mode({-2}) == -2.0);
     }
 
-    SECTION("Duplicates inside")
-    {
-        REQUIRE(mode({0.0, 0.0, 0.0, 0.0}) == 0.0);
-        REQUIRE(mode({2.0, 2.0, 1.0}) == 2.0);
-        REQUIRE(mode({-12.0, 3.0, 3.0, 1.0, 1.0}) == 1.0);
+    SECTION("All elements are equal") {
+        REQUIRE(mode({5.0, 5, 5.0, 5}) == 5.0);
+        REQUIRE(mode({-1.0, -1, -1.0}) == -1.0);
+        REQUIRE(mode({3.14, 3.14, 3.14}) == 3.14);
+    }
+
+    SECTION("All elements are unique") {
+        REQUIRE(mode({1, 2.0, 3.0, -4.0, 5.0}) == 1.0);
+        REQUIRE(mode({10.0, 20, 30.0}) == 10.0);
+        REQUIRE(mode({-5.0, 0.0, 5.0}) == -5.0);
+    }
+
+    SECTION("Single mode") {
+        REQUIRE(mode({1.0, 2.0, 2.0, 3.0, 4.0}) == 2.0);
+        REQUIRE(mode({10.0, -20.0, 30.0, 30.0, 30.0, 40}) == 30.0);
+        REQUIRE(mode({1.5, 1.5, 1.5, 2.5}) == 1.5);
+        REQUIRE(mode({-5.0, -5.0, -5.0, -10.0}) == -5.0);
+    }
+
+    SECTION("More than one mode") {
+        REQUIRE(mode({1.0, 1.0, 2.0, 2, 3.0}) == 1.0);
+        REQUIRE(mode({5.0, 5, 7.0, 7.0, 9.0, 9.0}) == 5.0);
+        REQUIRE(mode({1.0, 1, 1.0, 2.0, 2.0, 2.0}) == 1.0);
+        REQUIRE(mode({-1.0, -1.0, -2.0, -2.0}) == -1.0);
     }
 }
 
@@ -25,36 +44,64 @@ TEST_CASE("Testing median function")
 {
     SECTION("One element")
     {
-        REQUIRE(median(3.14) == (3.14, NULL));
-        REQUIRE(median(1) == (1, NULL));
-        REQUIRE(median(-2) == (-2, NULL));
+        auto result = median({0.5});
+        REQUIRE(result.first == 0.5);
+        REQUIRE(result.second == 0.5);
     }
 
     SECTION("Even amount")
     {
-        REQUIRE(median(3.14, -2.13, 4.0, 2) == (3.14, 2.0));
-        REQUIRE(median(1, 2, 3, 4) == (2.0, 3.0));
-        REQUIRE(median(-12.0, 3.0, 0, 1) == (0.0, 1.0));
+        auto result = median({1, 3.0, 2.0, -4.0});
+        REQUIRE(result.first == 1.0);
+        REQUIRE(result.second == 2.0);
     }
 
     SECTION("Odd amount")
     {
-        REQUIRE(median(3.14, -2.13, 4.0) == (3.14, NULL));
-        REQUIRE(median(1, 2, 3) == (2.0, NULL));
-        REQUIRE(median(-12.0, 3.0, 0) == (0.0, NULL));
+        auto result = median({5.0, 2.0, 8, -1.0, 9.0});
+        REQUIRE(result.first == 5.0);
+        REQUIRE(result.second == 5.0);
     }
 
-    SECTION("Duplicates inside")
+    SECTION("Duplicates inside - odd")
     {
-        REQUIRE(median(0, 0, 0, 0) == (0.0, 0.0));
-        REQUIRE(median(2, 2, 1) == (2.0, NULL));
-        REQUIRE(median(-12.0, 3.0, 3.0, 1) == (1.0, 3.0));
+        auto result = median({-1.0, 2.0, 3, 2, 3.0});
+        REQUIRE(result.first == 2.0);
+        REQUIRE(result.second == 2.0);
+    }
+
+    SECTION("Duplicates inside - even")
+    {
+        auto result = median({-1.0, 2.0, 3, 2, 3.0, 4.0});
+        REQUIRE(result.first == 2.0);
+        REQUIRE(result.second == 3.0);
     }
 }
 
 TEST_CASE("Testing mean deviation function")
 {
-    
+    SECTION("One element")
+    {
+        REQUIRE(meanDeviation({5.0}, 1, 1) == 0.0);
+        REQUIRE(meanDeviation({42}, 1, 1) == 0.0);
+        REQUIRE(meanDeviation({-5.0}, 1, 1) == 0.0);
+    }
+
+    SECTION("Same elements")
+    {
+        REQUIRE(meanDeviation({5.0, 5.0}, 1, 2) == 0.0);
+        REQUIRE(meanDeviation({42, 42}, 1, 2) == 0.0);
+        REQUIRE(meanDeviation({-5.0, -5.0}, 1, 2) == 0.0);
+    }
+
+    SECTION("Random")
+    {
+        std::vector<double> vec = {1.0, 3.0, 8.0};
+        double result = meanDeviation(vec, 1, 3);
+        double expected = std::sqrt(26.0/3.0);
+        REQUIRE(std::abs(result - expected) < 1e-10);
+    }
+
 }
 
 TEST_CASE("Testing safety of rows and calumns values")

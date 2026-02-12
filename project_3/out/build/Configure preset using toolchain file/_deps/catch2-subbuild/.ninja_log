@@ -1,0 +1,21 @@
+# ninja log v7
+2	53	1770839986680372773	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	6773f5876c68bf5b
+2	53	1770839986680372773	/home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/out/build/Configure preset using toolchain file/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	6773f5876c68bf5b
+53	14011	1770840000643350713	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	4593155751a9fcc7
+53	14011	1770840000643350713	/home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/out/build/Configure preset using toolchain file/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	4593155751a9fcc7
+14011	14057	1770840000643350713	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	954020e303cd6a27
+14011	14057	1770840000643350713	/home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/out/build/Configure preset using toolchain file/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	954020e303cd6a27
+14057	14136	1770840000767412713	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	df2170c5bee98b8f
+14057	14136	1770840000767412713	/home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/out/build/Configure preset using toolchain file/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	df2170c5bee98b8f
+14136	14193	1770840000823440712	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	2126a634d0341b28
+14136	14193	1770840000823440712	/home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/out/build/Configure preset using toolchain file/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	2126a634d0341b28
+14193	14256	1770840000891474712	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	a38949726543ca8b
+14193	14256	1770840000891474712	/home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/out/build/Configure preset using toolchain file/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	a38949726543ca8b
+14256	14313	1770840000939498712	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	67dfe1c4be90c705
+14256	14313	1770840000939498712	/home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/out/build/Configure preset using toolchain file/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	67dfe1c4be90c705
+14313	14355	1770840000987522711	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	f98f05188a786548
+14313	14355	1770840000987522711	/home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/out/build/Configure preset using toolchain file/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	f98f05188a786548
+14355	14421	1770840001051554712	CMakeFiles/catch2-populate-complete	c82a6d8f0f6acbe7
+14355	14421	1770840001051554712	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	c82a6d8f0f6acbe7
+14355	14421	1770840001051554712	/home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/out/build/Configure preset using toolchain file/_deps/catch2-subbuild/CMakeFiles/catch2-populate-complete	c82a6d8f0f6acbe7
+14355	14421	1770840001051554712	/home/kali/Desktop/Cpp_for_HSE/homework/cppeak_seminars/project_3/out/build/Configure preset using toolchain file/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	c82a6d8f0f6acbe7
