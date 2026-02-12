@@ -85,7 +85,21 @@ TEST_CASE("Testing mean deviation function")
         REQUIRE(meanDeviation({5.0}, 1, 1) == 0.0);
         REQUIRE(meanDeviation({42}, 1, 1) == 0.0);
         REQUIRE(meanDeviation({-5.0}, 1, 1) == 0.0);
+    }
 
+    SECTION("Same elements")
+    {
+        REQUIRE(meanDeviation({5.0, 5.0}, 1, 2) == 0.0);
+        REQUIRE(meanDeviation({42, 42}, 1, 2) == 0.0);
+        REQUIRE(meanDeviation({-5.0, -5.0}, 1, 2) == 0.0);
+    }
+
+    SSECTION("Random")
+    {
+        std::vector<double> vec = {1.0, 3.0, 8.0};
+        double result = meanDeviation(vec, 1, 3);
+        double expected = std::sqrt(26.0/3.0);
+        REQUIRE(std::abs(result - expected) < 1e-10);
     }
 
 }
