@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10.0)
 
-project(project_3 CXX)
+project(project_4 CXX)
 
 if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Debug)
@@ -22,31 +22,20 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(Catch2)
 
 # --- 2. Create a Library for shared logic ---
-add_library(matrix_arithm
-    src/appropriateSize.cpp
-    src/inputSample.cpp
-    src/meanDeviation.cpp
-    src/median.cpp
-    src/mode.cpp
-    src/safeInput.cpp
-    src/main.cpp)
-target_include_directories(matrix_arithm PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+add_library(log_analyzer
+)
+target_include_directories(log_analyzer PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # --- 3. Main Application ---
 add_executable(${CMAKE_PROJECT_NAME} src/main.cpp)
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE matrix_arithm)
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE log_analyzer)
 
 
 # --- 4. Testing Setup ---
 enable_testing()
 
 add_executable(tests src/tests.cpp
-   src/appropriateSize.cpp
-    src/inputSample.cpp
-    src/meanDeviation.cpp
-    src/median.cpp
-    src/mode.cpp
-    src/safeInput.cpp)
+ )
 
 target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
 
