@@ -9,10 +9,10 @@ std::vector<std::array<std::string, 4>> readFile(std::ifstream& file)
 {
     std::string logComm = "";
     std::string comment = "";
-    std::array<std::string, 4> logLine;
     std::vector<std::array< std::string, 4>> logBase;
     while(std::getline(file, logComm))
     {
+        std::array<std::string, 4> logLine;
         std::stringstream streamLog(logComm);
         for(int idx = 0; idx < 3; idx++)
         {
