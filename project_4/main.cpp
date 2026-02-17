@@ -1,6 +1,7 @@
 #include <iostream>
 #include "readFile.hpp"
 #include "countLvls.hpp"
+#include "showErrorsWarnings.hpp"
 
 std::ostream& operator<<(std::ostream& os, const std::array<std::string, 4>& arr)
 {
@@ -30,9 +31,10 @@ int main()
             countLvls(logBase, fileOut);
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
-        else if(command == "3")
-        {
-
+        else if(command == "4")
+        {   
+            showErrorsWarnings(fileIn);
+            fileOut << "----------------------------------------------------------------------" << "\n";
         }
         else if(command == "help")
         {
