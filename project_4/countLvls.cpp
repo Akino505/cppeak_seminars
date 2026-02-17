@@ -13,6 +13,7 @@ int countLvls(std::vector<std::array<std::string, 4>> logBase, std::ofstream& ou
         else if(logBase[idx][0] == "WARNING") warns++;
         else if(logBase[idx][0] == "INFO") infos++;   
     }
+    out << "Command №1" << "\n";
     out << "ERRORS: " << errs << "\n";
     out << "DEBUGS: " << dbgs << "\n";
     out << "WARNINGS: " << warns << "\n";
