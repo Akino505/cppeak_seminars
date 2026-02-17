@@ -4,4 +4,4 @@
 #include <sstream>
 #include <map>
 
-void showErrorsWarnings(const std::string& inputFile);
+void showErrorsWarnings(std::ifstream& inputFile);
