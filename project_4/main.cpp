@@ -3,6 +3,7 @@
 #include "countLvls.hpp"
 #include "showErrorsWarnings.hpp"
 #include "lvlsInRange.hpp"
+#include "checkFile.hpp"
 
 std::ostream& operator<<(std::ostream& os, const std::array<std::string, 4>& arr)
 {
@@ -14,6 +15,7 @@ int main()
 {
     std::ifstream fileIn("log_input.txt");
     std::ofstream fileOut("log_output.txt");
+    if(!checkFile(fileIn)) return 0;
     std::vector<std::array<std::string, 4>> logBase = readFile(fileIn);
     std::string command = "";
     std::cout << "What do you want to do with the log file?" << "\n";

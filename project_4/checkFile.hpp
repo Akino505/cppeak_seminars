@@ -2,4 +2,4 @@
 #include <fstream>
 #include <string>
 
-bool checkFile(std::fstream& inputFile);
+bool checkFile(std::ifstream& inputFile);
