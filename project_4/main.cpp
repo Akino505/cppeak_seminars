@@ -1,6 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <array>
+#include <vector>
+#include <string>
 
 std::ostream& operator<<(std::ostream& os, const std::array<std::string, 4>& arr)
 {
@@ -11,4 +13,5 @@ std::ostream& operator<<(std::ostream& os, const std::array<std::string, 4>& arr
 int main()
 {
     std::fstream file("log_input.txt");
+    std::vector<std::array<std::string, 4>> logBase = readFile(file);
 }
