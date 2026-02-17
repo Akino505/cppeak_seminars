@@ -2,6 +2,7 @@
 #include "readFile.hpp"
 #include "countLvls.hpp"
 #include "showErrorsWarnings.hpp"
+#include "lvlsInRange.hpp"
 
 std::ostream& operator<<(std::ostream& os, const std::array<std::string, 4>& arr)
 {
@@ -33,7 +34,7 @@ int main()
         }
         else if(command == "3")
         {
-            
+            if(!lvlsInRange(logBase, fileOut)) fileOut << "ERROR: End with error.";
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
         else if(command == "4")
