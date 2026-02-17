@@ -1,2 +1,17 @@
-err [2025-03-11 23:32:11] devil may cry
-inf [2026-04-11 13:32:11] devil may not cry
+ERROR [2025-03-11 23:32:11] devil may cry
+ERROR [2025-03-11 23:32:11] devil may cry
+ERROR [2025-03-11 23:32:11] devil may cry
+INFO [2026-04-11 13:32:11] devil may not cry
+INFO [2026-04-11 13:32:11] devil may not cry
+WARNING [2026-04-11 13:32:11] devil may not cry
+WARNING [2026-04-11 13:32:11] devil may not cry
+WARNING [2026-04-11 13:32:11] devil may not cry
+WARNING [2026-04-11 13:32:11] devil may not cry
+DEBUG [2026-04-11 13:32:11] devil may not cry
+DEBUG [2026-04-11 13:32:11] devil may not cry
+DEBUG [2026-04-11 13:32:11] devil may not cry
+DEBUG [2026-04-11 13:32:11] devil may not cry
+DEBUG [2026-04-11 13:32:11] devil may not cry
+DEBUG [2026-04-11 13:32:11] devil may not cry
+
+
