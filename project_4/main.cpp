@@ -31,6 +31,11 @@ int main()
             countLvls(logBase, fileOut);
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
+        else if(command == "3")
+        {
+            
+            fileOut << "----------------------------------------------------------------------" << "\n";
+        }
         else if(command == "4")
         {   
             showErrorsWarnings(fileIn);
