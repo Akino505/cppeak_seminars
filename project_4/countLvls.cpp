@@ -1,9 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <array>
-#include <fstream>
-#include <string>
-#include <sstream>
+#include "countLvls.hpp"
 
 int countLvls(std::vector<std::array<std::string, 4>> logBase, std::ofstream& out)
 {
