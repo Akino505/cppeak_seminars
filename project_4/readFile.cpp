@@ -1,9 +1,4 @@
-#include <fstream>
-#include <string>
-#include <sstream>
-#include <iostream>
-#include <vector>
-#include <array>
+#include "readFile.hpp"
 
 std::vector<std::array<std::string, 4>> readFile(std::ifstream& file)
 {
