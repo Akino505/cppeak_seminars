@@ -7,30 +7,36 @@ void showErrorsWarnings(std::fstream& inputFile)
     std::map<std::string, int> errors; 
     std::map<std::string, int> warnings;
     
-    while(getline(inputFile, line)) {
+    while(getline(inputFile, line))
+    {
         std::stringstream ss(line);
 
         ss >> date;
-        if(!date.empty() && date[0] == '[') {
+        if(!date.empty() && date[0] == '[')
+        {
             date = date.substr(1);
         }
 
         ss >> time;
-        if(!time.empty() && time.back() == ']') {
+        if(!time.empty() && time.back() == ']')
+        {
             time.pop_back();
         }
 
         ss >> level;
         getline(ss, message);
         
-        if(!message.empty() && message[0] == ' ') {
+        if(!message.empty() && message[0] == ' ')
+        {
             message = message.substr(1); 
         }
         
-        if(level == "ERROR") {
+        if(level == "ERROR")
+        {
             errors[message]++;
         }
-        else if(level == "WARNING") {
+        else if(level == "WARNING")
+        {
             warnings[message]++;
         }
     }
@@ -40,19 +46,27 @@ void showErrorsWarnings(std::fstream& inputFile)
     outFile << "Result of command 4:" << std::endl;
 
     outFile << "ERRORS:" << std::endl;
-    if(errors.empty()) {
+    if(errors.empty())
+    {
         outFile << "  No errors found" << std::endl;
-    } else {
-        for(const auto& e : errors) {
+    }
+    else
+    {
+        for(const auto& e : errors)
+        {
             outFile << "  \"" << e.first << "\" - " << e.second << " times" << std::endl;
         }
     }
 
     outFile << "WARNINGS:" << std::endl;
-    if(warnings.empty()) {
+    if(warnings.empty())
+    {
         outFile << "  No warnings found" << std::endl;
-    } else {
-        for(auto& w : warnings) {
+    }
+    else
+    {
+        for(auto& w : warnings)
+        {
             outFile << "  \"" << w.first << "\" - " << w.second << " times" << std::endl;
         }
     }
