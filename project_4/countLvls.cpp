@@ -1,6 +1,6 @@
 #include "countLvls.hpp"
 
-int countLvls(std::vector<std::array<std::string, 4>> logBase, std::ofstream& out)
+void countLvls(std::vector<std::array<std::string, 4>> logBase, std::ofstream& out)
 {
     int errs = 0;
     int warns = 0;
@@ -18,5 +18,4 @@ int countLvls(std::vector<std::array<std::string, 4>> logBase, std::ofstream& ou
     out << "DEBUGS: " << dbgs << "\n";
     out << "WARNINGS: " << warns << "\n";
     out << "INFOS: " << infos << "\n";
-    return 0;
 }
