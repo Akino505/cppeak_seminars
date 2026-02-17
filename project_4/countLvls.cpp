@@ -1,12 +1,14 @@
 #include <iostream>
+#include <vector>
+#include <array>
 
-int countLvls()
+int countLvls(std::vector<std::array<std::string, 4>> logBase, std::fstream& Out)
 {
 
 }
 
 int main()
 {
-    std::fstream file("log_input.txt");
-    std::fstream out("log_output.txt");
+    std::fstream fileIn("log_input.txt");
+    std::fstream fileOut("log_output.txt");
 }
