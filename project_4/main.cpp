@@ -4,7 +4,9 @@
 #include "showErrorsWarnings.hpp"
 #include "lvlsInRange.hpp"
 #include "checkFile.hpp"
+#include "specificLevel.hpp"
 #include "help.hpp"
+#include "statisticForPeriod.hpp"
 
 std::ostream& operator<<(std::ostream& os, const std::array<std::string, 4>& arr)
 {
@@ -31,6 +33,13 @@ int main()
             std::cout << "Anything else?" << "\n";
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
+        else if(command == "2")
+        {
+            if(!specificLevel(logBase, fileOut))
+                fileOut << "ERROR: End with error.";
+            std::cout << "Proccess is done!" << "\n";
+            fileOut << "----------------------------------------------------------------------" << "\n";
+        }
         else if(command == "3")
         {
             if(!lvlsInRange(logBase, fileOut)) fileOut << "ERROR: End with error." << "\n";
@@ -43,6 +52,13 @@ int main()
             showErrorsWarnings(fileIn);
             std::cout << "Proccess is done!" << "\n";
             std::cout << "Anything else?" << "\n";
+            fileOut << "----------------------------------------------------------------------" << "\n";
+        }
+        else if(command == "5")
+        {
+            if(!lvlsInRange2(logBase, fileOut))
+                fileOut << "ERROR: End with error.";
+            std::cout << "Proccess is done!" << "\n";
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
         else if(command == "help")
