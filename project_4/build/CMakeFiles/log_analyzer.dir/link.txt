@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblog_analyzer.a CMakeFiles/log_analyzer.dir/src/checkFile.cpp.o CMakeFiles/log_analyzer.dir/src/countLvls.cpp.o CMakeFiles/log_analyzer.dir/src/help.cpp.o CMakeFiles/log_analyzer.dir/src/lvlsInRange.cpp.o CMakeFiles/log_analyzer.dir/src/main.cpp.o CMakeFiles/log_analyzer.dir/src/readFile.cpp.o CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o
+/usr/bin/ranlib liblog_analyzer.a

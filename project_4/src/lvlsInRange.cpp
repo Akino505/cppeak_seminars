@@ -35,6 +35,7 @@ bool lvlsInRange(std::vector<std::array<std::string, 4>> logBase, std::ofstream&
         std::cout << "Please, type appropriate number." << "\n";
         return false;
     }
+    out << "Result of command 3." << "\n";
     for(int idx = start - 1; idx < finish; idx++)
     {
         for(int jdx = 0; jdx < logBase.size(); jdx++)

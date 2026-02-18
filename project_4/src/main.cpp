@@ -1,7 +1,6 @@
 #include <iostream>
 #include "readFile.hpp"
 #include "countLvls.hpp"
-#include "showErrorsWarnings.hpp"
 #include "lvlsInRange.hpp"
 #include "checkFile.hpp"
 #include "specificLevel.hpp"
@@ -24,6 +23,7 @@ int main()
         std::cin >> command;
         if(command == "1")
         {   
+            fileOut << "Result of command 1." << "\n";
             countLvls(logBase, fileOut);
             std::cout << "Proccess is done!" << "\n";
             std::cout << "Anything else?" << "\n";
@@ -34,6 +34,7 @@ int main()
             if(!specificLevel(logBase, fileOut))
                 fileOut << "ERROR: End with error.";
             std::cout << "Proccess is done!" << "\n";
+            std::cout << "Anything else?" << "\n";
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
         else if(command == "3")
@@ -44,17 +45,11 @@ int main()
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
         else if(command == "4")
-        {   
-            showErrorsWarnings(fileIn);
-            std::cout << "Proccess is done!" << "\n";
-            std::cout << "Anything else?" << "\n";
-            fileOut << "----------------------------------------------------------------------" << "\n";
-        }
-        else if(command == "5")
         {
             if(!lvlsInRange2(logBase, fileOut))
                 fileOut << "ERROR: End with error.";
             std::cout << "Proccess is done!" << "\n";
+            std::cout << "Anything else?" << "\n";
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
         else if(command == "help")

@@ -18,6 +18,7 @@ bool specificLevel(std::vector<std::array<std::string, 4>> logBase,
         {"INFO", 1}, {"WARNING", 2}, {"ERROR", 3}, {"DEBUG", 4}};
 
     int counter = 0;
+    out << "Result of command 2." << "\n";
     while(counter < logBase.size())
     {
         if(levelMap[logBase[counter][0]] == level)

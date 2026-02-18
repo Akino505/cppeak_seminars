@@ -1,0 +1,10 @@
+/home/akino/cppeak_seminars/project_4/build/CMakeFiles/log_analyzer.dir
+/home/akino/cppeak_seminars/project_4/build/CMakeFiles/project_4.dir
+/home/akino/cppeak_seminars/project_4/build/CMakeFiles/edit_cache.dir
+/home/akino/cppeak_seminars/project_4/build/CMakeFiles/rebuild_cache.dir
+/home/akino/cppeak_seminars/project_4/build/_deps/catch2-build/CMakeFiles/edit_cache.dir
+/home/akino/cppeak_seminars/project_4/build/_deps/catch2-build/CMakeFiles/rebuild_cache.dir
+/home/akino/cppeak_seminars/project_4/build/_deps/catch2-build/src/CMakeFiles/Catch2.dir
+/home/akino/cppeak_seminars/project_4/build/_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir
+/home/akino/cppeak_seminars/project_4/build/_deps/catch2-build/src/CMakeFiles/edit_cache.dir
+/home/akino/cppeak_seminars/project_4/build/_deps/catch2-build/src/CMakeFiles/rebuild_cache.dir
