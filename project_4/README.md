@@ -4,7 +4,6 @@ This is a small program that reads and analyzes a log file. Its main function is
 Additional features have also been implemented:
 - The user can request the output of a specific level.
 - The user can request the output of levels within a specific time range.
-- The user can request the output of the most frequent messages for errors and warnings.
 - The user can request statistics for a specific time period.
 
 CMake was used for building, and Catch2 for unit tests.  
