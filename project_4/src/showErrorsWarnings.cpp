@@ -40,7 +40,7 @@ void showErrorsWarnings(std::ifstream& inputFile)
         }
     }
     
-    std::ofstream outFile("outFile.txt");
+    std::ofstream outFile("log_output.txt");
 
     outFile << "Result of command 4:" << std::endl;
 
@@ -69,6 +69,4 @@ void showErrorsWarnings(std::ifstream& inputFile)
             outFile << "  \"" << w.first << "\" - " << w.second << " times" << std::endl;
         }
     }
-
-    outFile.close();
 }
