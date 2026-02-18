@@ -1,5 +1,4 @@
 #include "showErrorsWarnings.hpp"
-#include <array>
 
 void showErrorsWarnings(std::fstream& inputFile)
 {
