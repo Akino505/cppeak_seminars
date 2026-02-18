@@ -1,6 +1,6 @@
 #include "showErrorsWarnings.hpp"
 
-void showErrorsWarnings(std::fstream& inputFile)
+void showErrorsWarnings(std::ifstream& inputFile)
 {
     std::string line, date, time, level, message;
     std::map<std::string, int> errors; 
