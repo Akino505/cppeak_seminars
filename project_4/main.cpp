@@ -27,16 +27,22 @@ int main()
         if(command == "1")
         {   
             countLvls(logBase, fileOut);
+            std::cout << "Proccess is done!" << "\n";
+            std::cout << "Anything else?" << "\n";
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
         else if(command == "3")
         {
-            if(!lvlsInRange(logBase, fileOut)) fileOut << "ERROR: End with error.";
+            if(!lvlsInRange(logBase, fileOut)) fileOut << "ERROR: End with error." << "\n";
+            std::cout << "Proccess is done!" << "\n";
+            std::cout << "Anything else?" << "\n";
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
         else if(command == "4")
         {   
             showErrorsWarnings(fileIn);
+            std::cout << "Proccess is done!" << "\n";
+            std::cout << "Anything else?" << "\n";
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
         else if(command == "help")
@@ -45,7 +51,7 @@ int main()
         }
         else
         {
-            std::cout << "Please, type appropriate command.";
+            std::cout << "Please, type appropriate command." << "\n";
             std::cout << "Type 'help' for list of commands." << "\n";
         }
     }
