@@ -37,10 +37,12 @@ bool lvlsInRange2(std::vector<std::array<std::string, 4>> logBase, std::ofstream
         std::cout << "Please, type appropriate number." << "\n";
         return false;
     }
+    out << "Result of command 4." << "\n";
+    out << "from: " << timeBase[start - 1][0] << " " << timeBase[start - 1][1] << "\n";
+    out << "to: " << timeBase[finish - 1][0] << " " << timeBase[finish - 1][1] << "\n";
 
     std::vector<std::array<std::string, 4>> newVect;
     newVect.assign(logBase.begin() + start - 1, logBase.begin() + finish);
-    out << "Result of command 5." << "\n";
     countLvls(newVect, out);
     return true;
 }

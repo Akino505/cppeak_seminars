@@ -36,6 +36,8 @@ bool lvlsInRange(std::vector<std::array<std::string, 4>> logBase, std::ofstream&
         return false;
     }
     out << "Result of command 3." << "\n";
+    out << "from: " << timeBase[start - 1][0] << " " << timeBase[start - 1][1] << "\n";
+    out << "to: " << timeBase[finish - 1][0] << " " << timeBase[finish - 1][1] << "\n";
     for(int idx = start - 1; idx < finish; idx++)
     {
         for(int jdx = 0; jdx < logBase.size(); jdx++)
