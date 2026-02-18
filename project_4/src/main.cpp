@@ -21,8 +21,8 @@ int main()
         std::cin >> command;
         if(command == "1")
         {   
-            fileOut << "Log files was written:" << "\n";
             fileOut << "Result of command 1." << "\n";
+            fileOut << "Log files was written:" << "\n";
             fileOut << "from: " << logBase[0][1] << " " << logBase[0][2] << "\n";
             fileOut << "to: " << logBase[logBase.size() - 1][1] << " " << logBase[logBase.size() - 1][2] << "\n";
             countLvls(logBase, fileOut);
@@ -70,11 +70,12 @@ int main()
         {
             help();
         }
+        else if (command == "exit") std::cout << "Goodbye! :)" << "\n";
         else
         {
             std::cout << "Please, type appropriate command." << "\n";
             std::cout << "Type 'help' for list of commands." << "\n";
         }
     }
-    std::cout << "Goodbye! :)" << "\n";
+
 }
