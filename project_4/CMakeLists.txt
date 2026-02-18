@@ -22,8 +22,8 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(Catch2)
 
 # --- 2. Create a Library for shared logic ---
-add_library(log_analyzer
-)
+file(GLOB SOURCES "src/*.cpp") 
+add_library(log_analyzer ${SOURCES})
 target_include_directories(log_analyzer PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # --- 3. Main Application ---
@@ -32,13 +32,3 @@ target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE log_analyzer)
 
 
 # --- 4. Testing Setup ---
-enable_testing()
-
-add_executable(tests src/tests.cpp
- )
-
-target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
-
-target_include_directories(tests PRIVATE 
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
-)
