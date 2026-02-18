@@ -1,0 +1,18 @@
+ERROR [2026-18-02 12:30:00] Out of memory
+ERROR [2026-18-02 12:30:00] Out of memory
+ERROR [2026-18-02 12:31:00] Out of memory
+INFO [2026-18-02 12:31:30] User registered
+INFO [2026-18-02 12:31:30] User registered
+WARNING [2026-18-02 12:31:30] Memory usage above 85% on node-1
+WARNING [2026-18-02 12:31:30] Memory usage above 85% on node-1
+WARNING [2026-18-02 12:31:30] Memory usage above 85% on node-1
+DEBUG [2026-18-02 12:31:30] UserAuth - Validating user: user_id=42
+DEBUG [2026-18-02 12:31:30] UserAuth - Validating user: user_id=47
+ERROR [2026-18-02 12:32:00] Out of memory
+INFO [2026-19-02 12:31:30] User registered
+INFO [2026-19-02 12:31:30] User authorised
+INFO [2026-19-02 12:31:30] User authorised
+WARNING [2026-20-02 12:31:30] Memory usage above 85% on node-2
+WARNING [2026-21-02 12:31:30] Memory usage above 85% on node-2
+ERROR [2026-22-02 12:32:00] Connection refused
+ERROR [2026-23-02 12:33:00] Connection refused
