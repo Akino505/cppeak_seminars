@@ -7,8 +7,6 @@
 #include "help.hpp"
 #include "statisticForPeriod.hpp"
 
-
-
 int main()
 {
     std::ifstream fileIn("log_input.txt");
@@ -23,7 +21,10 @@ int main()
         std::cin >> command;
         if(command == "1")
         {   
+            fileOut << "Log files was written:" << "\n";
             fileOut << "Result of command 1." << "\n";
+            fileOut << "from: " << logBase[0][1] << " " << logBase[0][2] << "\n";
+            fileOut << "to: " << logBase[logBase.size() - 1][1] << " " << logBase[logBase.size() - 1][2] << "\n";
             countLvls(logBase, fileOut);
             std::cout << "Proccess is done!" << "\n";
             std::cout << "Anything else?" << "\n";
@@ -32,14 +33,23 @@ int main()
         else if(command == "2")
         {
             if(!specificLevel(logBase, fileOut))
+            {
+                fileOut << "Result of command 2." << "\n";
                 fileOut << "ERROR: End with error.";
+                break;
+            }
             std::cout << "Proccess is done!" << "\n";
             std::cout << "Anything else?" << "\n";
             fileOut << "----------------------------------------------------------------------" << "\n";
         }
         else if(command == "3")
         {
-            if(!lvlsInRange(logBase, fileOut)) fileOut << "ERROR: End with error." << "\n";
+            if(!lvlsInRange(logBase, fileOut))
+            {
+                fileOut << "Result of command 3." << "\n";
+                fileOut << "ERROR: End with error.";
+                break;
+            }
             std::cout << "Proccess is done!" << "\n";
             std::cout << "Anything else?" << "\n";
             fileOut << "----------------------------------------------------------------------" << "\n";
@@ -47,7 +57,11 @@ int main()
         else if(command == "4")
         {
             if(!lvlsInRange2(logBase, fileOut))
+            {
+                fileOut << "Result of command 4." << "\n";
                 fileOut << "ERROR: End with error.";
+                break;
+            }
             std::cout << "Proccess is done!" << "\n";
             std::cout << "Anything else?" << "\n";
             fileOut << "----------------------------------------------------------------------" << "\n";
