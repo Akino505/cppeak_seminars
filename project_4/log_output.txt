@@ -1,0 +1,33 @@
+Result of command 1.
+Log files was written:
+from: [2026-18-02 12:30:00]
+to: [2026-23-02 12:33:00]
+ERRORS: 6
+DEBUGS: 2
+WARNINGS: 5
+INFOS: 5
+----------------------------------------------------------------------
+Result of command 2.
+ERROR [2026-18-02 12:30:00]  Out of memory
+ERROR [2026-18-02 12:30:00]  Out of memory
+ERROR [2026-18-02 12:31:00]  Out of memory
+ERROR [2026-18-02 12:32:00]  Out of memory
+ERROR [2026-22-02 12:32:00]  Connection refused
+ERROR [2026-23-02 12:33:00]  Connection refused
+----------------------------------------------------------------------
+Result of command 4.
+from: [2026-18-02 12:31:30]
+to: [2026-20-02 12:31:30]
+ERRORS: 1
+DEBUGS: 0
+WARNINGS: 1
+INFOS: 2
+----------------------------------------------------------------------
+Result of command 5:
+ERRORS:
+  "Connection refused" - 2 times
+  "Out of memory" - 4 times
+WARNINGS:
+  "Memory usage above 85% on node-1" - 3 times
+  "Memory usage above 85% on node-2" - 2 times
+----------------------------------------------------------------------

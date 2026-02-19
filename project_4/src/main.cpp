@@ -83,7 +83,12 @@ int main()
         {
             help();
         }
-        else if (command == "exit") std::cout << "Goodbye! :)" << "\n";
+        else if (command == "exit")
+        {
+        std::cout << "Goodbye! :)" << "\n";
+        fileIn.close();
+        fileOut.close();
+        }
         else
         {
             std::cout << "Please, type appropriate command." << "\n";
