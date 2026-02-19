@@ -7,6 +7,7 @@ CMakeFiles/project_4.dir/src/main.cpp.o: /home/akino/cppeak_seminars/project_4/s
   /home/akino/cppeak_seminars/project_4/include/help.hpp \
   /home/akino/cppeak_seminars/project_4/include/lvlsInRange.hpp \
   /home/akino/cppeak_seminars/project_4/include/readFile.hpp \
+  /home/akino/cppeak_seminars/project_4/include/showErrorsWarnings.hpp \
   /home/akino/cppeak_seminars/project_4/include/specificLevel.hpp \
   /home/akino/cppeak_seminars/project_4/include/statisticForPeriod.hpp \
   /usr/include/alloca.h \
@@ -327,6 +328,8 @@ CMakeFiles/project_4.dir/src/main.cpp.o: /home/akino/cppeak_seminars/project_4/s
 
 /usr/include/stdc-predef.h:
 
+/usr/include/sched.h:
+
 /usr/include/c++/13/cstdlib:
 
 /usr/include/c++/13/bits/fstream.tcc:
@@ -363,11 +366,13 @@ CMakeFiles/project_4.dir/src/main.cpp.o: /home/akino/cppeak_seminars/project_4/s
 
 /usr/include/c++/13/array:
 
-/usr/include/c++/13/bits/nested_exception.h:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
-/usr/include/c++/13/bits/basic_ios.tcc:
+/usr/include/c++/13/streambuf:
+
+/usr/include/c++/13/bits/exception.h:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
@@ -383,27 +388,19 @@ CMakeFiles/project_4.dir/src/main.cpp.o: /home/akino/cppeak_seminars/project_4/s
 
 /usr/include/c++/13/bits/localefwd.h:
 
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/c++/13/streambuf:
-
-/usr/include/c++/13/bits/exception.h:
-
 /usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/c++/13/bits/exception_ptr.h:
-
-/usr/include/c++/13/bits/stl_multimap.h:
 
 /usr/include/c++/13/sstream:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/13/bits/basic_ios.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/c++/13/bits/nested_exception.h:
 
 /home/akino/cppeak_seminars/project_4/include/specificLevel.hpp:
 
@@ -417,6 +414,36 @@ CMakeFiles/project_4.dir/src/main.cpp.o: /home/akino/cppeak_seminars/project_4/s
 
 /home/akino/cppeak_seminars/project_4/include/countLvls.hpp:
 
+/usr/include/c++/13/bits/codecvt.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/usr/include/c++/13/bits/stl_multimap.h:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/home/akino/cppeak_seminars/project_4/include/showErrorsWarnings.hpp:
+
+/usr/include/c++/13/bits/stl_iterator_base_types.h:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/13/bits/memory_resource.h:
+
+/usr/include/c++/13/bits/invoke.h:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/13/bits/ostream.tcc:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
+
+/usr/include/c++/13/bits/ios_base.h:
+
+/home/akino/cppeak_seminars/project_4/include/checkFile.hpp:
+
 /usr/include/c++/13/bits/locale_facets.tcc:
 
 /usr/include/c++/13/bits/requires_hosted.h:
@@ -428,26 +455,6 @@ CMakeFiles/project_4.dir/src/main.cpp.o: /home/akino/cppeak_seminars/project_4/s
 /usr/include/c++/13/backward/binders.h:
 
 /usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/bits/codecvt.h:
-
-/usr/include/c++/13/bits/stl_vector.h:
-
-/usr/include/c++/13/bits/ostream.tcc:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
-
-/usr/include/c++/13/bits/ios_base.h:
-
-/usr/include/wchar.h:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
-/usr/include/c++/13/bits/invoke.h:
-
-/usr/include/alloca.h:
-
-/home/akino/cppeak_seminars/project_4/include/checkFile.hpp:
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
@@ -517,17 +524,15 @@ CMakeFiles/project_4.dir/src/main.cpp.o: /home/akino/cppeak_seminars/project_4/s
 
 /usr/include/c++/13/compare:
 
-/usr/include/c++/13/bits/stl_iterator_base_types.h:
-
 /usr/include/c++/13/bits/stl_tree.h:
 
 /usr/include/c++/13/bits/stl_map.h:
 
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
-/usr/include/c++/13/bits/std_abs.h:
-
 /usr/include/c++/13/bits/postypes.h:
+
+/usr/include/c++/13/bits/std_abs.h:
 
 /usr/include/c++/13/bits/uses_allocator.h:
 
@@ -642,5 +647,3 @@ CMakeFiles/project_4.dir/src/main.cpp.o: /home/akino/cppeak_seminars/project_4/s
 /usr/include/locale.h:
 
 /usr/include/pthread.h:
-
-/usr/include/sched.h:

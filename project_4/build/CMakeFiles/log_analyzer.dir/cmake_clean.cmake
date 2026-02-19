@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/log_analyzer.dir/src/main.cpp.o.d"
   "CMakeFiles/log_analyzer.dir/src/readFile.cpp.o"
   "CMakeFiles/log_analyzer.dir/src/readFile.cpp.o.d"
+  "CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o"
+  "CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o.d"
   "CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o"
   "CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o.d"
   "CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o"

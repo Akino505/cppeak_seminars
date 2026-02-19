@@ -315,6 +315,30 @@ src/readFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/readFile.cpp.s
 .PHONY : src/readFile.cpp.s
 
+src/showErrorsWarnings.o: src/showErrorsWarnings.cpp.o
+.PHONY : src/showErrorsWarnings.o
+
+# target to build an object file
+src/showErrorsWarnings.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o
+.PHONY : src/showErrorsWarnings.cpp.o
+
+src/showErrorsWarnings.i: src/showErrorsWarnings.cpp.i
+.PHONY : src/showErrorsWarnings.i
+
+# target to preprocess a source file
+src/showErrorsWarnings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.i
+.PHONY : src/showErrorsWarnings.cpp.i
+
+src/showErrorsWarnings.s: src/showErrorsWarnings.cpp.s
+.PHONY : src/showErrorsWarnings.s
+
+# target to generate assembly for a file
+src/showErrorsWarnings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.s
+.PHONY : src/showErrorsWarnings.cpp.s
+
 src/specificLevel.o: src/specificLevel.cpp.o
 .PHONY : src/specificLevel.o
 
@@ -393,6 +417,9 @@ help:
 	@echo "... src/readFile.o"
 	@echo "... src/readFile.i"
 	@echo "... src/readFile.s"
+	@echo "... src/showErrorsWarnings.o"
+	@echo "... src/showErrorsWarnings.i"
+	@echo "... src/showErrorsWarnings.s"
 	@echo "... src/specificLevel.o"
 	@echo "... src/specificLevel.i"
 	@echo "... src/specificLevel.s"

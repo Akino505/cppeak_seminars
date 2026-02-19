@@ -117,12 +117,12 @@ _deps/catch2-build/src/clean: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.d
 CMakeFiles/log_analyzer.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_4/build/CMakeFiles --progress-num=91,92,93,94,95,96,97,98 "Built target log_analyzer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_4/build/CMakeFiles --progress-num=90,91,92,93,94,95,96,97,98 "Built target log_analyzer"
 .PHONY : CMakeFiles/log_analyzer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/log_analyzer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_4/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_4/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/log_analyzer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_4/build/CMakeFiles 0
 .PHONY : CMakeFiles/log_analyzer.dir/rule
@@ -148,7 +148,7 @@ CMakeFiles/project_4.dir/all: CMakeFiles/log_analyzer.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/project_4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_4/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_4/build/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/project_4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_4/build/CMakeFiles 0
 .PHONY : CMakeFiles/project_4.dir/rule
@@ -195,12 +195,12 @@ _deps/catch2-build/src/CMakeFiles/Catch2.dir/clean:
 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_4/build/CMakeFiles --progress-num=89,90 "Built target Catch2WithMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_4/build/CMakeFiles --progress-num=89 "Built target Catch2WithMain"
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_4/build/CMakeFiles 90
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_4/build/CMakeFiles 89
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_4/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/rule

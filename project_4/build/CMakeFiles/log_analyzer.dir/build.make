@@ -153,10 +153,24 @@ CMakeFiles/log_analyzer.dir/src/readFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/log_analyzer.dir/src/readFile.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_4/src/readFile.cpp -o CMakeFiles/log_analyzer.dir/src/readFile.cpp.s
 
+CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o: CMakeFiles/log_analyzer.dir/flags.make
+CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o: /home/akino/cppeak_seminars/project_4/src/showErrorsWarnings.cpp
+CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o: CMakeFiles/log_analyzer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o -MF CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o.d -o CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o -c /home/akino/cppeak_seminars/project_4/src/showErrorsWarnings.cpp
+
+CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_4/src/showErrorsWarnings.cpp > CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.i
+
+CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_4/src/showErrorsWarnings.cpp -o CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.s
+
 CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o: CMakeFiles/log_analyzer.dir/flags.make
 CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o: /home/akino/cppeak_seminars/project_4/src/specificLevel.cpp
 CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o: CMakeFiles/log_analyzer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o -MF CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o.d -o CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o -c /home/akino/cppeak_seminars/project_4/src/specificLevel.cpp
 
 CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.s: cmake_force
 CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o: CMakeFiles/log_analyzer.dir/flags.make
 CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o: /home/akino/cppeak_seminars/project_4/src/statisticForPeriod.cpp
 CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o: CMakeFiles/log_analyzer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o -MF CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o.d -o CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o -c /home/akino/cppeak_seminars/project_4/src/statisticForPeriod.cpp
 
 CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.i: cmake_force
@@ -189,6 +203,7 @@ log_analyzer_OBJECTS = \
 "CMakeFiles/log_analyzer.dir/src/lvlsInRange.cpp.o" \
 "CMakeFiles/log_analyzer.dir/src/main.cpp.o" \
 "CMakeFiles/log_analyzer.dir/src/readFile.cpp.o" \
+"CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o" \
 "CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o" \
 "CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o"
 
@@ -201,11 +216,12 @@ liblog_analyzer.a: CMakeFiles/log_analyzer.dir/src/help.cpp.o
 liblog_analyzer.a: CMakeFiles/log_analyzer.dir/src/lvlsInRange.cpp.o
 liblog_analyzer.a: CMakeFiles/log_analyzer.dir/src/main.cpp.o
 liblog_analyzer.a: CMakeFiles/log_analyzer.dir/src/readFile.cpp.o
+liblog_analyzer.a: CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o
 liblog_analyzer.a: CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o
 liblog_analyzer.a: CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o
 liblog_analyzer.a: CMakeFiles/log_analyzer.dir/build.make
 liblog_analyzer.a: CMakeFiles/log_analyzer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/akino/cppeak_seminars/project_4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library liblog_analyzer.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/akino/cppeak_seminars/project_4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library liblog_analyzer.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/log_analyzer.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/log_analyzer.dir/link.txt --verbose=$(VERBOSE)
 

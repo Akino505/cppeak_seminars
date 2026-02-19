@@ -17,6 +17,5 @@ std::vector<std::array<std::string, 4>> readFile(std::ifstream& file)
         logLine[3] = comment;
         logBase.push_back(logLine);
     }
-    file.close();
     return logBase;
 }

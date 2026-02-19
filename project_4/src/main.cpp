@@ -5,6 +5,7 @@
 #include "checkFile.hpp"
 #include "specificLevel.hpp"
 #include "help.hpp"
+#include "showErrorsWarnings.hpp"
 #include "statisticForPeriod.hpp"
 
 int main()
@@ -59,6 +60,18 @@ int main()
             if(!lvlsInRange2(logBase, fileOut))
             {
                 fileOut << "Result of command 4." << "\n";
+                fileOut << "ERROR: End with error.";
+                break;
+            }
+            std::cout << "Proccess is done!" << "\n";
+            std::cout << "Anything else?" << "\n";
+            fileOut << "----------------------------------------------------------------------" << "\n";
+        }
+        else if(command == "5")
+        {
+            if(!showErrorsWarnings(fileIn, fileOut))
+            {
+                fileOut << "Result of command 5." << "\n";
                 fileOut << "ERROR: End with error.";
                 break;
             }

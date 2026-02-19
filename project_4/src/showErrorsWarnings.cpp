@@ -2,10 +2,10 @@
 
 bool showErrorsWarnings(std::ifstream& FileIn, std::ofstream& FileOut)
 {
-    if (!FileIn.is_open())
-    {
-        return false;
-    }
+    // if (!FileIn.is_open())
+    // {
+    //     return false;
+    // }
 
     FileIn.clear();
     FileIn.seekg(0);
@@ -48,7 +48,7 @@ bool showErrorsWarnings(std::ifstream& FileIn, std::ofstream& FileOut)
         }
     }
     
-    FileOut << "Result of command 4:" << std::endl;
+    FileOut << "Result of command 5:" << std::endl;
 
     FileOut << "ERRORS:" << std::endl;
     if (errors.empty()) {
