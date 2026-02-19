@@ -22,62 +22,62 @@ int main()
         std::cin >> command;
         if(command == "1")
         {   
-            fileOut << "Result of command 1." << "\n";
-            fileOut << "Log files was written:" << "\n";
-            fileOut << "from: " << logBase[0][1] << " " << logBase[0][2] << "\n";
-            fileOut << "to: " << logBase[logBase.size() - 1][1] << " " << logBase[logBase.size() - 1][2] << "\n";
+            fileOut << "Result of command 1." << std::endl;
+            fileOut << "Log files was written:" << std::endl;
+            fileOut << "from: " << logBase[0][1] << " " << logBase[0][2] << std::endl;
+            fileOut << "to: " << logBase[logBase.size() - 1][1] << " " << logBase[logBase.size() - 1][2] << std::endl;
             countLvls(logBase, fileOut);
             std::cout << "Proccess is done!" << "\n";
             std::cout << "Anything else?" << "\n";
-            fileOut << "----------------------------------------------------------------------" << "\n";
+            fileOut << "----------------------------------------------------------------------" << std::endl;
         }
         else if(command == "2")
         {
             if(!specificLevel(logBase, fileOut))
             {
-                fileOut << "Result of command 2." << "\n";
-                fileOut << "ERROR: End with error.";
+                fileOut << "Result of command 2." << std::endl;
+                fileOut << "ERROR: End with error." << std::endl;
                 break;
             }
             std::cout << "Proccess is done!" << "\n";
             std::cout << "Anything else?" << "\n";
-            fileOut << "----------------------------------------------------------------------" << "\n";
+            fileOut << "----------------------------------------------------------------------" << std::endl;
         }
         else if(command == "3")
         {
             if(!lvlsInRange(logBase, fileOut))
             {
-                fileOut << "Result of command 3." << "\n";
-                fileOut << "ERROR: End with error.";
+                fileOut << "Result of command 3." << std::endl;
+                fileOut << "ERROR: End with error." << std::endl;
                 break;
             }
             std::cout << "Proccess is done!" << "\n";
             std::cout << "Anything else?" << "\n";
-            fileOut << "----------------------------------------------------------------------" << "\n";
+            fileOut << "----------------------------------------------------------------------" << std::endl;
         }
         else if(command == "4")
         {
             if(!lvlsInRange2(logBase, fileOut))
             {
-                fileOut << "Result of command 4." << "\n";
-                fileOut << "ERROR: End with error.";
+                fileOut << "Result of command 4." << std::endl;
+                fileOut << "ERROR: End with error." << std::endl;
                 break;
             }
             std::cout << "Proccess is done!" << "\n";
             std::cout << "Anything else?" << "\n";
-            fileOut << "----------------------------------------------------------------------" << "\n";
+            fileOut << "----------------------------------------------------------------------" << std::endl;
         }
         else if(command == "5")
         {
             if(!showErrorsWarnings(fileIn, fileOut))
             {
-                fileOut << "Result of command 5." << "\n";
-                fileOut << "ERROR: End with error.";
+                fileOut << "Result of command 5." << std::endl;
+                fileOut << "ERROR: End with error." << std::endl;
                 break;
             }
             std::cout << "Proccess is done!" << "\n";
             std::cout << "Anything else?" << "\n";
-            fileOut << "----------------------------------------------------------------------" << "\n";
+            fileOut << "----------------------------------------------------------------------" << std::endl;
         }
         else if(command == "help")
         {

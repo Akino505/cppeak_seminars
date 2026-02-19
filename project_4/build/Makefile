@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/akino/cppeak_seminars/project_4/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -143,6 +153,19 @@ project_4/fast:
 .PHONY : project_4/fast
 
 #=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
 # Target rules for targets named Catch2
 
 # Build rule for target.
@@ -174,6 +197,7 @@ src/checkFile.o: src/checkFile.cpp.o
 # target to build an object file
 src/checkFile.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/checkFile.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/checkFile.cpp.o
 .PHONY : src/checkFile.cpp.o
 
 src/checkFile.i: src/checkFile.cpp.i
@@ -182,6 +206,7 @@ src/checkFile.i: src/checkFile.cpp.i
 # target to preprocess a source file
 src/checkFile.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/checkFile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/checkFile.cpp.i
 .PHONY : src/checkFile.cpp.i
 
 src/checkFile.s: src/checkFile.cpp.s
@@ -190,6 +215,7 @@ src/checkFile.s: src/checkFile.cpp.s
 # target to generate assembly for a file
 src/checkFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/checkFile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/checkFile.cpp.s
 .PHONY : src/checkFile.cpp.s
 
 src/countLvls.o: src/countLvls.cpp.o
@@ -198,6 +224,7 @@ src/countLvls.o: src/countLvls.cpp.o
 # target to build an object file
 src/countLvls.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/countLvls.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/countLvls.cpp.o
 .PHONY : src/countLvls.cpp.o
 
 src/countLvls.i: src/countLvls.cpp.i
@@ -206,6 +233,7 @@ src/countLvls.i: src/countLvls.cpp.i
 # target to preprocess a source file
 src/countLvls.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/countLvls.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/countLvls.cpp.i
 .PHONY : src/countLvls.cpp.i
 
 src/countLvls.s: src/countLvls.cpp.s
@@ -214,6 +242,7 @@ src/countLvls.s: src/countLvls.cpp.s
 # target to generate assembly for a file
 src/countLvls.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/countLvls.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/countLvls.cpp.s
 .PHONY : src/countLvls.cpp.s
 
 src/help.o: src/help.cpp.o
@@ -222,6 +251,7 @@ src/help.o: src/help.cpp.o
 # target to build an object file
 src/help.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/help.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/help.cpp.o
 .PHONY : src/help.cpp.o
 
 src/help.i: src/help.cpp.i
@@ -230,6 +260,7 @@ src/help.i: src/help.cpp.i
 # target to preprocess a source file
 src/help.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/help.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/help.cpp.i
 .PHONY : src/help.cpp.i
 
 src/help.s: src/help.cpp.s
@@ -238,6 +269,7 @@ src/help.s: src/help.cpp.s
 # target to generate assembly for a file
 src/help.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/help.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/help.cpp.s
 .PHONY : src/help.cpp.s
 
 src/lvlsInRange.o: src/lvlsInRange.cpp.o
@@ -246,6 +278,7 @@ src/lvlsInRange.o: src/lvlsInRange.cpp.o
 # target to build an object file
 src/lvlsInRange.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/lvlsInRange.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/lvlsInRange.cpp.o
 .PHONY : src/lvlsInRange.cpp.o
 
 src/lvlsInRange.i: src/lvlsInRange.cpp.i
@@ -254,6 +287,7 @@ src/lvlsInRange.i: src/lvlsInRange.cpp.i
 # target to preprocess a source file
 src/lvlsInRange.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/lvlsInRange.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/lvlsInRange.cpp.i
 .PHONY : src/lvlsInRange.cpp.i
 
 src/lvlsInRange.s: src/lvlsInRange.cpp.s
@@ -262,6 +296,7 @@ src/lvlsInRange.s: src/lvlsInRange.cpp.s
 # target to generate assembly for a file
 src/lvlsInRange.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/lvlsInRange.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/lvlsInRange.cpp.s
 .PHONY : src/lvlsInRange.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -271,6 +306,7 @@ src/main.o: src/main.cpp.o
 src/main.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/main.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_4.dir/build.make CMakeFiles/project_4.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -280,6 +316,7 @@ src/main.i: src/main.cpp.i
 src/main.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/main.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_4.dir/build.make CMakeFiles/project_4.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -289,6 +326,7 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/main.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_4.dir/build.make CMakeFiles/project_4.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/readFile.o: src/readFile.cpp.o
@@ -297,6 +335,7 @@ src/readFile.o: src/readFile.cpp.o
 # target to build an object file
 src/readFile.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/readFile.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/readFile.cpp.o
 .PHONY : src/readFile.cpp.o
 
 src/readFile.i: src/readFile.cpp.i
@@ -305,6 +344,7 @@ src/readFile.i: src/readFile.cpp.i
 # target to preprocess a source file
 src/readFile.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/readFile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/readFile.cpp.i
 .PHONY : src/readFile.cpp.i
 
 src/readFile.s: src/readFile.cpp.s
@@ -313,6 +353,7 @@ src/readFile.s: src/readFile.cpp.s
 # target to generate assembly for a file
 src/readFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/readFile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/readFile.cpp.s
 .PHONY : src/readFile.cpp.s
 
 src/showErrorsWarnings.o: src/showErrorsWarnings.cpp.o
@@ -321,6 +362,7 @@ src/showErrorsWarnings.o: src/showErrorsWarnings.cpp.o
 # target to build an object file
 src/showErrorsWarnings.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/showErrorsWarnings.cpp.o
 .PHONY : src/showErrorsWarnings.cpp.o
 
 src/showErrorsWarnings.i: src/showErrorsWarnings.cpp.i
@@ -329,6 +371,7 @@ src/showErrorsWarnings.i: src/showErrorsWarnings.cpp.i
 # target to preprocess a source file
 src/showErrorsWarnings.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/showErrorsWarnings.cpp.i
 .PHONY : src/showErrorsWarnings.cpp.i
 
 src/showErrorsWarnings.s: src/showErrorsWarnings.cpp.s
@@ -337,6 +380,7 @@ src/showErrorsWarnings.s: src/showErrorsWarnings.cpp.s
 # target to generate assembly for a file
 src/showErrorsWarnings.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/showErrorsWarnings.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/showErrorsWarnings.cpp.s
 .PHONY : src/showErrorsWarnings.cpp.s
 
 src/specificLevel.o: src/specificLevel.cpp.o
@@ -345,6 +389,7 @@ src/specificLevel.o: src/specificLevel.cpp.o
 # target to build an object file
 src/specificLevel.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/specificLevel.cpp.o
 .PHONY : src/specificLevel.cpp.o
 
 src/specificLevel.i: src/specificLevel.cpp.i
@@ -353,6 +398,7 @@ src/specificLevel.i: src/specificLevel.cpp.i
 # target to preprocess a source file
 src/specificLevel.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/specificLevel.cpp.i
 .PHONY : src/specificLevel.cpp.i
 
 src/specificLevel.s: src/specificLevel.cpp.s
@@ -361,6 +407,7 @@ src/specificLevel.s: src/specificLevel.cpp.s
 # target to generate assembly for a file
 src/specificLevel.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/specificLevel.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/specificLevel.cpp.s
 .PHONY : src/specificLevel.cpp.s
 
 src/statisticForPeriod.o: src/statisticForPeriod.cpp.o
@@ -369,6 +416,7 @@ src/statisticForPeriod.o: src/statisticForPeriod.cpp.o
 # target to build an object file
 src/statisticForPeriod.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/statisticForPeriod.cpp.o
 .PHONY : src/statisticForPeriod.cpp.o
 
 src/statisticForPeriod.i: src/statisticForPeriod.cpp.i
@@ -377,6 +425,7 @@ src/statisticForPeriod.i: src/statisticForPeriod.cpp.i
 # target to preprocess a source file
 src/statisticForPeriod.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/statisticForPeriod.cpp.i
 .PHONY : src/statisticForPeriod.cpp.i
 
 src/statisticForPeriod.s: src/statisticForPeriod.cpp.s
@@ -385,6 +434,7 @@ src/statisticForPeriod.s: src/statisticForPeriod.cpp.s
 # target to generate assembly for a file
 src/statisticForPeriod.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/log_analyzer.dir/build.make CMakeFiles/log_analyzer.dir/src/statisticForPeriod.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/statisticForPeriod.cpp.s
 .PHONY : src/statisticForPeriod.cpp.s
 
 # Help Target
@@ -395,10 +445,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
 	@echo "... log_analyzer"
 	@echo "... project_4"
+	@echo "... tests"
 	@echo "... src/checkFile.o"
 	@echo "... src/checkFile.i"
 	@echo "... src/checkFile.s"

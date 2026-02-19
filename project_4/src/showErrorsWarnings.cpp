@@ -2,10 +2,10 @@
 
 bool showErrorsWarnings(std::ifstream& FileIn, std::ofstream& FileOut)
 {
-    // if (!FileIn.is_open())
-    // {
-    //     return false;
-    // }
+    if (!FileIn.is_open())
+    {
+        return false;
+    }
 
     FileIn.clear();
     FileIn.seekg(0);

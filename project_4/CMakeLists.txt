@@ -32,3 +32,13 @@ target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE log_analyzer)
 
 
 # --- 4. Testing Setup ---
+enable_testing()
+
+file(GLOB TESTS "src/*.cpp")
+add_executable(tests ${TESTS})
+
+target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
+
+target_include_directories(tests PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
