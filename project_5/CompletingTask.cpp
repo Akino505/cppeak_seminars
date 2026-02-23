@@ -29,17 +29,27 @@ void completeTopTask(
     }
 
     pq.pop();  // pop first task from pq
-
+    std::cout << "Completing task:\n"
+              << "ID: " << std::get<1>(mjTask)
+              << "\nInfo: " << std::get<2>(mjTask)
+              << "\nPriority: " << std::get<0>(mjTask) << "\n";
     return;
 }
 
 // int main()
 // {
-//     std::priority_queue<int> pq;
-//     pq.push(30);
-//     pq.push(10);
-//     pq.push(20);
-//     std::cout << pq.top() << "\n";
-//     pq.pop();
-//     std::cout << pq.top() << "\n";
+
+//     std::stack<std::tuple<int, std::string, int>> undoStack;
+//     std::unordered_map<int, std::tuple<std::string, int, bool>> tasks;
+//     std::priority_queue<std::tuple<int, int, std::string>> pq;
+
+//     tasks[1] = {"Go for a walk", 1, false};
+//     tasks[2] = {"Do homework in C++", 9, false};
+//     tasks[3] = {"Have a sleep", 7, false};
+
+//     pq.push({1, 1, "Go for a walk"});
+//     pq.push({9, 2, "Do homework in C++"});
+//     pq.push({7, 3, "Have a sleep"});
+
+//     completeTopTask(pq, tasks, undoStack);
 // }
