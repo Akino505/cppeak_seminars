@@ -1,4 +1,5 @@
 #include "addTask.hpp"
+#include <iostream>      
 
 void addTask(
     std::unordered_map<int, std::tuple<std::string, int, bool>>& tasks,

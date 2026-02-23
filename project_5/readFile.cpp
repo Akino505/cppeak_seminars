@@ -1,5 +1,8 @@
 #include "readFile.hpp"
 #include "addTask.hpp"
+#include <fstream>
+#include <iostream>
+#include <sstream>
 
 bool readTasksFromFile(
     const std::string& filename,

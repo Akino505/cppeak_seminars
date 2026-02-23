@@ -1,4 +1,5 @@
 #include "help.hpp"
+#include <iostream>
 
 void help()
 {
