@@ -1,4 +1,6 @@
 #include "getPendingTasks.hpp"
+#include <algorithm>
+#include <vector>
 
 bool comparePriority(
     const std::pair<int, std::tuple<std::string, int, bool>>& first,
@@ -16,9 +18,9 @@ void getPendingTasks(
     std::sort(vectTasks.begin(), vectTasks.end(), comparePriority);
     for(const auto& elem: vectTasks)
     {
-        int id = elem.first;
+        int taskId = elem.first;
         const auto& task = elem.second;
-        fileOut << "ID: " << id << " Task: " << std::get<0>(task)
+        fileOut << "ID: " << taskId << " Task: " << std::get<0>(task)
                 << " Priority: " << std::get<1>(task) << std::endl;
     }
 }
