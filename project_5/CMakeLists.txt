@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10.0)
 
-project(project_4 CXX)
+project(project_5 CXX)
 
 if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Debug)
@@ -23,18 +23,18 @@ FetchContent_MakeAvailable(Catch2)
 
 # --- 2. Create a Library for shared logic ---
 file(GLOB SOURCES "src/*.cpp") 
-add_library(log_analyzer ${SOURCES})
-target_include_directories(log_analyzer PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+add_library(to_do_list ${SOURCES})
+target_include_directories(to_do_list PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # --- 3. Main Application ---
 add_executable(${CMAKE_PROJECT_NAME} src/main.cpp)
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE log_analyzer)
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE to_do_list)
 
 
 # --- 4. Testing Setup ---
 enable_testing()
 
-file(GLOB TESTS "src/*.cpp")
+file(GLOB TESTS "tests/*.cpp")
 add_executable(tests ${TESTS})
 
 target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
