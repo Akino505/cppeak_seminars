@@ -1,19 +1,21 @@
-#include <fstream>
-#include <string>
-#include <queue>
-#include <tuple>
-#include <stack>
-#include <unordered_map>
+#include "addTask.hpp"
+#include "getPendingTasks.hpp"
 #include "help.hpp"
+#include "readFile.hpp"
+#include <fstream>
+#include <queue>
+#include <stack>
+#include <string>
+#include <tuple>
+#include <unordered_map>
 
 int main()
 {
-    std::ifstream fileIn("log_input.txt");
-    std::ofstream fileOut("log_output.txt");
-    std::priority_queue<std::tuple<int, int, std::string>>;
-    std::stack<std::tuple<int, std::string, int>>;
-    std::unordered_map<int, std::tuple<std::string, int, bool>>;
-    // Чтение файла
+    std::ofstream fileOut("undoneTasks.txt");
+    std::priority_queue<std::tuple<int, int, std::string>> doTasks;
+    std::stack<std::tuple<int, std::string, int>> undoTasks;
+    std::unordered_map<int, std::tuple<std::string, int, bool>> tasks;
+    // readTasksFromFile("ToDoList.txt", tasks, doTasks, id?);
     std::string command = "";
     std::cout << "Let's work with your To-Do-List." << "\n";
     help();
@@ -22,15 +24,15 @@ int main()
         std::cin >> command;
         if(command == "1")
         {
-            //Complete the task
+            // Complete the task
         }
         else if(command == "2")
         {
-            //Cancel the task
+            // Cancel the task
         }
         else if(command == "3")
         {
-            //getPendingTasks(const std::unordered_map<...>& tasks)
+            getPendingTasks(tasks, fileOut);
         }
         else if(command == "help")
         {
@@ -39,7 +41,6 @@ int main()
         else if(command == "exit")
         {
             std::cout << "Goodbye! :)" << "\n";
-            fileIn.close();
             fileOut.close();
         }
         else
