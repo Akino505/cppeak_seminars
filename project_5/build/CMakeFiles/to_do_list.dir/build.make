@@ -69,10 +69,24 @@ include CMakeFiles/to_do_list.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/to_do_list.dir/flags.make
 
+CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o: CMakeFiles/to_do_list.dir/flags.make
+CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o: /home/akino/cppeak_seminars/project_5/src/CompletingTask.cpp
+CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o: CMakeFiles/to_do_list.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o -MF CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o.d -o CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o -c /home/akino/cppeak_seminars/project_5/src/CompletingTask.cpp
+
+CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_5/src/CompletingTask.cpp > CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.i
+
+CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_5/src/CompletingTask.cpp -o CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.s
+
 CMakeFiles/to_do_list.dir/src/addTask.cpp.o: CMakeFiles/to_do_list.dir/flags.make
 CMakeFiles/to_do_list.dir/src/addTask.cpp.o: /home/akino/cppeak_seminars/project_5/src/addTask.cpp
 CMakeFiles/to_do_list.dir/src/addTask.cpp.o: CMakeFiles/to_do_list.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/to_do_list.dir/src/addTask.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/to_do_list.dir/src/addTask.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/to_do_list.dir/src/addTask.cpp.o -MF CMakeFiles/to_do_list.dir/src/addTask.cpp.o.d -o CMakeFiles/to_do_list.dir/src/addTask.cpp.o -c /home/akino/cppeak_seminars/project_5/src/addTask.cpp
 
 CMakeFiles/to_do_list.dir/src/addTask.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/to_do_list.dir/src/addTask.cpp.s: cmake_force
 CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o: CMakeFiles/to_do_list.dir/flags.make
 CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o: /home/akino/cppeak_seminars/project_5/src/getPendingTasks.cpp
 CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o: CMakeFiles/to_do_list.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o -MF CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o.d -o CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o -c /home/akino/cppeak_seminars/project_5/src/getPendingTasks.cpp
 
 CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.s: cmake_force
 CMakeFiles/to_do_list.dir/src/help.cpp.o: CMakeFiles/to_do_list.dir/flags.make
 CMakeFiles/to_do_list.dir/src/help.cpp.o: /home/akino/cppeak_seminars/project_5/src/help.cpp
 CMakeFiles/to_do_list.dir/src/help.cpp.o: CMakeFiles/to_do_list.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/to_do_list.dir/src/help.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/to_do_list.dir/src/help.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/to_do_list.dir/src/help.cpp.o -MF CMakeFiles/to_do_list.dir/src/help.cpp.o.d -o CMakeFiles/to_do_list.dir/src/help.cpp.o -c /home/akino/cppeak_seminars/project_5/src/help.cpp
 
 CMakeFiles/to_do_list.dir/src/help.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/to_do_list.dir/src/help.cpp.s: cmake_force
 CMakeFiles/to_do_list.dir/src/main.cpp.o: CMakeFiles/to_do_list.dir/flags.make
 CMakeFiles/to_do_list.dir/src/main.cpp.o: /home/akino/cppeak_seminars/project_5/src/main.cpp
 CMakeFiles/to_do_list.dir/src/main.cpp.o: CMakeFiles/to_do_list.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/to_do_list.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/to_do_list.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/to_do_list.dir/src/main.cpp.o -MF CMakeFiles/to_do_list.dir/src/main.cpp.o.d -o CMakeFiles/to_do_list.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_5/src/main.cpp
 
 CMakeFiles/to_do_list.dir/src/main.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/to_do_list.dir/src/main.cpp.s: cmake_force
 CMakeFiles/to_do_list.dir/src/readFile.cpp.o: CMakeFiles/to_do_list.dir/flags.make
 CMakeFiles/to_do_list.dir/src/readFile.cpp.o: /home/akino/cppeak_seminars/project_5/src/readFile.cpp
 CMakeFiles/to_do_list.dir/src/readFile.cpp.o: CMakeFiles/to_do_list.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/to_do_list.dir/src/readFile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/to_do_list.dir/src/readFile.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/to_do_list.dir/src/readFile.cpp.o -MF CMakeFiles/to_do_list.dir/src/readFile.cpp.o.d -o CMakeFiles/to_do_list.dir/src/readFile.cpp.o -c /home/akino/cppeak_seminars/project_5/src/readFile.cpp
 
 CMakeFiles/to_do_list.dir/src/readFile.cpp.i: cmake_force
@@ -139,25 +153,43 @@ CMakeFiles/to_do_list.dir/src/readFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/to_do_list.dir/src/readFile.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_5/src/readFile.cpp -o CMakeFiles/to_do_list.dir/src/readFile.cpp.s
 
+CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o: CMakeFiles/to_do_list.dir/flags.make
+CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o: /home/akino/cppeak_seminars/project_5/src/undoLastTask.cpp
+CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o: CMakeFiles/to_do_list.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o -MF CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o.d -o CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o -c /home/akino/cppeak_seminars/project_5/src/undoLastTask.cpp
+
+CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_5/src/undoLastTask.cpp > CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.i
+
+CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_5/src/undoLastTask.cpp -o CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.s
+
 # Object files for target to_do_list
 to_do_list_OBJECTS = \
+"CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o" \
 "CMakeFiles/to_do_list.dir/src/addTask.cpp.o" \
 "CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o" \
 "CMakeFiles/to_do_list.dir/src/help.cpp.o" \
 "CMakeFiles/to_do_list.dir/src/main.cpp.o" \
-"CMakeFiles/to_do_list.dir/src/readFile.cpp.o"
+"CMakeFiles/to_do_list.dir/src/readFile.cpp.o" \
+"CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o"
 
 # External object files for target to_do_list
 to_do_list_EXTERNAL_OBJECTS =
 
+libto_do_list.a: CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o
 libto_do_list.a: CMakeFiles/to_do_list.dir/src/addTask.cpp.o
 libto_do_list.a: CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o
 libto_do_list.a: CMakeFiles/to_do_list.dir/src/help.cpp.o
 libto_do_list.a: CMakeFiles/to_do_list.dir/src/main.cpp.o
 libto_do_list.a: CMakeFiles/to_do_list.dir/src/readFile.cpp.o
+libto_do_list.a: CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o
 libto_do_list.a: CMakeFiles/to_do_list.dir/build.make
 libto_do_list.a: CMakeFiles/to_do_list.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libto_do_list.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/akino/cppeak_seminars/project_5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libto_do_list.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/to_do_list.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/to_do_list.dir/link.txt --verbose=$(VERBOSE)
 

@@ -1,2 +1,2 @@
-/usr/bin/ar qc libto_do_list.a CMakeFiles/to_do_list.dir/src/addTask.cpp.o CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o CMakeFiles/to_do_list.dir/src/help.cpp.o CMakeFiles/to_do_list.dir/src/main.cpp.o CMakeFiles/to_do_list.dir/src/readFile.cpp.o
+/usr/bin/ar qc libto_do_list.a CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o CMakeFiles/to_do_list.dir/src/addTask.cpp.o CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o CMakeFiles/to_do_list.dir/src/help.cpp.o CMakeFiles/to_do_list.dir/src/main.cpp.o CMakeFiles/to_do_list.dir/src/readFile.cpp.o CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o
 /usr/bin/ranlib libto_do_list.a

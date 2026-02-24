@@ -12,7 +12,7 @@ void addTask(
     if (priority < 0 || priority > 10)
     {
         std::cerr << "Error: Priority must be in the range 0-10"
-                  << std::endl;ed
+                  << std::endl;
         return;
     }
 

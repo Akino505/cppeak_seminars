@@ -191,6 +191,30 @@ Catch2WithMain/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
 .PHONY : Catch2WithMain/fast
 
+src/CompletingTask.o: src/CompletingTask.cpp.o
+.PHONY : src/CompletingTask.o
+
+# target to build an object file
+src/CompletingTask.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/to_do_list.dir/build.make CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o
+.PHONY : src/CompletingTask.cpp.o
+
+src/CompletingTask.i: src/CompletingTask.cpp.i
+.PHONY : src/CompletingTask.i
+
+# target to preprocess a source file
+src/CompletingTask.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/to_do_list.dir/build.make CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.i
+.PHONY : src/CompletingTask.cpp.i
+
+src/CompletingTask.s: src/CompletingTask.cpp.s
+.PHONY : src/CompletingTask.s
+
+# target to generate assembly for a file
+src/CompletingTask.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/to_do_list.dir/build.make CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.s
+.PHONY : src/CompletingTask.cpp.s
+
 src/addTask.o: src/addTask.cpp.o
 .PHONY : src/addTask.o
 
@@ -314,6 +338,30 @@ src/readFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/to_do_list.dir/build.make CMakeFiles/to_do_list.dir/src/readFile.cpp.s
 .PHONY : src/readFile.cpp.s
 
+src/undoLastTask.o: src/undoLastTask.cpp.o
+.PHONY : src/undoLastTask.o
+
+# target to build an object file
+src/undoLastTask.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/to_do_list.dir/build.make CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o
+.PHONY : src/undoLastTask.cpp.o
+
+src/undoLastTask.i: src/undoLastTask.cpp.i
+.PHONY : src/undoLastTask.i
+
+# target to preprocess a source file
+src/undoLastTask.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/to_do_list.dir/build.make CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.i
+.PHONY : src/undoLastTask.cpp.i
+
+src/undoLastTask.s: src/undoLastTask.cpp.s
+.PHONY : src/undoLastTask.s
+
+# target to generate assembly for a file
+src/undoLastTask.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/to_do_list.dir/build.make CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.s
+.PHONY : src/undoLastTask.cpp.s
+
 tests/test_readFile_addTask.o: tests/test_readFile_addTask.cpp.o
 .PHONY : tests/test_readFile_addTask.o
 
@@ -352,6 +400,9 @@ help:
 	@echo "... project_5"
 	@echo "... tests"
 	@echo "... to_do_list"
+	@echo "... src/CompletingTask.o"
+	@echo "... src/CompletingTask.i"
+	@echo "... src/CompletingTask.s"
 	@echo "... src/addTask.o"
 	@echo "... src/addTask.i"
 	@echo "... src/addTask.s"
@@ -367,6 +418,9 @@ help:
 	@echo "... src/readFile.o"
 	@echo "... src/readFile.i"
 	@echo "... src/readFile.s"
+	@echo "... src/undoLastTask.o"
+	@echo "... src/undoLastTask.i"
+	@echo "... src/undoLastTask.s"
 	@echo "... tests/test_readFile_addTask.o"
 	@echo "... tests/test_readFile_addTask.i"
 	@echo "... tests/test_readFile_addTask.s"

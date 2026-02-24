@@ -8,11 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/akino/cppeak_seminars/project_5/src/CompletingTask.cpp" "CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o" "gcc" "CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o.d"
   "/home/akino/cppeak_seminars/project_5/src/addTask.cpp" "CMakeFiles/to_do_list.dir/src/addTask.cpp.o" "gcc" "CMakeFiles/to_do_list.dir/src/addTask.cpp.o.d"
   "/home/akino/cppeak_seminars/project_5/src/getPendingTasks.cpp" "CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o" "gcc" "CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o.d"
   "/home/akino/cppeak_seminars/project_5/src/help.cpp" "CMakeFiles/to_do_list.dir/src/help.cpp.o" "gcc" "CMakeFiles/to_do_list.dir/src/help.cpp.o.d"
   "/home/akino/cppeak_seminars/project_5/src/main.cpp" "CMakeFiles/to_do_list.dir/src/main.cpp.o" "gcc" "CMakeFiles/to_do_list.dir/src/main.cpp.o.d"
   "/home/akino/cppeak_seminars/project_5/src/readFile.cpp" "CMakeFiles/to_do_list.dir/src/readFile.cpp.o" "gcc" "CMakeFiles/to_do_list.dir/src/readFile.cpp.o.d"
+  "/home/akino/cppeak_seminars/project_5/src/undoLastTask.cpp" "CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o" "gcc" "CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o"
+  "CMakeFiles/to_do_list.dir/src/CompletingTask.cpp.o.d"
   "CMakeFiles/to_do_list.dir/src/addTask.cpp.o"
   "CMakeFiles/to_do_list.dir/src/addTask.cpp.o.d"
   "CMakeFiles/to_do_list.dir/src/getPendingTasks.cpp.o"
@@ -9,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/to_do_list.dir/src/main.cpp.o.d"
   "CMakeFiles/to_do_list.dir/src/readFile.cpp.o"
   "CMakeFiles/to_do_list.dir/src/readFile.cpp.o.d"
+  "CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o"
+  "CMakeFiles/to_do_list.dir/src/undoLastTask.cpp.o.d"
   "libto_do_list.a"
   "libto_do_list.pdb"
 )
