@@ -2,17 +2,17 @@
 
 // EXPECT: ordered queue
 void completeTopTask(
-    std::priority_queue<std::tuple<int, int, std::string>>& pq,
+    std::priority_queue<std::tuple<int, int, std::string>>& prq,
     std::unordered_map<int, std::tuple<std::string, int, bool>>& tasks,
     std::stack<std::tuple<int, std::string, int>>& undoStack)
 {
-    if(!pq.size())
+    if(!prq.size())
     {
         std::cout << "Nothing to completing!" << "\n";
         return;
     }
 
-    std::tuple<int, int, std::string> mjTask = pq.top();
+    std::tuple<int, int, std::string> mjTask = prq.top();
     std::tuple<int, std::string, int> majorTaskForAdding =
         std::tuple(std::get<1>(mjTask),   // ID
                    std::get<2>(mjTask),   // info
@@ -28,7 +28,7 @@ void completeTopTask(
         std::cout << "Task's ID not found\n";
     }
 
-    pq.pop();  // pop first task from pq
+    prq.pop();  // pop first task from pq
     std::cout << "Completing task:\n"
               << "ID: " << std::get<1>(mjTask)
               << "\nInfo: " << std::get<2>(mjTask)

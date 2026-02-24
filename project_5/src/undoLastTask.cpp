@@ -4,7 +4,7 @@
 void undoLast(
     std::stack<std::tuple<int, std::string, int>>& undoStack,
     std::unordered_map<int, std::tuple<std::string, int, bool>>& tasks,
-    std::priority_queue<std::tuple<int, int, std::string>>& pq)
+    std::priority_queue<std::tuple<int, int, std::string>>& prq)
 {
     if(!undoStack.size())
     {
@@ -13,15 +13,15 @@ void undoLast(
     }
 
     std::tuple<int, std::string, int> mjTask = undoStack.top();
-    std::tuple<int, int, std::string> TaskForUndo =
+    std::tuple<int, int, std::string> taskForUndo =
         std::tuple(std::get<2>(mjTask),   // prioity
                    std::get<0>(mjTask),   // ID
                    std::get<1>(mjTask));  // info
 
-    pq.push(TaskForUndo);  // add task at the end of undoStack
+    prq.push(taskForUndo);  // add task at the end of undoStack
     try                    // change task's status in tasks
     {
-        std::get<2>(tasks.at(std::get<1>(TaskForUndo))) = false;
+        std::get<2>(tasks.at(std::get<1>(taskForUndo))) = false;
     }
     catch(const std::out_of_range& e)
     {
