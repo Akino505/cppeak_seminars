@@ -6,7 +6,7 @@ This is a small program - a task management system. The user provides a file "To
 - STATUS - the task status `true`/`false`, where true means completed, and false means not completed.  
 
 Communication with the user is done via the console.
-- The help() command - displays all commands.
+- help - displays all commands.
 - 1 - Execute the task with the highest priority
 - 2 - Undo the execution of the last task
 - 3 - Show uncompleted tasks
