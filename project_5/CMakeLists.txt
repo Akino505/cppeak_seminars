@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD 17)
 # the following options prevent compiler-optimization issues that are unwanted in an edu process
 set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -O0 -Werror=return-type")
 set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0")
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # --- 1. Fetch Catch2 Dependency ---
 include(FetchContent)
@@ -37,8 +38,6 @@ enable_testing()
 file(GLOB TESTS "tests/*.cpp")
 add_executable(tests ${TESTS})
 
-target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(tests PRIVATE Catch2::Catch2WithMain to_do_list)
 
-target_include_directories(tests PRIVATE 
-    ${CMAKE_CURRENT_SOURCE_DIR}/include
-)
+target_include_directories(tests PRIVATE include)
