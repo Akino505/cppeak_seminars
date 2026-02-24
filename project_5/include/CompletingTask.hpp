@@ -9,7 +9,7 @@
 #include <unordered_map>
 
 void completeTopTask(
-    std::priority_queue<std::tuple<int, int, std::string>>& pq,
+    std::priority_queue<std::tuple<int, int, std::string>>& prq,
     std::unordered_map<int, std::tuple<std::string, int, bool>>& tasks,
     std::stack<std::tuple<int, std::string, int>>& undoStack);
 
