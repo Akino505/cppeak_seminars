@@ -1,33 +1,6 @@
-ID: 3 Task: Call_mom Priority: 7
-ID: 7 Task: Clean_room Priority: 4
-ID: 4 Task: Water_plants Priority: 3
-ID: 5 Task: Read_book Priority: 2
-----------------------------------------------------
-ID: 1 Task: Buy_milk Priority: 8
-ID: 3 Task: Call_mom Priority: 7
-ID: 7 Task: Clean_room Priority: 4
-ID: 4 Task: Water_plants Priority: 3
-ID: 5 Task: Read_book Priority: 2
-----------------------------------------------------
-ID: 6 Task: Pay_bills Priority: 9
-ID: 1 Task: Buy_milk Priority: 8
-ID: 3 Task: Call_mom Priority: 7
-ID: 7 Task: Clean_room Priority: 4
-ID: 4 Task: Water_plants Priority: 3
-ID: 5 Task: Read_book Priority: 2
-----------------------------------------------------
-ID: 2 Task: Finish_homework Priority: 10
-ID: 6 Task: Pay_bills Priority: 9
-ID: 1 Task: Buy_milk Priority: 8
-ID: 3 Task: Call_mom Priority: 7
-ID: 7 Task: Clean_room Priority: 4
-ID: 4 Task: Water_plants Priority: 3
-ID: 5 Task: Read_book Priority: 2
-----------------------------------------------------
-ID: 6 Task: Pay_bills Priority: 9
-ID: 1 Task: Buy_milk Priority: 8
-ID: 3 Task: Call_mom Priority: 7
-ID: 7 Task: Clean_room Priority: 4
-ID: 4 Task: Water_plants Priority: 3
-ID: 5 Task: Read_book Priority: 2
+ID: 6 Task: Pay bills Priority: 9
+ID: 1 Task: Buy milk Priority: 8
+ID: 7 Task: Clean room Priority: 4
+ID: 4 Task: Water plants Priority: 3
+ID: 5 Task: Read book Priority: 2
 ----------------------------------------------------

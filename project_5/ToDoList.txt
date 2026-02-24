@@ -1,7 +1,7 @@
-1 Buy_milk 8 false
-2 Finish_homework 10 false
-3 Call_mom 7 false
-4 Water_plants 3 false
-5 Read_book 2 false
-6 Pay_bills 9 false
-7 Clean_room 4 false
+1 Buy milk 8 false
+2 Finish homework 10 false
+2 Call mom 7 false
+4 Water plants 3 false
+5 Read book 2 false
+6 Pay bills 9 false
+7 Clean room 4 false
