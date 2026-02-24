@@ -1,13 +1,10 @@
 #include "readFile.hpp"
 #include "addTask.hpp"
-#include <fstream>
-#include <iostream>
-#include <sstream>
 
 bool readTasksFromFile(
     const std::string& filename,
     std::unordered_map<int, std::tuple<std::string, int, bool>>& tasks,
-    std::priority_queue<std::tuple<int, int, std::string>>& prq, int& nextId)
+    std::priority_queue<std::tuple<int, int, std::string>>& pq)
 {
 
     std::ifstream file(filename);
@@ -29,12 +26,12 @@ bool readTasksFromFile(
             continue;
 
         std::istringstream iss(line);
-        int taskId;
+        int id;
         std::string desc;
         int priority;
         std::string statusStr;
 
-        if(!(iss >> taskId >> desc >> priority >> statusStr))
+        if(!(iss >> id >> desc >> priority >> statusStr))
         {
             std::cerr << "  Error in line " << lineNum << std::endl;
             errorCount++;
@@ -50,18 +47,12 @@ bool readTasksFromFile(
         }
 
         size_t tasksBefore = tasks.size();
-        addTask(tasks, prq, taskId, desc, priority);
+        addTask(tasks, pq, id, desc, priority);
 
         if(tasks.size() > tasksBefore)
-        {
             addedCount++;
-            if(taskId >= nextId)
-                nextId = taskId + 1;
-        }
         else
-        {
             errorCount++;
-        }
     }
 
     file.close();
