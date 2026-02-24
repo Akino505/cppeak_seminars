@@ -6,11 +6,11 @@ This is a small program - a task management system. The user provides a file "To
 - STATUS - the task status `true`/`false`, where true means completed, and false means not completed.  
 
 Communication with the user is done via the console.
-- help - displays all commands.
+- help - Displays all commands.
 - 1 - Execute the task with the highest priority
 - 2 - Undo the execution of the last task
 - 3 - Show uncompleted tasks
-- exit - terminate the program  
+- exit - Terminate the program  
 
 CMake was used for building, and Catch2 for unit tests.  
 
