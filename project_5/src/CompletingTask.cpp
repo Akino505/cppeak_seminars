@@ -39,17 +39,17 @@ void completeTopTask(
 // int main()
 // {
 
-//     std::stack<std::tuple<int, std::string, int>> undoStack;
-//     std::unordered_map<int, std::tuple<std::string, int, bool>> tasks;
-//     std::priority_queue<std::tuple<int, int, std::string>> pq;
+// std::stack<std::tuple<int, std::string, int>> undoStack;
+// std::unordered_map<int, std::tuple<std::string, int, bool>> tasks;
+// std::priority_queue<std::tuple<int, int, std::string>> pq;
 
-//     tasks[1] = {"Go for a walk", 1, false};
-//     tasks[2] = {"Do homework in C++", 9, false};
-//     tasks[3] = {"Have a sleep", 7, false};
+// tasks[1] = {"Go for a walk", 1, false};
+// tasks[2] = {"Do homework in C++", 9, false};
+// tasks[3] = {"Have a sleep", 7, false};
 
-//     pq.push({1, 1, "Go for a walk"});
-//     pq.push({9, 2, "Do homework in C++"});
-//     pq.push({7, 3, "Have a sleep"});
+// pq.push({1, 1, "Go for a walk"});
+// pq.push({9, 2, "Do homework in C++"});
+// pq.push({7, 3, "Have a sleep"});
 
-//     completeTopTask(pq, tasks, undoStack);
+// completeTopTask(pq, tasks, undoStack);
 // }

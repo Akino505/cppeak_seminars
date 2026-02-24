@@ -1,6 +1,8 @@
 #include "getPendingTasks.hpp"
 #include "help.hpp"
 #include "readFile.hpp"
+#include "CompletingTask.hpp"
+#include "undoLastTask.hpp"
 #include <fstream>
 #include <queue>
 #include <stack>
@@ -24,11 +26,11 @@ int main()
         std::cin >> command;
         if(command == "1")
         {
-            // Complete the task
+            completeTopTask(doTasks, tasks, undoTasks);
         }
         else if(command == "2")
         {
-            // Cancel the task
+            undoLast(undoTasks, tasks, doTasks);
         }
         else if(command == "3")
         {

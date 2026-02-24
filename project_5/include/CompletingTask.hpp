@@ -1,13 +1,12 @@
 #ifndef CMPLTNG_TSK_HPP
 #define CMPLTNG_TSK_HPP
 
+#include <iostream>
 #include <queue>
 #include <stack>
+#include <stdexcept>
 #include <string>
 #include <unordered_map>
-#include <stdexcept>
-#include <iostream>
-
 
 void completeTopTask(
     std::priority_queue<std::tuple<int, int, std::string>>& pq,

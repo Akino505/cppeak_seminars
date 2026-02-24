@@ -43,13 +43,13 @@ void undoLast(
 //     std::unordered_map<int, std::tuple<std::string, int, bool>> tasks;
 //     std::priority_queue<std::tuple<int, int, std::string>> pq;
 
-//     tasks[1] = {"Go for a walk", 1, false};
-//     tasks[2] = {"Do homework in C++", 9, false};
-//     tasks[3] = {"Have a sleep", 7, false};
+// tasks[1] = {"Go for a walk", 1, false};
+// tasks[2] = {"Do homework in C++", 9, false};
+// tasks[3] = {"Have a sleep", 7, false};
 
-//     undoStack.push({1, "Go for a walk", 1});
-//     undoStack.push({2, "Do homework in C++", 9});
-//     undoStack.push({3, "Have a sleep", 7});
+// undoStack.push({1, "Go for a walk", 1});
+// undoStack.push({2, "Do homework in C++", 9});
+// undoStack.push({3, "Have a sleep", 7});
 
-//     undoLast(undoStack, tasks, pq);
+// undoLast(undoStack, tasks, pq);
 // }
