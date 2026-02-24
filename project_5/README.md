@@ -1,10 +1,16 @@
 # Task 5  
-This is a small program that reads and analyzes a log file. Its main function is to output the types of levels and their counts to another file, as well as the start and end timestamps of the log file.
+This is a small program - a task management system. The user provides a file "ToDoList.txt" with tasks in the format "id task priority status".  
+- ID - the task number in the system. If a task with this number already exists, the system notifies the user, ignores the task, and continues working.
+- TASK - the task description.
+- PRIORITY - the task priority (from 0 to 10). The task with the highest priority is executed first.
+- STATUS - the task status `true`/`false`, where true means completed, and false means not completed.  
 
-Additional features have also been implemented:
-- The user can request the output of a specific level.
-- The user can request the output of levels within a specific time range.
-- The user can request statistics for a specific time period.
+Communication with the user is done via the console.
+- The help() command - displays all commands.
+- 1 - Execute the task with the highest priority
+- 2 - Undo the execution of the last task
+- 3 - Show uncompleted tasks
+- exit - terminate the program  
 
 CMake was used for building, and Catch2 for unit tests.  
 
@@ -19,7 +25,7 @@ cmake --build build
 ```
 # Run  
 ```bash
-./build/project_4
+./build/project_5
 ```
 # Unit tests  
 ```bash
