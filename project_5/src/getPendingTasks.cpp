@@ -20,7 +20,12 @@ void getPendingTasks(
     {
         int taskId = elem.first;
         const auto& task = elem.second;
-        fileOut << "ID: " << taskId << " Task: " << std::get<0>(task)
-                << " Priority: " << std::get<1>(task) << std::endl;
+        if(std::get<2>(task) == false)
+        {
+            fileOut << "ID: " << taskId << " Task: " << std::get<0>(task)
+                    << " Priority: " << std::get<1>(task) << std::endl;
+        }
     }
+    fileOut << "----------------------------------------------------"
+            << std::endl;
 }

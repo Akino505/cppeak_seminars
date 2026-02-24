@@ -29,7 +29,7 @@ void undoLast(
     }
 
     undoStack.pop();  // pop first task from pq
-    std::cout << "Completing task:\n"
+    std::cout << "Undoing task:\n"
               << "ID: " << std::get<0>(mjTask)
               << "\nInfo: " << std::get<1>(mjTask)
               << "\nPriority: " << std::get<2>(mjTask) << "\n";

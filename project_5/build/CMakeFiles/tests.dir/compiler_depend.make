@@ -47,8 +47,10 @@ CMakeFiles/tests.dir/tests/test_readFile_addTask.cpp.o: /home/akino/cppeak_semin
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \
+  /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/algorithmfwd.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/basic_ios.h \
@@ -98,7 +100,9 @@ CMakeFiles/tests.dir/tests/test_readFile_addTask.cpp.o: /home/akino/cppeak_semin
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
@@ -110,12 +114,14 @@ CMakeFiles/tests.dir/tests/test_readFile_addTask.cpp.o: /home/akino/cppeak_semin
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_queue.h \
+  /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
   /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
@@ -148,13 +154,17 @@ CMakeFiles/tests.dir/tests/test_readFile_addTask.cpp.o: /home/akino/cppeak_semin
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
+  /usr/include/c++/13/pstl/execution_defs.h \
+  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/queue \
   /usr/include/c++/13/ratio \
+  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
@@ -281,29 +291,25 @@ CMakeFiles/tests.dir/tests/test_readFile_addTask.cpp.o: /home/akino/cppeak_semin
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/c++/13/clocale:
+/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
 
-/usr/include/c++/13/chrono:
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
 
-_deps/catch2-src/src/catch2/interfaces/catch_interfaces_enum_values_registry.hpp:
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
 
-/usr/include/c++/13/cstdint:
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
-/usr/include/c++/13/cstdlib:
-
-/usr/include/c++/13/cctype:
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
 /usr/include/c++/13/bits/vector.tcc:
 
 /usr/include/c++/13/bits/stl_function.h:
 
 /usr/include/c++/13/bits/uses_allocator_args.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/c++/13/bits/streambuf.tcc:
 
@@ -319,6 +325,16 @@ _deps/catch2-src/src/catch2/internal/catch_config_static_analysis_support.hpp:
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
+/usr/include/c++/13/bits/stl_algo.h:
+
+/usr/include/c++/13/cstddef:
+
+/usr/include/c++/13/bits/sstream.tcc:
+
+_deps/catch2-src/src/catch2/internal/catch_test_registry.hpp:
+
+/usr/include/c++/13/ratio:
+
 /usr/include/c++/13/bits/range_access.h:
 
 /usr/include/c++/13/system_error:
@@ -326,10 +342,6 @@ _deps/catch2-src/src/catch2/internal/catch_config_static_analysis_support.hpp:
 /usr/include/c++/13/bits/ostream.tcc:
 
 /usr/include/c++/13/bits/memoryfwd.h:
-
-/usr/include/c++/13/cerrno:
-
-_deps/catch2-src/src/catch2/interfaces/catch_interfaces_registry_hub.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
@@ -359,8 +371,6 @@ _deps/catch2-src/src/catch2/catch_test_macros.hpp:
 
 /usr/include/c++/13/bits/localefwd.h:
 
-/usr/include/c++/13/cstddef:
-
 /usr/include/c++/13/bits/erase_if.h:
 
 /usr/include/c++/13/bits/deque.tcc:
@@ -374,6 +384,10 @@ _deps/catch2-src/src/catch2/catch_test_macros.hpp:
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/c++/13/bits/hashtable_policy.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/c++/13/bits/char_traits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -389,6 +403,20 @@ _deps/catch2-src/src/catch2/catch_test_macros.hpp:
 
 /usr/include/c++/13/bits/cxxabi_init_exception.h:
 
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
+
+/usr/include/c++/13/typeinfo:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/include/c++/13/bits/codecvt.h:
+
 _deps/catch2-src/src/catch2/internal/catch_move_and_forward.hpp:
 
 _deps/catch2-src/src/catch2/internal/catch_preprocessor_remove_parens.hpp:
@@ -403,7 +431,7 @@ _deps/catch2-src/src/catch2/internal/catch_compiler_capabilities.hpp:
 
 _deps/catch2-src/src/catch2/catch_tostring.hpp:
 
-_deps/catch2-src/src/catch2/internal/catch_logical_traits.hpp:
+/usr/include/c++/13/iostream:
 
 /usr/include/c++/13/bits/predefined_ops.h:
 
@@ -426,8 +454,6 @@ _deps/catch2-src/src/catch2/internal/catch_decomposer.hpp:
 /usr/include/c++/13/bits/stl_heap.h:
 
 _deps/catch2-src/src/catch2/interfaces/catch_interfaces_test_invoker.hpp:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -459,9 +485,17 @@ _deps/catch2-src/src/catch2/internal/catch_void_type.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
+_deps/catch2-src/src/catch2/internal/catch_test_macro_impl.hpp:
+
+/usr/include/c++/13/bits/cxxabi_forced.h:
+
 _deps/catch2-src/src/catch2/benchmark/detail/catch_benchmark_stats_fwd.hpp:
 
 _deps/catch2-build/generated-includes/catch2/catch_user_config.hpp:
+
+/usr/include/c++/13/cstdint:
+
+/usr/include/c++/13/cstdlib:
 
 /usr/include/c++/13/queue:
 
@@ -481,13 +515,9 @@ _deps/catch2-src/src/catch2/catch_assertion_info.hpp:
 
 /usr/include/assert.h:
 
-/usr/include/c++/13/bits/stl_vector.h:
+_deps/catch2-src/src/catch2/interfaces/catch_interfaces_enum_values_registry.hpp:
 
-/usr/include/c++/13/bits/codecvt.h:
-
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
-_deps/catch2-src/src/catch2/internal/catch_test_macro_impl.hpp:
+/usr/include/c++/13/chrono:
 
 _deps/catch2-src/src/catch2/catch_timer.hpp:
 
@@ -495,9 +525,11 @@ _deps/catch2-src/src/catch2/internal/catch_preprocessor_internal_stringify.hpp:
 
 /usr/include/c++/13/bits/ios_base.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
-
 _deps/catch2-src/src/catch2/internal/catch_unique_name.hpp:
+
+/usr/include/c++/13/cwctype:
+
+/home/akino/cppeak_seminars/project_5/include/readFile.hpp:
 
 /usr/include/c++/13/istream:
 
@@ -523,29 +555,31 @@ _deps/catch2-src/src/catch2/internal/catch_result_type.hpp:
 
 _deps/catch2-src/src/catch2/catch_totals.hpp:
 
+_deps/catch2-src/src/catch2/internal/catch_logical_traits.hpp:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/c++/13/algorithm:
+
 _deps/catch2-src/src/catch2/internal/catch_reusable_string_stream.hpp:
 
 /usr/include/c++/13/bits/stl_construct.h:
 
 _deps/catch2-src/src/catch2/internal/catch_stream_end_stop.hpp:
 
+/usr/include/c++/13/sstream:
+
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-_deps/catch2-src/src/catch2/internal/catch_source_line_info.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
-
 _deps/catch2-src/src/catch2/internal/catch_test_failure_exception.hpp:
 
-_deps/catch2-src/src/catch2/internal/catch_test_registry.hpp:
-
-/home/akino/cppeak_seminars/project_5/include/readFile.hpp:
-
-/usr/include/c++/13/cwctype:
-
-/usr/include/c++/13/ratio:
+/usr/include/c++/13/bits/stringfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
@@ -553,15 +587,7 @@ _deps/catch2-src/src/catch2/internal/catch_test_registry.hpp:
 
 /usr/include/c++/13/bits/stl_deque.h:
 
-/usr/include/c++/13/bits/concept_check.h:
-
-/usr/include/c++/13/bits/alloc_traits.h:
-
 /usr/include/c++/13/bits/ptr_traits.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
 
 _deps/catch2-src/src/catch2/internal/catch_compare_traits.hpp:
 
@@ -587,11 +613,19 @@ _deps/catch2-src/src/catch2/internal/catch_compare_traits.hpp:
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/include/c++/13/bits/stringfwd.h:
-
 /usr/include/c++/13/backward/binders.h:
 
+/usr/include/c++/13/bits/uniform_int_dist.h:
+
 /usr/include/c++/13/bits/locale_classes.tcc:
+
+_deps/catch2-src/src/catch2/internal/catch_source_line_info.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
 
 /usr/include/c++/13/bits/basic_ios.h:
 
@@ -599,13 +633,25 @@ _deps/catch2-src/src/catch2/internal/catch_compare_traits.hpp:
 
 /usr/include/c++/13/bits/basic_ios.tcc:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+/usr/include/c++/13/pstl/execution_defs.h:
 
 /usr/include/c++/13/bits/basic_string.h:
 
 /usr/include/c++/13/bits/chrono.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/13/cctype:
+
+_deps/catch2-src/src/catch2/interfaces/catch_interfaces_registry_hub.hpp:
+
+/usr/include/c++/13/cerrno:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/13/clocale:
 
 /usr/include/c++/13/cstring:
 
@@ -644,6 +690,8 @@ _deps/catch2-src/src/catch2/catch_section_info.hpp:
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
 /usr/include/c++/13/limits:
+
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
 /usr/include/c++/13/pstl/pstl_config.h:
 
@@ -737,8 +785,6 @@ _deps/catch2-src/src/catch2/internal/catch_unique_ptr.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
@@ -746,6 +792,10 @@ _deps/catch2-src/src/catch2/internal/catch_unique_ptr.hpp:
 /usr/include/c++/13/bits/charconv.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/c++/13/bits/hashtable.h:
 
@@ -755,17 +805,13 @@ _deps/catch2-src/src/catch2/internal/catch_unique_ptr.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
-
 /usr/include/asm-generic/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/include/c++/13/ext/atomicity.h:
-
 _deps/catch2-src/src/catch2/internal/catch_platform.hpp:
+
+/usr/include/c++/13/ext/atomicity.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
@@ -775,28 +821,12 @@ _deps/catch2-src/src/catch2/internal/catch_platform.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/home/akino/cppeak_seminars/project_5/tests/test_readFile_addTask.cpp:
-
 /usr/include/c++/13/bits/exception_defines.h:
+
+/home/akino/cppeak_seminars/project_5/tests/test_readFile_addTask.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/include/c++/13/typeinfo:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:

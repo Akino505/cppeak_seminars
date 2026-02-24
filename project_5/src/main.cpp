@@ -17,7 +17,7 @@ int main()
     std::priority_queue<std::tuple<int, int, std::string>> doTasks;
     std::stack<std::tuple<int, std::string, int>> undoTasks;
     std::unordered_map<int, std::tuple<std::string, int, bool>> tasks;
-    // readTasksFromFile("ToDoList.txt", tasks, doTasks, id?);
+    if (!readTasksFromFile("ToDoList.txt", tasks, doTasks)) return 0;
     std::string command = "";
     std::cout << "Let's work with your To-Do-List." << "\n";
     help();

@@ -60,6 +60,7 @@ bool readTasksFromFile(
     std::cout << "--- Statistics ---" << std::endl;
     std::cout << "Successfully added: " << addedCount << " tasks" << std::endl;
     std::cout << "Errors in the file: " << errorCount << std::endl;
+    std::cout << "------------------" << std::endl;
 
     return true;
 }

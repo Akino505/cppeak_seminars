@@ -60,14 +60,13 @@ TEST_CASE("Testing readTasksFromFile function")
 
     std::unordered_map<int, std::tuple<std::string, int, bool>> tasks;
     std::priority_queue<std::tuple<int, int, std::string>> pq;
-    int nextId = 1;
     std::string filename = "test_temp.txt";
 
     SECTION("File opens successfully")
     {
         createTestFile(filename, "1 Test 5 false\n");
 
-        bool result = readTasksFromFile(filename, tasks, pq, nextId);
+        bool result = readTasksFromFile(filename, tasks, pq);
 
         REQUIRE(result == true);
 
@@ -76,7 +75,7 @@ TEST_CASE("Testing readTasksFromFile function")
 
     SECTION("File does not exist")
     {
-        bool result = readTasksFromFile("nonexistent.txt", tasks, pq, nextId);
+        bool result = readTasksFromFile("nonexistent.txt", tasks, pq);
 
         REQUIRE(result == false);
         REQUIRE(tasks.empty());
@@ -89,7 +88,7 @@ TEST_CASE("Testing readTasksFromFile function")
 
         createTestFile(filename, content);
 
-        readTasksFromFile(filename, tasks, pq, nextId);
+        readTasksFromFile(filename, tasks, pq);
 
         REQUIRE(tasks.size() == 2);
         REQUIRE(tasks.find(1) != tasks.end());
@@ -103,7 +102,7 @@ TEST_CASE("Testing readTasksFromFile function")
         std::string content = "1 Buy_milk 5 false\n";
         createTestFile(filename, content);
 
-        readTasksFromFile(filename, tasks, pq, nextId);
+        readTasksFromFile(filename, tasks, pq);
 
         REQUIRE_FALSE(pq.empty());
         auto [prio, id, desc] = pq.top();
