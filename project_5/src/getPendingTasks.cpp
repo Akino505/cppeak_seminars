@@ -22,8 +22,8 @@ void getPendingTasks(
         const auto& task = elem.second;
         if(std::get<2>(task) == false)
         {
-            fileOut << "ID: " << taskId << " Task: " << std::get<0>(task)
-                    << " Priority: " << std::get<1>(task) << std::endl;
+            fileOut << "ID: " << taskId << " | Task: " << std::get<0>(task)
+                    << " | Priority: " << std::get<1>(task) << std::endl;
         }
     }
     fileOut << "----------------------------------------------------"
