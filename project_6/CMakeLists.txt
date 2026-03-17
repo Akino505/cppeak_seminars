@@ -25,10 +25,10 @@ FetchContent_MakeAvailable(Catch2)
 # --- 2. Create a Library for shared logic ---
 file(GLOB SOURCES "src/*.cpp") 
 add_library(BD_employees ${SOURCES})
-target_include_directories(BD_employees PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(BD_employees PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # --- 3. Main Application ---
-add_executable(${CMAKE_PROJECT_NAME} main.cpp)
+add_executable(${CMAKE_PROJECT_NAME} src/main.cpp)
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE BD_employees)
 
 
