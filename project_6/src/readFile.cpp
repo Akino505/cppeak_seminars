@@ -29,8 +29,8 @@ std::vector<Employee> readBDFromFile(const std::string& filename)
         std::string sSalary = line.substr(dept + 1);
 
         try{
-            int iDept;
-            double dSalary;
+            int iDept = 0;
+            double dSalary = -1.0;
             if (!(sDept.empty()))
             {
                 iDept = std::stoi(sDept);

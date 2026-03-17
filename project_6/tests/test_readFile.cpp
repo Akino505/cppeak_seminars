@@ -58,7 +58,7 @@ TEST_CASE("File not found", "[readFile]")
 }
 
 
-TEST_CASE("Department zero – setter rejects, becomes default 0", "[readFile]")
+TEST_CASE("Department zero", "[readFile]")
 {
     std::string content = "John;0;50000\n";
     TempFile file(content);
@@ -111,23 +111,13 @@ TEST_CASE("Salary zero is accepted", "[readFile]")
     CHECK(employees[0].getSalary() == 0.0);
 }
 
-// The following tests reveal problems in the parsing logic.
-// They are included to highlight the need for fixes.
-
 TEST_CASE(
     "Empty department field",
     "[readFile]")
 {
-    // The function declares int iDept; and does not initialise it when
-    // sDept.empty(). This test may crash or give unpredictable results.
     std::string content = "John;;50000\n";
     TempFile file(content);
-
-    // We cannot reliably REQUIRE anything here because of UB.
-    // The test is marked as expected to fail.
     std::vector<Employee> employees = readBDFromFile(file.path);
-    // If the code were fixed, we might expect the line to be skipped.
-    // Currently it's unsafe.
     REQUIRE(employees.size() == 1);
     CHECK(employees[0].getName() == "John");
     CHECK(employees[0].getDept() == 0);
