@@ -1,5 +1,5 @@
-#ifndef FINDNAME_HPP
-#define FINDNAME_HPP
+#ifndef FIND_NAME_HPP
+#define FIND_NAME_HPP
 
 #include <iostream>
 #include <cstring>
