@@ -6,6 +6,3 @@ ID: 7 | Task: Clean room | Priority: 4
 ID: 4 | Task: Water plants | Priority: 3
 ID: 5 | Task: Read book | Priority: 2
 ----------------------------------------------------
-ID: 4 | Task: Water plants | Priority: 3
-ID: 5 | Task: Read book | Priority: 2
-----------------------------------------------------
