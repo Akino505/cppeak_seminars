@@ -1,4 +1,4 @@
-#ifndef FIND_DEPR_HPP
+#ifndef FIND_DEPT_HPP
 #define FIND_DEPT_HPP
 
 #include <iostream>
