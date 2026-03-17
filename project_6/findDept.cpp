@@ -1,4 +1,4 @@
-#include "findDept.h"
+#include "findDept.hpp"
 
 std::vector<int> findDept(const SafeVector<Employee>& employees, int dept)
 {

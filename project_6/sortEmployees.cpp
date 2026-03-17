@@ -1,4 +1,4 @@
-#include "comparator.h"
+#include "comparator.hpp"
 
 bool compareEmployee(const Employee& first, const Employee& second)
 {

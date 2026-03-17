@@ -1,4 +1,4 @@
-#include "findName.h"
+#include "findName.hpp"
 
 std::vector<int> findName(const SafeVector<Employee>& employees, const char* name)
 {

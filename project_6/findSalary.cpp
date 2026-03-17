@@ -1,4 +1,4 @@
-#include "findSalary.h"
+#include "findSalary.hpp"
 
 std::vector<int> findSalary(const SafeVector<Employee>& employees, double salary)
 {
