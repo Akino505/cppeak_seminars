@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10.0)
 
-project(project_6_E CXX)
+project(project_6 CXX)
 
 if (NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Debug)
@@ -23,13 +23,13 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(Catch2)
 
 # --- 2. Create a Library for shared logic ---
-file(GLOB SOURCES "*.cpp") 
-add_library(employee ${SOURCES})
-target_include_directories(employee PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+file(GLOB SOURCES "src/*.cpp") 
+add_library(BD_employees ${SOURCES})
+target_include_directories(BD_employees PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 # --- 3. Main Application ---
 add_executable(${CMAKE_PROJECT_NAME} main.cpp)
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE employee)
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE BD_employees)
 
 
 # --- 4. Testing Setup ---
