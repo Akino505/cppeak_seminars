@@ -1,5 +1,5 @@
-#ifndef CONPARATOR_HPP
-#define COMPARATOR_HPP
+#ifndef SORT_EMPLOYEES_HPP
+#define SORT_EMPLOYEES_HPP
 
 #include <iostream>
 #include <vector>
