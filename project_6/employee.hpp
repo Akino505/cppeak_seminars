@@ -11,6 +11,7 @@ private:
     double salary = -1;
 
 public:
+    Employee(std::string name, int dept, double salary);
     void setName(std::string sName);
     void setDept(int sDept);
     void setSalary(double sSalary);

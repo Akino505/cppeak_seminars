@@ -1,6 +1,12 @@
 #include "employee.hpp"
 #include <string>
 
+Employee::Employee(std::string name, int dept, double salary){
+    setName(name);
+    setDept(dept);
+    setSalary(salary);
+}
+
 void Employee::setName(std::string sName)
 {
     if(!sName.empty())
