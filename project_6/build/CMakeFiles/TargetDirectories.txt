@@ -1,5 +1,5 @@
-/home/akino/cppeak_seminars/project_6/build/CMakeFiles/employee.dir
-/home/akino/cppeak_seminars/project_6/build/CMakeFiles/project_6_E.dir
+/home/akino/cppeak_seminars/project_6/build/CMakeFiles/BD_employees.dir
+/home/akino/cppeak_seminars/project_6/build/CMakeFiles/project_6.dir
 /home/akino/cppeak_seminars/project_6/build/CMakeFiles/edit_cache.dir
 /home/akino/cppeak_seminars/project_6/build/CMakeFiles/rebuild_cache.dir
 /home/akino/cppeak_seminars/project_6/build/_deps/catch2-build/CMakeFiles/edit_cache.dir

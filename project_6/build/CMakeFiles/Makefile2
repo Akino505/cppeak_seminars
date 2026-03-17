@@ -63,8 +63,8 @@ CMAKE_BINARY_DIR = /home/akino/cppeak_seminars/project_6/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/employee.dir/all
-all: CMakeFiles/project_6_E.dir/all
+all: CMakeFiles/BD_employees.dir/all
+all: CMakeFiles/project_6.dir/all
 all: _deps/catch2-build/all
 .PHONY : all
 
@@ -73,8 +73,8 @@ preinstall: _deps/catch2-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/employee.dir/clean
-clean: CMakeFiles/project_6_E.dir/clean
+clean: CMakeFiles/BD_employees.dir/clean
+clean: CMakeFiles/project_6.dir/clean
 clean: _deps/catch2-build/clean
 .PHONY : clean
 
@@ -111,56 +111,56 @@ _deps/catch2-build/src/clean: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.d
 .PHONY : _deps/catch2-build/src/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/employee.dir
+# Target rules for target CMakeFiles/BD_employees.dir
 
 # All Build rule for target.
-CMakeFiles/employee.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=94,95,96,97,98 "Built target employee"
-.PHONY : CMakeFiles/employee.dir/all
+CMakeFiles/BD_employees.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=1,2,3,4 "Built target BD_employees"
+.PHONY : CMakeFiles/BD_employees.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/employee.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_6/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/employee.dir/all
+CMakeFiles/BD_employees.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_6/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BD_employees.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_6/build/CMakeFiles 0
-.PHONY : CMakeFiles/employee.dir/rule
+.PHONY : CMakeFiles/BD_employees.dir/rule
 
 # Convenience name for target.
-employee: CMakeFiles/employee.dir/rule
-.PHONY : employee
+BD_employees: CMakeFiles/BD_employees.dir/rule
+.PHONY : BD_employees
 
 # clean rule for target.
-CMakeFiles/employee.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/clean
-.PHONY : CMakeFiles/employee.dir/clean
+CMakeFiles/BD_employees.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/clean
+.PHONY : CMakeFiles/BD_employees.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/project_6_E.dir
+# Target rules for target CMakeFiles/project_6.dir
 
 # All Build rule for target.
-CMakeFiles/project_6_E.dir/all: CMakeFiles/employee.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6_E.dir/build.make CMakeFiles/project_6_E.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6_E.dir/build.make CMakeFiles/project_6_E.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=99,100 "Built target project_6_E"
-.PHONY : CMakeFiles/project_6_E.dir/all
+CMakeFiles/project_6.dir/all: CMakeFiles/BD_employees.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6.dir/build.make CMakeFiles/project_6.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6.dir/build.make CMakeFiles/project_6.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=99,100 "Built target project_6"
+.PHONY : CMakeFiles/project_6.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/project_6_E.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_6/build/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/project_6_E.dir/all
+CMakeFiles/project_6.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_6/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/project_6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_6/build/CMakeFiles 0
-.PHONY : CMakeFiles/project_6_E.dir/rule
+.PHONY : CMakeFiles/project_6.dir/rule
 
 # Convenience name for target.
-project_6_E: CMakeFiles/project_6_E.dir/rule
-.PHONY : project_6_E
+project_6: CMakeFiles/project_6.dir/rule
+.PHONY : project_6
 
 # clean rule for target.
-CMakeFiles/project_6_E.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6_E.dir/build.make CMakeFiles/project_6_E.dir/clean
-.PHONY : CMakeFiles/project_6_E.dir/clean
+CMakeFiles/project_6.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6.dir/build.make CMakeFiles/project_6.dir/clean
+.PHONY : CMakeFiles/project_6.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/catch2-build/src/CMakeFiles/Catch2.dir
@@ -169,7 +169,7 @@ CMakeFiles/project_6_E.dir/clean:
 _deps/catch2-build/src/CMakeFiles/Catch2.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92 "Built target Catch2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96 "Built target Catch2"
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -195,12 +195,12 @@ _deps/catch2-build/src/CMakeFiles/Catch2.dir/clean:
 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=93 "Built target Catch2WithMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=97,98 "Built target Catch2WithMain"
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_6/build/CMakeFiles 93
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_6/build/CMakeFiles 94
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_6/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/rule

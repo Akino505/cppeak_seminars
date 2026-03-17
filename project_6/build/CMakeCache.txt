@@ -331,7 +331,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=project_6_E
+CMAKE_PROJECT_NAME:STATIC=project_6
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=3.4.0
@@ -449,13 +449,13 @@ FETCHCONTENT_UPDATES_DISCONNECTED_CATCH2:BOOL=OFF
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
 //Value Computed by CMake
-project_6_E_BINARY_DIR:STATIC=/home/akino/cppeak_seminars/project_6/build
+project_6_BINARY_DIR:STATIC=/home/akino/cppeak_seminars/project_6/build
 
 //Value Computed by CMake
-project_6_E_IS_TOP_LEVEL:STATIC=ON
+project_6_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-project_6_E_SOURCE_DIR:STATIC=/home/akino/cppeak_seminars/project_6
+project_6_SOURCE_DIR:STATIC=/home/akino/cppeak_seminars/project_6
 
 
 ########################

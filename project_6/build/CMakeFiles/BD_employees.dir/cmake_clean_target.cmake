@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "libemployee.a"
+  "libBD_employees.a"
 )

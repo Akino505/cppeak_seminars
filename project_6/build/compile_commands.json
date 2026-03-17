@@ -1,33 +1,33 @@
 [
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6 -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/employee.dir/employee.cpp.o -c /home/akino/cppeak_seminars/project_6/employee.cpp",
-  "file": "/home/akino/cppeak_seminars/project_6/employee.cpp",
-  "output": "CMakeFiles/employee.dir/employee.cpp.o"
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/employee.cpp.o -c /home/akino/cppeak_seminars/project_6/src/employee.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/employee.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/employee.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6 -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/employee.dir/main.cpp.o -c /home/akino/cppeak_seminars/project_6/main.cpp",
-  "file": "/home/akino/cppeak_seminars/project_6/main.cpp",
-  "output": "CMakeFiles/employee.dir/main.cpp.o"
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_6/src/main.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/main.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6 -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/employee.dir/printFile.cpp.o -c /home/akino/cppeak_seminars/project_6/printFile.cpp",
-  "file": "/home/akino/cppeak_seminars/project_6/printFile.cpp",
-  "output": "CMakeFiles/employee.dir/printFile.cpp.o"
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/printFile.cpp.o -c /home/akino/cppeak_seminars/project_6/src/printFile.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/printFile.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/printFile.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6 -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/employee.dir/readFile.cpp.o -c /home/akino/cppeak_seminars/project_6/readFile.cpp",
-  "file": "/home/akino/cppeak_seminars/project_6/readFile.cpp",
-  "output": "CMakeFiles/employee.dir/readFile.cpp.o"
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/readFile.cpp.o -c /home/akino/cppeak_seminars/project_6/src/readFile.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/readFile.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/readFile.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6 -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/project_6_E.dir/main.cpp.o -c /home/akino/cppeak_seminars/project_6/main.cpp",
-  "file": "/home/akino/cppeak_seminars/project_6/main.cpp",
-  "output": "CMakeFiles/project_6_E.dir/main.cpp.o"
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/project_6.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_6/src/main.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/main.cpp",
+  "output": "CMakeFiles/project_6.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build/_deps/catch2-build/src",

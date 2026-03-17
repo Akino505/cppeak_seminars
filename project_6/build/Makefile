@@ -117,30 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named employee
+# Target rules for targets named BD_employees
 
 # Build rule for target.
-employee: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 employee
-.PHONY : employee
+BD_employees: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BD_employees
+.PHONY : BD_employees
 
 # fast build rule for target.
-employee/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/build
-.PHONY : employee/fast
+BD_employees/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/build
+.PHONY : BD_employees/fast
 
 #=============================================================================
-# Target rules for targets named project_6_E
+# Target rules for targets named project_6
 
 # Build rule for target.
-project_6_E: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_6_E
-.PHONY : project_6_E
+project_6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_6
+.PHONY : project_6
 
 # fast build rule for target.
-project_6_E/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6_E.dir/build.make CMakeFiles/project_6_E.dir/build
-.PHONY : project_6_E/fast
+project_6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6.dir/build.make CMakeFiles/project_6.dir/build
+.PHONY : project_6/fast
 
 #=============================================================================
 # Target rules for targets named Catch2
@@ -168,104 +168,104 @@ Catch2WithMain/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
 .PHONY : Catch2WithMain/fast
 
-employee.o: employee.cpp.o
-.PHONY : employee.o
+src/employee.o: src/employee.cpp.o
+.PHONY : src/employee.o
 
 # target to build an object file
-employee.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/employee.cpp.o
-.PHONY : employee.cpp.o
+src/employee.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/employee.cpp.o
+.PHONY : src/employee.cpp.o
 
-employee.i: employee.cpp.i
-.PHONY : employee.i
+src/employee.i: src/employee.cpp.i
+.PHONY : src/employee.i
 
 # target to preprocess a source file
-employee.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/employee.cpp.i
-.PHONY : employee.cpp.i
+src/employee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/employee.cpp.i
+.PHONY : src/employee.cpp.i
 
-employee.s: employee.cpp.s
-.PHONY : employee.s
+src/employee.s: src/employee.cpp.s
+.PHONY : src/employee.s
 
 # target to generate assembly for a file
-employee.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/employee.cpp.s
-.PHONY : employee.cpp.s
+src/employee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/employee.cpp.s
+.PHONY : src/employee.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/main.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6_E.dir/build.make CMakeFiles/project_6_E.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6.dir/build.make CMakeFiles/project_6.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/main.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6_E.dir/build.make CMakeFiles/project_6_E.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6.dir/build.make CMakeFiles/project_6.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/main.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6_E.dir/build.make CMakeFiles/project_6_E.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_6.dir/build.make CMakeFiles/project_6.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
-printFile.o: printFile.cpp.o
-.PHONY : printFile.o
+src/printFile.o: src/printFile.cpp.o
+.PHONY : src/printFile.o
 
 # target to build an object file
-printFile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/printFile.cpp.o
-.PHONY : printFile.cpp.o
+src/printFile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/printFile.cpp.o
+.PHONY : src/printFile.cpp.o
 
-printFile.i: printFile.cpp.i
-.PHONY : printFile.i
+src/printFile.i: src/printFile.cpp.i
+.PHONY : src/printFile.i
 
 # target to preprocess a source file
-printFile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/printFile.cpp.i
-.PHONY : printFile.cpp.i
+src/printFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/printFile.cpp.i
+.PHONY : src/printFile.cpp.i
 
-printFile.s: printFile.cpp.s
-.PHONY : printFile.s
+src/printFile.s: src/printFile.cpp.s
+.PHONY : src/printFile.s
 
 # target to generate assembly for a file
-printFile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/printFile.cpp.s
-.PHONY : printFile.cpp.s
+src/printFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/printFile.cpp.s
+.PHONY : src/printFile.cpp.s
 
-readFile.o: readFile.cpp.o
-.PHONY : readFile.o
+src/readFile.o: src/readFile.cpp.o
+.PHONY : src/readFile.o
 
 # target to build an object file
-readFile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/readFile.cpp.o
-.PHONY : readFile.cpp.o
+src/readFile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/readFile.cpp.o
+.PHONY : src/readFile.cpp.o
 
-readFile.i: readFile.cpp.i
-.PHONY : readFile.i
+src/readFile.i: src/readFile.cpp.i
+.PHONY : src/readFile.i
 
 # target to preprocess a source file
-readFile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/readFile.cpp.i
-.PHONY : readFile.cpp.i
+src/readFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/readFile.cpp.i
+.PHONY : src/readFile.cpp.i
 
-readFile.s: readFile.cpp.s
-.PHONY : readFile.s
+src/readFile.s: src/readFile.cpp.s
+.PHONY : src/readFile.s
 
 # target to generate assembly for a file
-readFile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/employee.dir/build.make CMakeFiles/employee.dir/readFile.cpp.s
-.PHONY : readFile.cpp.s
+src/readFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/readFile.cpp.s
+.PHONY : src/readFile.cpp.s
 
 # Help Target
 help:
@@ -275,22 +275,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... BD_employees"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
-	@echo "... employee"
-	@echo "... project_6_E"
-	@echo "... employee.o"
-	@echo "... employee.i"
-	@echo "... employee.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... printFile.o"
-	@echo "... printFile.i"
-	@echo "... printFile.s"
-	@echo "... readFile.o"
-	@echo "... readFile.i"
-	@echo "... readFile.s"
+	@echo "... project_6"
+	@echo "... src/employee.o"
+	@echo "... src/employee.i"
+	@echo "... src/employee.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/printFile.o"
+	@echo "... src/printFile.i"
+	@echo "... src/printFile.s"
+	@echo "... src/readFile.o"
+	@echo "... src/readFile.i"
+	@echo "... src/readFile.s"
 .PHONY : help
 
 
