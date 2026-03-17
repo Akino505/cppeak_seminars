@@ -33,11 +33,16 @@ target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE BD_employees)
 
 
 # --- 4. Testing Setup ---
-# enable_testing()
+enable_testing()
 
-# file(GLOB TESTS "tests/*.cpp")
-# add_executable(tests ${TESTS})
+file(GLOB TESTS "tests/*.cpp")
 
-# target_link_libraries(tests PRIVATE Catch2::Catch2WithMain bd_employees)
 
-# target_include_directories(tests PRIVATE include)
+add_library(bd_employees STATIC src/employee.cpp src/readFile.cpp)   # пример
+target_include_directories(bd_employees PUBLIC include)
+
+add_executable(tests ${TESTS})
+target_link_libraries(tests PRIVATE Catch2::Catch2WithMain bd_employees)
+target_include_directories(tests PRIVATE include)
+
+add_dependencies(tests bd_employees)   # гарантирует сборку библиотеки перед тестами

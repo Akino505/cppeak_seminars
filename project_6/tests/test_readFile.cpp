@@ -1,0 +1,148 @@
+#include "employee.hpp"
+#include "readFile.hpp"
+#include <catch2/catch_test_macros.hpp>
+#include <cstdio>
+#include <fstream>
+#include <string>
+#include <vector>
+
+// Helper to create a temporary file with given content.
+// The file is automatically removed at the end of the test case.
+struct TempFile
+{
+    std::string path;
+
+    TempFile(const std::string& content)
+    {
+        // Generate a (probably) unique filename.
+        path = "test_" + std::to_string(rand()) + ".txt";
+        std::ofstream f(path);
+        f << content;
+    }
+
+    ~TempFile() { std::remove(path.c_str()); }
+};
+
+TEST_CASE("Read valid file with multiple employees", "[readFile]")
+{
+    std::string content = "John;10;50000.5\nJane;20;60000\n";
+    TempFile file(content);
+
+    std::vector<Employee> employees = readBDFromFile(file.path);
+
+    REQUIRE(employees.size() == 2);
+    CHECK(employees[0].getName() == "John");
+    CHECK(employees[0].getDept() == 10);
+    CHECK(employees[0].getSalary() == 50000.5);
+    CHECK(employees[1].getName() == "Jane");
+    CHECK(employees[1].getDept() == 20);
+    CHECK(employees[1].getSalary() == 60000);
+}
+
+TEST_CASE("Skip empty lines", "[readFile]")
+{
+    std::string content = "John;10;50000.5\n\nJane;20;60000\n";
+    TempFile file(content);
+
+    std::vector<Employee> employees = readBDFromFile(file.path);
+
+    REQUIRE(employees.size() == 2);
+    CHECK(employees[0].getName() == "John");
+    CHECK(employees[1].getName() == "Jane");
+}
+
+TEST_CASE("File not found", "[readFile]")
+{
+    std::vector<Employee> employees = readBDFromFile("nonexistent_12345.txt");
+    REQUIRE(employees.empty());
+}
+
+
+TEST_CASE("Department zero – setter rejects, becomes default 0", "[readFile]")
+{
+    std::string content = "John;0;50000\n";
+    TempFile file(content);
+
+    std::vector<Employee> employees = readBDFromFile(file.path);
+
+    REQUIRE(employees.size() == 1);
+    CHECK(employees[0].getName() == "John");
+    CHECK(employees[0].getDept() == 0);
+    CHECK(employees[0].getSalary() == 50000);
+}
+
+TEST_CASE("Negative department",
+          "[readFile]")
+{
+    std::string content = "John;-5;50000\n";
+    TempFile file(content);
+
+    std::vector<Employee> employees = readBDFromFile(file.path);
+
+    REQUIRE(employees.size() == 1);
+    CHECK(employees[0].getName() == "John");
+    CHECK(employees[0].getDept() == 0);
+    CHECK(employees[0].getSalary() == 50000);
+}
+
+TEST_CASE("Negative salary", "[readFile]")
+{
+    std::string content = "John;10;-100.5\n";
+    TempFile file(content);
+
+    std::vector<Employee> employees = readBDFromFile(file.path);
+
+    REQUIRE(employees.size() == 1);
+    CHECK(employees[0].getName() == "John");
+    CHECK(employees[0].getDept() == 10);
+    CHECK(employees[0].getSalary() == -1);
+}
+
+TEST_CASE("Salary zero is accepted", "[readFile]")
+{
+    std::string content = "John;10;0\n";
+    TempFile file(content);
+
+    std::vector<Employee> employees = readBDFromFile(file.path);
+
+    REQUIRE(employees.size() == 1);
+    CHECK(employees[0].getName() == "John");
+    CHECK(employees[0].getDept() == 10);
+    CHECK(employees[0].getSalary() == 0.0);
+}
+
+// The following tests reveal problems in the parsing logic.
+// They are included to highlight the need for fixes.
+
+TEST_CASE(
+    "Empty department field",
+    "[readFile]")
+{
+    // The function declares int iDept; and does not initialise it when
+    // sDept.empty(). This test may crash or give unpredictable results.
+    std::string content = "John;;50000\n";
+    TempFile file(content);
+
+    // We cannot reliably REQUIRE anything here because of UB.
+    // The test is marked as expected to fail.
+    std::vector<Employee> employees = readBDFromFile(file.path);
+    // If the code were fixed, we might expect the line to be skipped.
+    // Currently it's unsafe.
+    REQUIRE(employees.size() == 1);
+    CHECK(employees[0].getName() == "John");
+    CHECK(employees[0].getDept() == 0);
+    CHECK(employees[0].getSalary() == 50000);
+}
+
+TEST_CASE("Empty salary field",
+          "[readFile]")
+{
+    std::string content = "John;10;\n";
+    TempFile file(content);
+
+    std::vector<Employee> employees = readBDFromFile(file.path);
+    REQUIRE(employees.size() == 1);
+    CHECK(employees[0].getName() == "John");
+    CHECK(employees[0].getDept() == 10);
+    CHECK(employees[0].getSalary() == -1.0);
+}

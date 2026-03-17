@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/akino/cppeak_seminars/project_6/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -143,6 +153,32 @@ project_6/fast:
 .PHONY : project_6/fast
 
 #=============================================================================
+# Target rules for targets named bd_employees
+
+# Build rule for target.
+bd_employees: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bd_employees
+.PHONY : bd_employees
+
+# fast build rule for target.
+bd_employees/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bd_employees.dir/build.make CMakeFiles/bd_employees.dir/build
+.PHONY : bd_employees/fast
+
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
 # Target rules for targets named Catch2
 
 # Build rule for target.
@@ -174,6 +210,7 @@ src/employee.o: src/employee.cpp.o
 # target to build an object file
 src/employee.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/employee.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bd_employees.dir/build.make CMakeFiles/bd_employees.dir/src/employee.cpp.o
 .PHONY : src/employee.cpp.o
 
 src/employee.i: src/employee.cpp.i
@@ -182,6 +219,7 @@ src/employee.i: src/employee.cpp.i
 # target to preprocess a source file
 src/employee.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/employee.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bd_employees.dir/build.make CMakeFiles/bd_employees.dir/src/employee.cpp.i
 .PHONY : src/employee.cpp.i
 
 src/employee.s: src/employee.cpp.s
@@ -190,6 +228,7 @@ src/employee.s: src/employee.cpp.s
 # target to generate assembly for a file
 src/employee.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/employee.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bd_employees.dir/build.make CMakeFiles/bd_employees.dir/src/employee.cpp.s
 .PHONY : src/employee.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -249,6 +288,7 @@ src/readFile.o: src/readFile.cpp.o
 # target to build an object file
 src/readFile.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/readFile.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bd_employees.dir/build.make CMakeFiles/bd_employees.dir/src/readFile.cpp.o
 .PHONY : src/readFile.cpp.o
 
 src/readFile.i: src/readFile.cpp.i
@@ -257,6 +297,7 @@ src/readFile.i: src/readFile.cpp.i
 # target to preprocess a source file
 src/readFile.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/readFile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bd_employees.dir/build.make CMakeFiles/bd_employees.dir/src/readFile.cpp.i
 .PHONY : src/readFile.cpp.i
 
 src/readFile.s: src/readFile.cpp.s
@@ -265,7 +306,32 @@ src/readFile.s: src/readFile.cpp.s
 # target to generate assembly for a file
 src/readFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/readFile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bd_employees.dir/build.make CMakeFiles/bd_employees.dir/src/readFile.cpp.s
 .PHONY : src/readFile.cpp.s
+
+tests/test_readFile.o: tests/test_readFile.cpp.o
+.PHONY : tests/test_readFile.o
+
+# target to build an object file
+tests/test_readFile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_readFile.cpp.o
+.PHONY : tests/test_readFile.cpp.o
+
+tests/test_readFile.i: tests/test_readFile.cpp.i
+.PHONY : tests/test_readFile.i
+
+# target to preprocess a source file
+tests/test_readFile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_readFile.cpp.i
+.PHONY : tests/test_readFile.cpp.i
+
+tests/test_readFile.s: tests/test_readFile.cpp.s
+.PHONY : tests/test_readFile.s
+
+# target to generate assembly for a file
+tests/test_readFile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_readFile.cpp.s
+.PHONY : tests/test_readFile.cpp.s
 
 # Help Target
 help:
@@ -275,10 +341,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... BD_employees"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
+	@echo "... bd_employees"
 	@echo "... project_6"
+	@echo "... tests"
 	@echo "... src/employee.o"
 	@echo "... src/employee.i"
 	@echo "... src/employee.s"
@@ -291,6 +360,9 @@ help:
 	@echo "... src/readFile.o"
 	@echo "... src/readFile.i"
 	@echo "... src/readFile.s"
+	@echo "... tests/test_readFile.o"
+	@echo "... tests/test_readFile.i"
+	@echo "... tests/test_readFile.s"
 .PHONY : help
 
 

@@ -30,6 +30,24 @@
   "output": "CMakeFiles/project_6.dir/src/main.cpp.o"
 },
 {
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/bd_employees.dir/src/employee.cpp.o -c /home/akino/cppeak_seminars/project_6/src/employee.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/employee.cpp",
+  "output": "CMakeFiles/bd_employees.dir/src/employee.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/bd_employees.dir/src/readFile.cpp.o -c /home/akino/cppeak_seminars/project_6/src/readFile.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/readFile.cpp",
+  "output": "CMakeFiles/bd_employees.dir/src/readFile.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -I/home/akino/cppeak_seminars/project_6/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_6/build/_deps/catch2-build/generated-includes -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/tests.dir/tests/test_readFile.cpp.o -c /home/akino/cppeak_seminars/project_6/tests/test_readFile.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/tests/test_readFile.cpp",
+  "output": "CMakeFiles/tests.dir/tests/test_readFile.cpp.o"
+},
+{
   "directory": "/home/akino/cppeak_seminars/project_6/build/_deps/catch2-build/src",
   "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_6/build/_deps/catch2-build/generated-includes -g -O0 -Werror=return-type -std=gnu++17 -ffile-prefix-map=/home/akino/cppeak_seminars/project_6/build/_deps/catch2-src/= -o CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.o -c /home/akino/cppeak_seminars/project_6/build/_deps/catch2-src/src/catch2/benchmark/catch_chronometer.cpp",
   "file": "/home/akino/cppeak_seminars/project_6/build/_deps/catch2-src/src/catch2/benchmark/catch_chronometer.cpp",
