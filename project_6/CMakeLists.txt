@@ -38,7 +38,7 @@ enable_testing()
 file(GLOB TESTS "tests/*.cpp")
 
 
-add_library(bd_employees STATIC src/employee.cpp src/readFile.cpp)   # пример
+add_library(bd_employees STATIC src/employee.cpp src/readFile.cpp)
 target_include_directories(bd_employees PUBLIC include)
 
 add_executable(tests ${TESTS})

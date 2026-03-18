@@ -1,2 +1,2 @@
-/usr/bin/ar qc libBD_employees.a CMakeFiles/BD_employees.dir/src/employee.cpp.o CMakeFiles/BD_employees.dir/src/main.cpp.o CMakeFiles/BD_employees.dir/src/printFile.cpp.o CMakeFiles/BD_employees.dir/src/readFile.cpp.o
+/usr/bin/ar qc libBD_employees.a CMakeFiles/BD_employees.dir/src/employee.cpp.o CMakeFiles/BD_employees.dir/src/findDept.cpp.o CMakeFiles/BD_employees.dir/src/findName.cpp.o CMakeFiles/BD_employees.dir/src/findSalary.cpp.o CMakeFiles/BD_employees.dir/src/main.cpp.o CMakeFiles/BD_employees.dir/src/printFile.cpp.o CMakeFiles/BD_employees.dir/src/readFile.cpp.o CMakeFiles/BD_employees.dir/src/sortEmployees.cpp.o
 /usr/bin/ranlib libBD_employees.a

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/akino/cppeak_seminars/project_6/tests/test_comparator.cpp" "CMakeFiles/tests.dir/tests/test_comparator.cpp.o" "gcc" "CMakeFiles/tests.dir/tests/test_comparator.cpp.o.d"
   "/home/akino/cppeak_seminars/project_6/tests/test_readFile.cpp" "CMakeFiles/tests.dir/tests/test_readFile.cpp.o" "gcc" "CMakeFiles/tests.dir/tests/test_readFile.cpp.o.d"
   )
 

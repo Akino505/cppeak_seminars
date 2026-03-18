@@ -231,6 +231,78 @@ src/employee.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bd_employees.dir/build.make CMakeFiles/bd_employees.dir/src/employee.cpp.s
 .PHONY : src/employee.cpp.s
 
+src/findDept.o: src/findDept.cpp.o
+.PHONY : src/findDept.o
+
+# target to build an object file
+src/findDept.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/findDept.cpp.o
+.PHONY : src/findDept.cpp.o
+
+src/findDept.i: src/findDept.cpp.i
+.PHONY : src/findDept.i
+
+# target to preprocess a source file
+src/findDept.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/findDept.cpp.i
+.PHONY : src/findDept.cpp.i
+
+src/findDept.s: src/findDept.cpp.s
+.PHONY : src/findDept.s
+
+# target to generate assembly for a file
+src/findDept.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/findDept.cpp.s
+.PHONY : src/findDept.cpp.s
+
+src/findName.o: src/findName.cpp.o
+.PHONY : src/findName.o
+
+# target to build an object file
+src/findName.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/findName.cpp.o
+.PHONY : src/findName.cpp.o
+
+src/findName.i: src/findName.cpp.i
+.PHONY : src/findName.i
+
+# target to preprocess a source file
+src/findName.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/findName.cpp.i
+.PHONY : src/findName.cpp.i
+
+src/findName.s: src/findName.cpp.s
+.PHONY : src/findName.s
+
+# target to generate assembly for a file
+src/findName.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/findName.cpp.s
+.PHONY : src/findName.cpp.s
+
+src/findSalary.o: src/findSalary.cpp.o
+.PHONY : src/findSalary.o
+
+# target to build an object file
+src/findSalary.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/findSalary.cpp.o
+.PHONY : src/findSalary.cpp.o
+
+src/findSalary.i: src/findSalary.cpp.i
+.PHONY : src/findSalary.i
+
+# target to preprocess a source file
+src/findSalary.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/findSalary.cpp.i
+.PHONY : src/findSalary.cpp.i
+
+src/findSalary.s: src/findSalary.cpp.s
+.PHONY : src/findSalary.s
+
+# target to generate assembly for a file
+src/findSalary.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/findSalary.cpp.s
+.PHONY : src/findSalary.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -309,6 +381,54 @@ src/readFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bd_employees.dir/build.make CMakeFiles/bd_employees.dir/src/readFile.cpp.s
 .PHONY : src/readFile.cpp.s
 
+src/sortEmployees.o: src/sortEmployees.cpp.o
+.PHONY : src/sortEmployees.o
+
+# target to build an object file
+src/sortEmployees.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/sortEmployees.cpp.o
+.PHONY : src/sortEmployees.cpp.o
+
+src/sortEmployees.i: src/sortEmployees.cpp.i
+.PHONY : src/sortEmployees.i
+
+# target to preprocess a source file
+src/sortEmployees.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/sortEmployees.cpp.i
+.PHONY : src/sortEmployees.cpp.i
+
+src/sortEmployees.s: src/sortEmployees.cpp.s
+.PHONY : src/sortEmployees.s
+
+# target to generate assembly for a file
+src/sortEmployees.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BD_employees.dir/build.make CMakeFiles/BD_employees.dir/src/sortEmployees.cpp.s
+.PHONY : src/sortEmployees.cpp.s
+
+tests/test_comparator.o: tests/test_comparator.cpp.o
+.PHONY : tests/test_comparator.o
+
+# target to build an object file
+tests/test_comparator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_comparator.cpp.o
+.PHONY : tests/test_comparator.cpp.o
+
+tests/test_comparator.i: tests/test_comparator.cpp.i
+.PHONY : tests/test_comparator.i
+
+# target to preprocess a source file
+tests/test_comparator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_comparator.cpp.i
+.PHONY : tests/test_comparator.cpp.i
+
+tests/test_comparator.s: tests/test_comparator.cpp.s
+.PHONY : tests/test_comparator.s
+
+# target to generate assembly for a file
+tests/test_comparator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_comparator.cpp.s
+.PHONY : tests/test_comparator.cpp.s
+
 tests/test_readFile.o: tests/test_readFile.cpp.o
 .PHONY : tests/test_readFile.o
 
@@ -351,6 +471,15 @@ help:
 	@echo "... src/employee.o"
 	@echo "... src/employee.i"
 	@echo "... src/employee.s"
+	@echo "... src/findDept.o"
+	@echo "... src/findDept.i"
+	@echo "... src/findDept.s"
+	@echo "... src/findName.o"
+	@echo "... src/findName.i"
+	@echo "... src/findName.s"
+	@echo "... src/findSalary.o"
+	@echo "... src/findSalary.i"
+	@echo "... src/findSalary.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -360,6 +489,12 @@ help:
 	@echo "... src/readFile.o"
 	@echo "... src/readFile.i"
 	@echo "... src/readFile.s"
+	@echo "... src/sortEmployees.o"
+	@echo "... src/sortEmployees.i"
+	@echo "... src/sortEmployees.s"
+	@echo "... tests/test_comparator.o"
+	@echo "... tests/test_comparator.i"
+	@echo "... tests/test_comparator.s"
 	@echo "... tests/test_readFile.o"
 	@echo "... tests/test_readFile.i"
 	@echo "... tests/test_readFile.s"

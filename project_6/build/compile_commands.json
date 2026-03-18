@@ -7,6 +7,24 @@
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/findDept.cpp.o -c /home/akino/cppeak_seminars/project_6/src/findDept.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/findDept.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/findDept.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/findName.cpp.o -c /home/akino/cppeak_seminars/project_6/src/findName.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/findName.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/findName.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/findSalary.cpp.o -c /home/akino/cppeak_seminars/project_6/src/findSalary.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/findSalary.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/findSalary.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
   "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_6/src/main.cpp",
   "file": "/home/akino/cppeak_seminars/project_6/src/main.cpp",
   "output": "CMakeFiles/BD_employees.dir/src/main.cpp.o"
@@ -25,6 +43,12 @@
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/sortEmployees.cpp.o -c /home/akino/cppeak_seminars/project_6/src/sortEmployees.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/sortEmployees.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/sortEmployees.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
   "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/project_6.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_6/src/main.cpp",
   "file": "/home/akino/cppeak_seminars/project_6/src/main.cpp",
   "output": "CMakeFiles/project_6.dir/src/main.cpp.o"
@@ -40,6 +64,12 @@
   "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/bd_employees.dir/src/readFile.cpp.o -c /home/akino/cppeak_seminars/project_6/src/readFile.cpp",
   "file": "/home/akino/cppeak_seminars/project_6/src/readFile.cpp",
   "output": "CMakeFiles/bd_employees.dir/src/readFile.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -I/home/akino/cppeak_seminars/project_6/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_6/build/_deps/catch2-build/generated-includes -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/tests.dir/tests/test_comparator.cpp.o -c /home/akino/cppeak_seminars/project_6/tests/test_comparator.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/tests/test_comparator.cpp",
+  "output": "CMakeFiles/tests.dir/tests/test_comparator.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build",
