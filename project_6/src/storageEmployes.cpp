@@ -1,9 +1,4 @@
-
-#include <iostream>
-
 #include "../include/storageEmployees.hpp"
-
-#include <iostream>
 
 SafeVector::SafeVector(): data(nullptr), size(0) {}
 SafeVector::~SafeVector() { delete[] data; }
