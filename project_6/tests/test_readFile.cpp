@@ -5,17 +5,13 @@
 #include <cstdio>
 #include <fstream>
 #include <string>
-#include <vector>
 
-// Helper to create a temporary file with given content.
-// The file is automatically removed at the end of the test case.
 struct TempFile
 {
     std::string path;
 
     TempFile(const std::string& content)
     {
-        // Generate a (probably) unique filename.
         path = "test_" + std::to_string(rand()) + ".txt";
         std::ofstream f(path);
         f << content;

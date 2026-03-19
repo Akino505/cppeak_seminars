@@ -67,6 +67,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/BD_employees.dir/DependInfo.cmake"
   "CMakeFiles/project_6.dir/DependInfo.cmake"
+  "CMakeFiles/bd_employees.dir/DependInfo.cmake"
+  "CMakeFiles/tests.dir/DependInfo.cmake"
   "_deps/catch2-build/src/CMakeFiles/Catch2.dir/DependInfo.cmake"
   "_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/DependInfo.cmake"
   )

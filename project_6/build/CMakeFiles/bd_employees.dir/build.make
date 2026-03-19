@@ -83,10 +83,122 @@ CMakeFiles/bd_employees.dir/src/employee.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/employee.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/employee.cpp -o CMakeFiles/bd_employees.dir/src/employee.cpp.s
 
+CMakeFiles/bd_employees.dir/src/findDept.cpp.o: CMakeFiles/bd_employees.dir/flags.make
+CMakeFiles/bd_employees.dir/src/findDept.cpp.o: /home/akino/cppeak_seminars/project_6/src/findDept.cpp
+CMakeFiles/bd_employees.dir/src/findDept.cpp.o: CMakeFiles/bd_employees.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/bd_employees.dir/src/findDept.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bd_employees.dir/src/findDept.cpp.o -MF CMakeFiles/bd_employees.dir/src/findDept.cpp.o.d -o CMakeFiles/bd_employees.dir/src/findDept.cpp.o -c /home/akino/cppeak_seminars/project_6/src/findDept.cpp
+
+CMakeFiles/bd_employees.dir/src/findDept.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bd_employees.dir/src/findDept.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_6/src/findDept.cpp > CMakeFiles/bd_employees.dir/src/findDept.cpp.i
+
+CMakeFiles/bd_employees.dir/src/findDept.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/findDept.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/findDept.cpp -o CMakeFiles/bd_employees.dir/src/findDept.cpp.s
+
+CMakeFiles/bd_employees.dir/src/findName.cpp.o: CMakeFiles/bd_employees.dir/flags.make
+CMakeFiles/bd_employees.dir/src/findName.cpp.o: /home/akino/cppeak_seminars/project_6/src/findName.cpp
+CMakeFiles/bd_employees.dir/src/findName.cpp.o: CMakeFiles/bd_employees.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/bd_employees.dir/src/findName.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bd_employees.dir/src/findName.cpp.o -MF CMakeFiles/bd_employees.dir/src/findName.cpp.o.d -o CMakeFiles/bd_employees.dir/src/findName.cpp.o -c /home/akino/cppeak_seminars/project_6/src/findName.cpp
+
+CMakeFiles/bd_employees.dir/src/findName.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bd_employees.dir/src/findName.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_6/src/findName.cpp > CMakeFiles/bd_employees.dir/src/findName.cpp.i
+
+CMakeFiles/bd_employees.dir/src/findName.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/findName.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/findName.cpp -o CMakeFiles/bd_employees.dir/src/findName.cpp.s
+
+CMakeFiles/bd_employees.dir/src/findSalary.cpp.o: CMakeFiles/bd_employees.dir/flags.make
+CMakeFiles/bd_employees.dir/src/findSalary.cpp.o: /home/akino/cppeak_seminars/project_6/src/findSalary.cpp
+CMakeFiles/bd_employees.dir/src/findSalary.cpp.o: CMakeFiles/bd_employees.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/bd_employees.dir/src/findSalary.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bd_employees.dir/src/findSalary.cpp.o -MF CMakeFiles/bd_employees.dir/src/findSalary.cpp.o.d -o CMakeFiles/bd_employees.dir/src/findSalary.cpp.o -c /home/akino/cppeak_seminars/project_6/src/findSalary.cpp
+
+CMakeFiles/bd_employees.dir/src/findSalary.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bd_employees.dir/src/findSalary.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_6/src/findSalary.cpp > CMakeFiles/bd_employees.dir/src/findSalary.cpp.i
+
+CMakeFiles/bd_employees.dir/src/findSalary.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/findSalary.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/findSalary.cpp -o CMakeFiles/bd_employees.dir/src/findSalary.cpp.s
+
+CMakeFiles/bd_employees.dir/src/main.cpp.o: CMakeFiles/bd_employees.dir/flags.make
+CMakeFiles/bd_employees.dir/src/main.cpp.o: /home/akino/cppeak_seminars/project_6/src/main.cpp
+CMakeFiles/bd_employees.dir/src/main.cpp.o: CMakeFiles/bd_employees.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/bd_employees.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bd_employees.dir/src/main.cpp.o -MF CMakeFiles/bd_employees.dir/src/main.cpp.o.d -o CMakeFiles/bd_employees.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_6/src/main.cpp
+
+CMakeFiles/bd_employees.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bd_employees.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_6/src/main.cpp > CMakeFiles/bd_employees.dir/src/main.cpp.i
+
+CMakeFiles/bd_employees.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/main.cpp -o CMakeFiles/bd_employees.dir/src/main.cpp.s
+
+CMakeFiles/bd_employees.dir/src/printDepts.cpp.o: CMakeFiles/bd_employees.dir/flags.make
+CMakeFiles/bd_employees.dir/src/printDepts.cpp.o: /home/akino/cppeak_seminars/project_6/src/printDepts.cpp
+CMakeFiles/bd_employees.dir/src/printDepts.cpp.o: CMakeFiles/bd_employees.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/bd_employees.dir/src/printDepts.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bd_employees.dir/src/printDepts.cpp.o -MF CMakeFiles/bd_employees.dir/src/printDepts.cpp.o.d -o CMakeFiles/bd_employees.dir/src/printDepts.cpp.o -c /home/akino/cppeak_seminars/project_6/src/printDepts.cpp
+
+CMakeFiles/bd_employees.dir/src/printDepts.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bd_employees.dir/src/printDepts.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_6/src/printDepts.cpp > CMakeFiles/bd_employees.dir/src/printDepts.cpp.i
+
+CMakeFiles/bd_employees.dir/src/printDepts.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/printDepts.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/printDepts.cpp -o CMakeFiles/bd_employees.dir/src/printDepts.cpp.s
+
+CMakeFiles/bd_employees.dir/src/printFile.cpp.o: CMakeFiles/bd_employees.dir/flags.make
+CMakeFiles/bd_employees.dir/src/printFile.cpp.o: /home/akino/cppeak_seminars/project_6/src/printFile.cpp
+CMakeFiles/bd_employees.dir/src/printFile.cpp.o: CMakeFiles/bd_employees.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/bd_employees.dir/src/printFile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bd_employees.dir/src/printFile.cpp.o -MF CMakeFiles/bd_employees.dir/src/printFile.cpp.o.d -o CMakeFiles/bd_employees.dir/src/printFile.cpp.o -c /home/akino/cppeak_seminars/project_6/src/printFile.cpp
+
+CMakeFiles/bd_employees.dir/src/printFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bd_employees.dir/src/printFile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_6/src/printFile.cpp > CMakeFiles/bd_employees.dir/src/printFile.cpp.i
+
+CMakeFiles/bd_employees.dir/src/printFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/printFile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/printFile.cpp -o CMakeFiles/bd_employees.dir/src/printFile.cpp.s
+
+CMakeFiles/bd_employees.dir/src/printNames.cpp.o: CMakeFiles/bd_employees.dir/flags.make
+CMakeFiles/bd_employees.dir/src/printNames.cpp.o: /home/akino/cppeak_seminars/project_6/src/printNames.cpp
+CMakeFiles/bd_employees.dir/src/printNames.cpp.o: CMakeFiles/bd_employees.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/bd_employees.dir/src/printNames.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bd_employees.dir/src/printNames.cpp.o -MF CMakeFiles/bd_employees.dir/src/printNames.cpp.o.d -o CMakeFiles/bd_employees.dir/src/printNames.cpp.o -c /home/akino/cppeak_seminars/project_6/src/printNames.cpp
+
+CMakeFiles/bd_employees.dir/src/printNames.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bd_employees.dir/src/printNames.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_6/src/printNames.cpp > CMakeFiles/bd_employees.dir/src/printNames.cpp.i
+
+CMakeFiles/bd_employees.dir/src/printNames.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/printNames.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/printNames.cpp -o CMakeFiles/bd_employees.dir/src/printNames.cpp.s
+
+CMakeFiles/bd_employees.dir/src/printSalarys.cpp.o: CMakeFiles/bd_employees.dir/flags.make
+CMakeFiles/bd_employees.dir/src/printSalarys.cpp.o: /home/akino/cppeak_seminars/project_6/src/printSalarys.cpp
+CMakeFiles/bd_employees.dir/src/printSalarys.cpp.o: CMakeFiles/bd_employees.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/bd_employees.dir/src/printSalarys.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bd_employees.dir/src/printSalarys.cpp.o -MF CMakeFiles/bd_employees.dir/src/printSalarys.cpp.o.d -o CMakeFiles/bd_employees.dir/src/printSalarys.cpp.o -c /home/akino/cppeak_seminars/project_6/src/printSalarys.cpp
+
+CMakeFiles/bd_employees.dir/src/printSalarys.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bd_employees.dir/src/printSalarys.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_6/src/printSalarys.cpp > CMakeFiles/bd_employees.dir/src/printSalarys.cpp.i
+
+CMakeFiles/bd_employees.dir/src/printSalarys.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/printSalarys.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/printSalarys.cpp -o CMakeFiles/bd_employees.dir/src/printSalarys.cpp.s
+
 CMakeFiles/bd_employees.dir/src/readFile.cpp.o: CMakeFiles/bd_employees.dir/flags.make
 CMakeFiles/bd_employees.dir/src/readFile.cpp.o: /home/akino/cppeak_seminars/project_6/src/readFile.cpp
 CMakeFiles/bd_employees.dir/src/readFile.cpp.o: CMakeFiles/bd_employees.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/bd_employees.dir/src/readFile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/bd_employees.dir/src/readFile.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bd_employees.dir/src/readFile.cpp.o -MF CMakeFiles/bd_employees.dir/src/readFile.cpp.o.d -o CMakeFiles/bd_employees.dir/src/readFile.cpp.o -c /home/akino/cppeak_seminars/project_6/src/readFile.cpp
 
 CMakeFiles/bd_employees.dir/src/readFile.cpp.i: cmake_force
@@ -97,19 +209,67 @@ CMakeFiles/bd_employees.dir/src/readFile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/readFile.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/readFile.cpp -o CMakeFiles/bd_employees.dir/src/readFile.cpp.s
 
+CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.o: CMakeFiles/bd_employees.dir/flags.make
+CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.o: /home/akino/cppeak_seminars/project_6/src/sortEmployees.cpp
+CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.o: CMakeFiles/bd_employees.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.o -MF CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.o.d -o CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.o -c /home/akino/cppeak_seminars/project_6/src/sortEmployees.cpp
+
+CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_6/src/sortEmployees.cpp > CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.i
+
+CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/sortEmployees.cpp -o CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.s
+
+CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.o: CMakeFiles/bd_employees.dir/flags.make
+CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.o: /home/akino/cppeak_seminars/project_6/src/storageEmployes.cpp
+CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.o: CMakeFiles/bd_employees.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.o -MF CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.o.d -o CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.o -c /home/akino/cppeak_seminars/project_6/src/storageEmployes.cpp
+
+CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akino/cppeak_seminars/project_6/src/storageEmployes.cpp > CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.i
+
+CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akino/cppeak_seminars/project_6/src/storageEmployes.cpp -o CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.s
+
 # Object files for target bd_employees
 bd_employees_OBJECTS = \
 "CMakeFiles/bd_employees.dir/src/employee.cpp.o" \
-"CMakeFiles/bd_employees.dir/src/readFile.cpp.o"
+"CMakeFiles/bd_employees.dir/src/findDept.cpp.o" \
+"CMakeFiles/bd_employees.dir/src/findName.cpp.o" \
+"CMakeFiles/bd_employees.dir/src/findSalary.cpp.o" \
+"CMakeFiles/bd_employees.dir/src/main.cpp.o" \
+"CMakeFiles/bd_employees.dir/src/printDepts.cpp.o" \
+"CMakeFiles/bd_employees.dir/src/printFile.cpp.o" \
+"CMakeFiles/bd_employees.dir/src/printNames.cpp.o" \
+"CMakeFiles/bd_employees.dir/src/printSalarys.cpp.o" \
+"CMakeFiles/bd_employees.dir/src/readFile.cpp.o" \
+"CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.o" \
+"CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.o"
 
 # External object files for target bd_employees
 bd_employees_EXTERNAL_OBJECTS =
 
 libbd_employees.a: CMakeFiles/bd_employees.dir/src/employee.cpp.o
+libbd_employees.a: CMakeFiles/bd_employees.dir/src/findDept.cpp.o
+libbd_employees.a: CMakeFiles/bd_employees.dir/src/findName.cpp.o
+libbd_employees.a: CMakeFiles/bd_employees.dir/src/findSalary.cpp.o
+libbd_employees.a: CMakeFiles/bd_employees.dir/src/main.cpp.o
+libbd_employees.a: CMakeFiles/bd_employees.dir/src/printDepts.cpp.o
+libbd_employees.a: CMakeFiles/bd_employees.dir/src/printFile.cpp.o
+libbd_employees.a: CMakeFiles/bd_employees.dir/src/printNames.cpp.o
+libbd_employees.a: CMakeFiles/bd_employees.dir/src/printSalarys.cpp.o
 libbd_employees.a: CMakeFiles/bd_employees.dir/src/readFile.cpp.o
+libbd_employees.a: CMakeFiles/bd_employees.dir/src/sortEmployees.cpp.o
+libbd_employees.a: CMakeFiles/bd_employees.dir/src/storageEmployes.cpp.o
 libbd_employees.a: CMakeFiles/bd_employees.dir/build.make
 libbd_employees.a: CMakeFiles/bd_employees.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libbd_employees.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/akino/cppeak_seminars/project_6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libbd_employees.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/bd_employees.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bd_employees.dir/link.txt --verbose=$(VERBOSE)
 
