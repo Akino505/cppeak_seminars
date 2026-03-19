@@ -1,5 +1,6 @@
 #include "employee.hpp"
 #include "readFile.hpp"
+#include "storageEmployees.hpp"
 #include <catch2/catch_test_macros.hpp>
 #include <cstdio>
 #include <fstream>
@@ -103,12 +104,12 @@ TEST_CASE("Salary zero is accepted", "[readFile]")
     std::string content = "John;10;0\n";
     TempFile file(content);
 
-    std::vector<Employee> employees = readBDFromFile(file.path);
+    SafeVector employees = readBDFromFile(file.path);
 
-    REQUIRE(employees.size() == 1);
-    CHECK(employees[0].getName() == "John");
-    CHECK(employees[0].getDept() == 10);
-    CHECK(employees[0].getSalary() == 0.0);
+    REQUIRE(employees.getSize() == 1);
+    CHECK(employees.at(0).getName() == "John");
+    CHECK(employees.at(0).getDept() == 10);
+    CHECK(employees.at(0).getSalary() == 0.0);
 }
 
 TEST_CASE(
@@ -117,11 +118,11 @@ TEST_CASE(
 {
     std::string content = "John;;50000\n";
     TempFile file(content);
-    std::vector<Employee> employees = readBDFromFile(file.path);
-    REQUIRE(employees.size() == 1);
-    CHECK(employees[0].getName() == "John");
-    CHECK(employees[0].getDept() == 0);
-    CHECK(employees[0].getSalary() == 50000);
+    SafeVector employees = readBDFromFile(file.path);
+    REQUIRE(employees.getSize() == 1);
+    CHECK(employees.at(0).getName() == "John");
+    CHECK(employees.at(0).getDept() == 0);
+    CHECK(employees.at(0).getSalary() == 50000);
 }
 
 TEST_CASE("Empty salary field",
@@ -130,9 +131,9 @@ TEST_CASE("Empty salary field",
     std::string content = "John;10;\n";
     TempFile file(content);
 
-    std::vector<Employee> employees = readBDFromFile(file.path);
-    REQUIRE(employees.size() == 1);
-    CHECK(employees[0].getName() == "John");
-    CHECK(employees[0].getDept() == 10);
-    CHECK(employees[0].getSalary() == -1.0);
+    SafeVector employees = readBDFromFile(file.path);
+    REQUIRE(employees.getSize() == 1);
+    CHECK(employees.at(0).getName() == "John");
+    CHECK(employees.at(0).getDept() == 10);
+    CHECK(employees.at(0).getSalary() == -1.0);
 }

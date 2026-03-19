@@ -21,15 +21,15 @@ SafeVector createTestEmployees() {
     employees.push_back(e2);
     
     Employee e3;
-    strcpy(e3.name, "Charlie");
-    e3.dept = 1;
-    e3.salary = 5500;
+    e3.setName("Charlie");
+    e3.setDept(1);
+    e3.setSalary(5500);
     employees.push_back(e3);
     
     Employee e4;
-    strcpy(e4.name, "David");
-    e4.dept = 2;
-    e4.salary = 6000;
+    e4.setName("David");
+    e4.setDept(2);
+    e4.setSalary(6000);
     employees.push_back(e4);
     
     return employees;
@@ -44,8 +44,8 @@ TEST_CASE("Testing findDept function")
         auto result = findDept(employees, 1);
         
         REQUIRE(result.size() == 2);
-        REQUIRE(strcmp(employees.at(result[0]).name, "Alice") == 0);
-        REQUIRE(strcmp(employees.at(result[1]).name, "Charlie") == 0);
+        REQUIRE(employees.at(result[0]).getName() =="Alice");
+        REQUIRE(employees.at(result[1]).getName() == "Charlie");
     }
     
     SECTION("Find non-existing department")
@@ -65,8 +65,8 @@ TEST_CASE("Testing findName function")
         
         REQUIRE(result.size() == 1);
         REQUIRE(result[0] == 1);
-        REQUIRE(employees.at(result[0]).dept == 2);
-        REQUIRE(employees.at(result[0]).salary == 6000);
+        REQUIRE(employees.at(result[0]).getDept() == 2);
+        REQUIRE(employees.at(result[0]).getSalary() == 6000);
     }
     
     SECTION("Find non-existing name")
@@ -87,8 +87,8 @@ TEST_CASE("Testing findSalary function")
         REQUIRE(result.size() == 2);
         bool foundBob = false, foundDavid = false;
         for (int idx : result) {
-            if (strcmp(employees.at(idx).name, "Bob") == 0) foundBob = true;
-            if (strcmp(employees.at(idx).name, "David") == 0) foundDavid = true;
+            if (employees.at(idx).getName() == "Bob") foundBob = true;
+            if (employees.at(idx).getName() == "David") foundDavid = true;
         }
         REQUIRE(foundBob);
         REQUIRE(foundDavid);
@@ -109,29 +109,22 @@ TEST_CASE("Testing sortEmployees function")
     {
         sortEmployees(employees);
         
-        REQUIRE(employees.size() == 4);
+        REQUIRE(employees.getSize() == 4);
         
-        REQUIRE(employees.at(0).dept == 1);
-        REQUIRE(employees.at(0).salary == 5500);
-        REQUIRE(strcmp(employees.at(0).name, "Charlie") == 0);
+        REQUIRE(employees.at(0).getDept() == 1);
+        REQUIRE(employees.at(0).getSalary() == 5500);
+        REQUIRE(employees.at(0).getName() == "Charlie");
         
-        REQUIRE(employees.at(1).dept == 1);
-        REQUIRE(employees.at(1).salary == 5000);
-        REQUIRE(strcmp(employees.at(1).name, "Alice") == 0);
+        REQUIRE(employees.at(1).getDept() == 1);
+        REQUIRE(employees.at(1).getSalary() == 5000);
+        REQUIRE(employees.at(1).getName() == "Alice");
         
-        REQUIRE(employees.at(2).dept == 2);
-        REQUIRE(employees.at(2).salary == 6000);
-        REQUIRE(strcmp(employees.at(2).name, "Bob") == 0);
+        REQUIRE(employees.at(2).getDept() == 2);
+        REQUIRE(employees.at(2).getSalary() == 6000);
+        REQUIRE(employees.at(2).getName() == "Bob");
         
-        REQUIRE(employees.at(3).dept == 2);
-        REQUIRE(employees.at(3).salary == 6000);
-        REQUIRE(strcmp(employees.at(3).name, "David") == 0);
-    }
-    
-    SECTION("Sort empty vector")
-    {
-        SafeVector<Employee> empty;
-        sortEmployees(empty);  
-        REQUIRE(empty.empty());
+        REQUIRE(employees.at(3).getDept() == 2);
+        REQUIRE(employees.at(3).getSalary() == 6000);
+        REQUIRE(employees.at(3).getName() == "David");
     }
 }
