@@ -5,19 +5,19 @@
 #include <catch2/catch_test_macros.hpp>
 #include <cstring>
 
-SafeVector<Employee> createTestEmployees() {
-    SafeVector<Employee> employees;
+SafeVector createTestEmployees() {
+    SafeVector employees;
     
     Employee e1;
-    strcpy(e1.name, "Alice");
-    e1.dept = 1;
-    e1.salary = 5000;
+    e1.setName("Alice");
+    e1.setDept(1);
+    e1.setSalary(5000);
     employees.push_back(e1);
     
     Employee e2;
-    strcpy(e2.name, "Bob");
-    e2.dept = 2;
-    e2.salary = 6000;
+    e2.setName("Bob");
+    e2.setDept(2);
+    e2.setSalary(6000);
     employees.push_back(e2);
     
     Employee e3;

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libbd_employees.a CMakeFiles/bd_employees.dir/src/employee.cpp.o CMakeFiles/bd_employees.dir/src/readFile.cpp.o
-/usr/bin/ranlib libbd_employees.a

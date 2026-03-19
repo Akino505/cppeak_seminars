@@ -13,9 +13,13 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/akino/cppeak_seminars/project_6/src/findName.cpp" "CMakeFiles/BD_employees.dir/src/findName.cpp.o" "gcc" "CMakeFiles/BD_employees.dir/src/findName.cpp.o.d"
   "/home/akino/cppeak_seminars/project_6/src/findSalary.cpp" "CMakeFiles/BD_employees.dir/src/findSalary.cpp.o" "gcc" "CMakeFiles/BD_employees.dir/src/findSalary.cpp.o.d"
   "/home/akino/cppeak_seminars/project_6/src/main.cpp" "CMakeFiles/BD_employees.dir/src/main.cpp.o" "gcc" "CMakeFiles/BD_employees.dir/src/main.cpp.o.d"
+  "/home/akino/cppeak_seminars/project_6/src/printDepts.cpp" "CMakeFiles/BD_employees.dir/src/printDepts.cpp.o" "gcc" "CMakeFiles/BD_employees.dir/src/printDepts.cpp.o.d"
   "/home/akino/cppeak_seminars/project_6/src/printFile.cpp" "CMakeFiles/BD_employees.dir/src/printFile.cpp.o" "gcc" "CMakeFiles/BD_employees.dir/src/printFile.cpp.o.d"
+  "/home/akino/cppeak_seminars/project_6/src/printNames.cpp" "CMakeFiles/BD_employees.dir/src/printNames.cpp.o" "gcc" "CMakeFiles/BD_employees.dir/src/printNames.cpp.o.d"
+  "/home/akino/cppeak_seminars/project_6/src/printSalarys.cpp" "CMakeFiles/BD_employees.dir/src/printSalarys.cpp.o" "gcc" "CMakeFiles/BD_employees.dir/src/printSalarys.cpp.o.d"
   "/home/akino/cppeak_seminars/project_6/src/readFile.cpp" "CMakeFiles/BD_employees.dir/src/readFile.cpp.o" "gcc" "CMakeFiles/BD_employees.dir/src/readFile.cpp.o.d"
   "/home/akino/cppeak_seminars/project_6/src/sortEmployees.cpp" "CMakeFiles/BD_employees.dir/src/sortEmployees.cpp.o" "gcc" "CMakeFiles/BD_employees.dir/src/sortEmployees.cpp.o.d"
+  "/home/akino/cppeak_seminars/project_6/src/storageEmployes.cpp" "CMakeFiles/BD_employees.dir/src/storageEmployes.cpp.o" "gcc" "CMakeFiles/BD_employees.dir/src/storageEmployes.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

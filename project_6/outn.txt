@@ -1,0 +1,2 @@
+Employees with name: Tom Black
+Name: Tom Black | Dept: 10 | Salary: 12

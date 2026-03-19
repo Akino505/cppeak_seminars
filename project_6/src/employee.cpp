@@ -1,7 +1,15 @@
 #include "employee.hpp"
 #include <string>
 
-Employee::Employee(std::string name, int dept, double salary){
+Employee::Employee()
+{
+    name = "Undefined";
+    dept = 0;
+    salary = -1;
+}
+
+Employee::Employee(std::string name, int dept, double salary)
+{
     setName(name);
     setDept(dept);
     setSalary(salary);

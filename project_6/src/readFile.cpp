@@ -1,14 +1,15 @@
 #include "readFile.hpp"
 #include "employee.hpp"
+#include "storageEmployees.hpp"
 #include <cstddef>
 #include <fstream>
 #include <iostream>
 #include <string>
-#include <vector>
 
-std::vector<Employee> readBDFromFile(const std::string& filename)
+
+SafeVector readBDFromFile(std::string filename)
 {
-    std::vector<Employee> employees;
+    SafeVector employees;
     std::ifstream file(filename);
     if(!file.is_open())
     {

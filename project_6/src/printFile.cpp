@@ -2,12 +2,15 @@
 #include <string>
 #include <vector>
 #include "employee.hpp"
+#include "storageEmployees.hpp"
 #include "printFile.hpp"
 
-void printBD(std::string filename, const std::vector<Employee>& employees){ //change to SafeVector
+void printBD(std::string filename, const SafeVector& employees){
     std::ofstream outFile(filename);
-    for (Employee employee : employees)
+    outFile << "EMPLOYEES" << "\n";
+    for (const Employee& employee : employees)
     {
         outFile << "Name: " << employee.getName() << " | Dept: " << employee.getDept() << " | Salary: " << employee.getSalary() << '\n'; 
     }
+    outFile.close();
 }

@@ -31,9 +31,27 @@
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/printDepts.cpp.o -c /home/akino/cppeak_seminars/project_6/src/printDepts.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/printDepts.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/printDepts.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
   "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/printFile.cpp.o -c /home/akino/cppeak_seminars/project_6/src/printFile.cpp",
   "file": "/home/akino/cppeak_seminars/project_6/src/printFile.cpp",
   "output": "CMakeFiles/BD_employees.dir/src/printFile.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/printNames.cpp.o -c /home/akino/cppeak_seminars/project_6/src/printNames.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/printNames.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/printNames.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/printSalarys.cpp.o -c /home/akino/cppeak_seminars/project_6/src/printSalarys.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/printSalarys.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/printSalarys.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build",
@@ -49,33 +67,15 @@
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/BD_employees.dir/src/storageEmployes.cpp.o -c /home/akino/cppeak_seminars/project_6/src/storageEmployes.cpp",
+  "file": "/home/akino/cppeak_seminars/project_6/src/storageEmployes.cpp",
+  "output": "CMakeFiles/BD_employees.dir/src/storageEmployes.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_6/build",
   "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/project_6.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_6/src/main.cpp",
   "file": "/home/akino/cppeak_seminars/project_6/src/main.cpp",
   "output": "CMakeFiles/project_6.dir/src/main.cpp.o"
-},
-{
-  "directory": "/home/akino/cppeak_seminars/project_6/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/bd_employees.dir/src/employee.cpp.o -c /home/akino/cppeak_seminars/project_6/src/employee.cpp",
-  "file": "/home/akino/cppeak_seminars/project_6/src/employee.cpp",
-  "output": "CMakeFiles/bd_employees.dir/src/employee.cpp.o"
-},
-{
-  "directory": "/home/akino/cppeak_seminars/project_6/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/bd_employees.dir/src/readFile.cpp.o -c /home/akino/cppeak_seminars/project_6/src/readFile.cpp",
-  "file": "/home/akino/cppeak_seminars/project_6/src/readFile.cpp",
-  "output": "CMakeFiles/bd_employees.dir/src/readFile.cpp.o"
-},
-{
-  "directory": "/home/akino/cppeak_seminars/project_6/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -I/home/akino/cppeak_seminars/project_6/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_6/build/_deps/catch2-build/generated-includes -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/tests.dir/tests/test_comparator.cpp.o -c /home/akino/cppeak_seminars/project_6/tests/test_comparator.cpp",
-  "file": "/home/akino/cppeak_seminars/project_6/tests/test_comparator.cpp",
-  "output": "CMakeFiles/tests.dir/tests/test_comparator.cpp.o"
-},
-{
-  "directory": "/home/akino/cppeak_seminars/project_6/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_6/include -I/home/akino/cppeak_seminars/project_6/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_6/build/_deps/catch2-build/generated-includes -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/tests.dir/tests/test_readFile.cpp.o -c /home/akino/cppeak_seminars/project_6/tests/test_readFile.cpp",
-  "file": "/home/akino/cppeak_seminars/project_6/tests/test_readFile.cpp",
-  "output": "CMakeFiles/tests.dir/tests/test_readFile.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_6/build/_deps/catch2-build/src",

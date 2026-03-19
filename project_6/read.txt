@@ -1,3 +1,7 @@
-tom black;10;12
-sam;-123;-123213
-a;;
+Tom Black;10;12
+Sam;2;-12312
+Olga;1;10000
+Anton;3;3000
+Timur;3;5000
+Bob;3;5000
+;;

@@ -7,6 +7,6 @@
 #include <iostream>
 #include <vector>
 
-std::vector<int> findDept(const SafeVector& employees, int dept);
+std::vector<size_t> findDept(const SafeVector& employees, int dept);
 
 #endif

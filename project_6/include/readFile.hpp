@@ -1,9 +1,10 @@
 #include "employee.hpp"
+#include "storageEmployees.hpp"
 #include <vector>
 
 #ifndef READ_FILE
 #define READ_FILE
 
-std::vector<Employee> readBDFromFile(const std::string& filename);
+SafeVector readBDFromFile(std::string filename);
 
 #endif

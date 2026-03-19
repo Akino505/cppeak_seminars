@@ -8,16 +8,16 @@ class SafeVector
 {
 private:
     Employee* data;
-    int size;
+    size_t size;
 
 public:
     SafeVector();
     ~SafeVector();
 
-    Employee& at(int index);
     const Employee& at(size_t index) const;
-    Employee* begin();
-    Employee* end();
+    void push_back(const Employee& value);
+    Employee* begin() const;
+    Employee* end() const;
     size_t getSize() const;
 };
 
