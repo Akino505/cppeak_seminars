@@ -1,8 +1,0 @@
-EMPLOYEES
-Name: Undefined | Dept: 0 | Salary: -1
-Name: Olga | Dept: 1 | Salary: 10000
-Name: Sam | Dept: 2 | Salary: -1
-Name: Bob | Dept: 3 | Salary: 5000
-Name: Timur | Dept: 3 | Salary: 5000
-Name: Anton | Dept: 3 | Salary: 3000
-Name: Tom Black | Dept: 10 | Salary: 12

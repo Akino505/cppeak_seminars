@@ -1,2 +1,0 @@
-Employees in dept: 5
-No employees in dept 5
