@@ -5,10 +5,7 @@
 #include "employee.hpp"
 #include <algorithm>
 #include <cstring>
-#include <functional>
-#include <iostream>
-#include <tuple>
-#include <vector>
+
 
 void sortEmployees(SafeVector& employees);
 

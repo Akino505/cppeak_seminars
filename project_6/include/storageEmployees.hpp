@@ -16,6 +16,8 @@ public:
 
     Employee& at(int index);
     const Employee& at(size_t index) const;
+    Employee* begin();
+    Employee* end();
     size_t getSize() const;
 };
 

@@ -2,11 +2,14 @@
 
 bool compareEmployee(const Employee& first, const Employee& second)
 {
-    return std::tie(first.dept, std::greater<double>()(second.salary, first.salary), first.name) <
-           std::tie(second.dept, std::greater<double>()(first.salary, second.salary), second.name);
+    if (first.getDept() != second.getDept())
+        return first.getDept() < second.getDept();
+    if (first.getSalary() != second.getSalary())
+        return first.getSalary() > second.getSalary();
+    return first.getName() < second.getName();
 }
 
-void sortEmployees(SafeVector<Employee>& employees)
+void sortEmployees(SafeVector& employees)
 {
     std::sort(employees.begin(), employees.end(), compareEmployee);
 }
