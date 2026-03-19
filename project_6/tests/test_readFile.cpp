@@ -91,12 +91,12 @@ TEST_CASE("Negative salary", "[readFile]")
     std::string content = "John;10;-100.5\n";
     TempFile file(content);
 
-    std::vector<Employee> employees = readBDFromFile(file.path);
+    SafeVector employees = readBDFromFile(file.path);
 
-    REQUIRE(employees.size() == 1);
-    CHECK(employees[0].getName() == "John");
-    CHECK(employees[0].getDept() == 10);
-    CHECK(employees[0].getSalary() == -1);
+    REQUIRE(employees.getSize() == 1);
+    CHECK(employees.at(0).getName() == "John");
+    CHECK(employees.at(0).getDept() == 10);
+    CHECK(employees.at(0).getSalary() == -1);
 }
 
 TEST_CASE("Salary zero is accepted", "[readFile]")
