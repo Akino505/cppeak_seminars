@@ -5,8 +5,9 @@
 #include <cstring>
 #include <iostream>
 #include <vector>
+#include "storageEmployees.hpp"
 
-std::vector<int> findSalary(const SafeVector<Employee>& employees,
+std::vector<int> findSalary(const SafeVector& employees,
                             double salary);
 
 #endif

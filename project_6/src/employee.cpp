@@ -22,6 +22,6 @@ void Employee::setSalary(double sSalary)
     if(sSalary >= 0)
         salary = sSalary;
 }
-std::string Employee::getName() { return name; }
-int Employee::getDept() { return dept; }
-double Employee::getSalary() { return salary; }
+std::string Employee::getName() const { return name; }
+int Employee::getDept() const { return dept; }
+double Employee::getSalary() const { return salary; }

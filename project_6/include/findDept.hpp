@@ -2,10 +2,11 @@
 #define FIND_DEPT_HPP
 
 #include "employee.hpp"
+#include "storageEmployees.hpp"
 #include <cstring>
 #include <iostream>
 #include <vector>
 
-std::vector<int> findDept(const SafeVector<Employee>& employees, int dept);
+std::vector<int> findDept(const SafeVector& employees, int dept);
 
 #endif

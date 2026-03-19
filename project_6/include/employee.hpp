@@ -15,9 +15,9 @@ public:
     void setName(std::string sName);
     void setDept(int sDept);
     void setSalary(double sSalary);
-    std::string getName();
-    int getDept();
-    double getSalary();
+    std::string getName() const;
+    int getDept() const;
+    double getSalary() const;
 };
 
 #endif

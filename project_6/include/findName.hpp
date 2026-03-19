@@ -4,9 +4,10 @@
 #include "employee.hpp"
 #include <cstring>
 #include <iostream>
+#include "storageEmployees.hpp"
 #include <vector>
 
-std::vector<int> findName(const SafeVector<Employee>& employees,
+std::vector<int> findName(const SafeVector& employees,
                           const char* name);
 
 #endif

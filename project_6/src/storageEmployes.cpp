@@ -12,3 +12,5 @@ Employee& SafeVector::at(int index)
     }
     return data[index];
 }
+size_t SafeVector::getSize() const { return size; }
+

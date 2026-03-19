@@ -1,11 +1,11 @@
 #include "findSalary.hpp"
 
-std::vector<int> findSalary(const SafeVector<Employee>& employees, double salary)
+std::vector<int> findSalary(const SafeVector& employees, double salary)
 {
     std::vector<int> idxs;
-    for (size_t idx = 0; idx < employees.size(); idx++)
+    for (size_t idx = 0; idx < employees.getSize(); idx++)
     {
-        if (employees.at(idx).salary == salary)
+        if (employees.at(idx).getSalary() == salary)
         {
             idxs.push_back(idx);
         }
