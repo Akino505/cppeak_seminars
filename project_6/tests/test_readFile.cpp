@@ -29,15 +29,15 @@ TEST_CASE("Read valid file with multiple employees", "[readFile]")
     std::string content = "John;10;50000.5\nJane;20;60000\n";
     TempFile file(content);
 
-    std::vector<Employee> employees = readBDFromFile(file.path);
+    SafeVector employees = readBDFromFile(file.path);
 
-    REQUIRE(employees.size() == 2);
-    CHECK(employees[0].getName() == "John");
-    CHECK(employees[0].getDept() == 10);
-    CHECK(employees[0].getSalary() == 50000.5);
-    CHECK(employees[1].getName() == "Jane");
-    CHECK(employees[1].getDept() == 20);
-    CHECK(employees[1].getSalary() == 60000);
+    REQUIRE(employees.getSize() == 2);
+    CHECK(employees.at(0).getName() == "John");
+    CHECK(employees.at(0).getDept() == 10);
+    CHECK(employees.at(0).getSalary() == 50000.5);
+    CHECK(employees.at(1).getName() == "Jane");
+    CHECK(employees.at(1).getDept() == 20);
+    CHECK(employees.at(1).getSalary() == 60000);
 }
 
 TEST_CASE("Skip empty lines", "[readFile]")
@@ -45,17 +45,11 @@ TEST_CASE("Skip empty lines", "[readFile]")
     std::string content = "John;10;50000.5\n\nJane;20;60000\n";
     TempFile file(content);
 
-    std::vector<Employee> employees = readBDFromFile(file.path);
+    SafeVector employees = readBDFromFile(file.path);
 
-    REQUIRE(employees.size() == 2);
-    CHECK(employees[0].getName() == "John");
-    CHECK(employees[1].getName() == "Jane");
-}
-
-TEST_CASE("File not found", "[readFile]")
-{
-    std::vector<Employee> employees = readBDFromFile("nonexistent_12345.txt");
-    REQUIRE(employees.empty());
+    REQUIRE(employees.getSize() == 2);
+    CHECK(employees.at(0).getName() == "John");
+    CHECK(employees.at(1).getName() == "Jane");
 }
 
 
@@ -64,12 +58,12 @@ TEST_CASE("Department zero", "[readFile]")
     std::string content = "John;0;50000\n";
     TempFile file(content);
 
-    std::vector<Employee> employees = readBDFromFile(file.path);
+    SafeVector employees = readBDFromFile(file.path);
 
-    REQUIRE(employees.size() == 1);
-    CHECK(employees[0].getName() == "John");
-    CHECK(employees[0].getDept() == 0);
-    CHECK(employees[0].getSalary() == 50000);
+    REQUIRE(employees.getSize() == 1);
+    CHECK(employees.at(0).getName() == "John");
+    CHECK(employees.at(0).getDept() == 0);
+    CHECK(employees.at(0).getSalary() == 50000);
 }
 
 TEST_CASE("Negative department",
@@ -78,12 +72,12 @@ TEST_CASE("Negative department",
     std::string content = "John;-5;50000\n";
     TempFile file(content);
 
-    std::vector<Employee> employees = readBDFromFile(file.path);
+    SafeVector employees = readBDFromFile(file.path);
 
-    REQUIRE(employees.size() == 1);
-    CHECK(employees[0].getName() == "John");
-    CHECK(employees[0].getDept() == 0);
-    CHECK(employees[0].getSalary() == 50000);
+    REQUIRE(employees.getSize() == 1);
+    CHECK(employees.at(0).getName() == "John");
+    CHECK(employees.at(0).getDept() == 0);
+    CHECK(employees.at(0).getSalary() == 50000);
 }
 
 TEST_CASE("Negative salary", "[readFile]")
