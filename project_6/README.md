@@ -1,17 +1,14 @@
-# Task 5  
-This is a small program - a task management system. The user provides a file "ToDoList.txt" with tasks in the format "id task priority status".  
-- ID - the task number in the system. If a task with this number already exists, the system notifies the user, ignores the task, and continues working.
-- TASK - the task description.
-- PRIORITY - the task priority (from 0 to 10). The task with the highest priority is executed first.
-- STATUS - the task status `true`/`false`, where true means completed, and false means not completed.  
-
-Communication with the user is done via the console.
-- help - Displays all commands.
-- 1 - Execute the task with the highest priority
-- 2 - Undo the execution of the last task
-- 3 - Show uncompleted tasks
-- exit - Terminate the program  
-
+# Task 6  
+This is a small program for working with an employee database. It implements:  
+1. Sorting employees by department in ascending order and by salary in descending order  
+2. Searching for employees with a given name  
+3. Searching for employees with a given salary  
+4. Searching for employees with a given department
+  
+The user provides a file "read.txt" with tasks in the format "name;department;salary".
+- NAME – employee name. If the name cannot be recognized, returns UNDEFINED  
+- DEPARTMENT – the department where the employee works. If an invalid department is specified, returns 0  
+- SALARY – the salary received by the employee. If an invalid salary is specified, returns -1  
 CMake was used for building, and Catch2 for unit tests.  
 
 # Build
@@ -25,7 +22,7 @@ cmake --build build
 ```
 # Run  
 ```bash
-./build/project_5
+./build/project_6
 ```
 # Unit tests  
 ```bash
