@@ -1,7 +1,7 @@
 #include "printDepts.hpp"
 #include "findDept.hpp"
 
-void printDepts(std::string filename, const SafeVector& employees, int dept)
+void printDepts(const std::string& filename, const SafeVector& employees, int dept)
 {
     std::ofstream outFile(filename);
     std::vector<size_t> depts = findDept(employees, dept);

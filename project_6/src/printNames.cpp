@@ -1,6 +1,6 @@
 #include "printNames.hpp"
 
-void printNames(std::string filename, const SafeVector& employees,
+void printNames(const std::string& filename, const SafeVector& employees,
                 std::string name)
 {
     std::vector<size_t> names = findName(employees, name);

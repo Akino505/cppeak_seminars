@@ -7,7 +7,7 @@
 #include <string>
 
 
-SafeVector readBDFromFile(std::string filename)
+SafeVector readBDFromFile(const std::string& filename)
 {
     SafeVector employees;
     std::ifstream file(filename);

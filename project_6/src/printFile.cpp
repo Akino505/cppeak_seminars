@@ -2,7 +2,7 @@
 #include "storageEmployees.hpp"
 #include "printFile.hpp"
 
-void printBD(std::string filename, const SafeVector& employees){
+void printBD(const std::string& filename, const SafeVector& employees){
     std::ofstream outFile(filename);
     outFile << "EMPLOYEES" << "\n";
     for (const Employee& employee : employees)

@@ -2,7 +2,7 @@
 #include "findSalary.hpp"
 #include <cstddef>
 
-void printSalarys(std::string filename, const SafeVector& employees,
+void printSalarys(const std::string& filename, const SafeVector& employees,
                   double salary)
 {
     std::vector<size_t> salarys = findSalary(employees, salary);
