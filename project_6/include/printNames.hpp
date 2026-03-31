@@ -7,7 +7,7 @@
 #include <string>
 #include <vector>
 
-void printNames(std::string filename, const SafeVector& employees,
-                std::string name);
+void printNames(const std::string& filename, const SafeVector& employees,
+                const std::string& name);
 
 #endif

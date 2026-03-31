@@ -5,6 +5,6 @@
 #ifndef READ_FILE
 #define READ_FILE
 
-SafeVector readBDFromFile(std::string filename);
+SafeVector readBDFromFile(const std::string& filename);
 
 #endif

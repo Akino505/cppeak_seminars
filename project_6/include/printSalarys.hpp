@@ -6,7 +6,7 @@
 #include <fstream>
 #include <vector>
 
-void printSalarys(std::string filename, const SafeVector& employees,
-                double salary);
+void printSalarys(const std::string& filename, const SafeVector& employees,
+                  double salary);
 
 #endif

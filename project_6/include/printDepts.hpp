@@ -6,6 +6,6 @@
 #include <fstream>
 #include <vector>
 
-void printDepts(std::string filename, const SafeVector& employees, int dept);
+void printDepts(const std::string& filename, const SafeVector& employees, int dept);
 
 #endif

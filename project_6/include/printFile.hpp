@@ -7,6 +7,6 @@
 #ifndef PRINT_FILE_HPP
 #define PRINT_FILE_HPP
 
-void printBD(std::string filename, const SafeVector& employees);
+void printBD(const std::string& filename, const SafeVector& employees);
 
 #endif
