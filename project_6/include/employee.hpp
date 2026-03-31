@@ -6,8 +6,8 @@
 class Employee
 {
 private:
-    std::string name = "Undefined";
-    int dept = 0;
+    std::string name = "UNDEFINED";
+    int dept = -1;
     double salary = -1;
 
 public:

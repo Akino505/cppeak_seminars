@@ -3,8 +3,8 @@
 
 Employee::Employee()
 {
-    name = "Undefined";
-    dept = 0;
+    name = "UNDEFINED";
+    dept = -1;
     salary = -1;
 }
 
