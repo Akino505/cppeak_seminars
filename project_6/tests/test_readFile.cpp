@@ -58,7 +58,7 @@ TEST_CASE("Department zero", "[readFile]")
 
     REQUIRE(employees.getSize() == 1);
     CHECK(employees.at(0).getName() == "John");
-    CHECK(employees.at(0).getDept() == 0);
+    CHECK(employees.at(0).getDept() == -1);
     CHECK(employees.at(0).getSalary() == 50000);
 }
 
@@ -72,7 +72,7 @@ TEST_CASE("Negative department",
 
     REQUIRE(employees.getSize() == 1);
     CHECK(employees.at(0).getName() == "John");
-    CHECK(employees.at(0).getDept() == 0);
+    CHECK(employees.at(0).getDept() == -1);
     CHECK(employees.at(0).getSalary() == 50000);
 }
 
@@ -111,7 +111,7 @@ TEST_CASE(
     SafeVector employees = readBDFromFile(file.path);
     REQUIRE(employees.getSize() == 1);
     CHECK(employees.at(0).getName() == "John");
-    CHECK(employees.at(0).getDept() == 0);
+    CHECK(employees.at(0).getDept() == -1);
     CHECK(employees.at(0).getSalary() == 50000);
 }
 
