@@ -6,8 +6,16 @@ SafeVector::~SafeVector() { delete[] data; }
 
 const Employee& SafeVector::at(size_t index) const
 {
-    if(index < 0 || index >= size)
+    if(index >= size)
     {
+        std::cout << "Ошибка: индекс вне диапазона!" << std::endl;
+        exit(1);
+    }
+    return data[index];
+}
+
+Employee& SafeVector::at(size_t index) {
+    if (index >= size) {
         std::cout << "Ошибка: индекс вне диапазона!" << std::endl;
         exit(1);
     }

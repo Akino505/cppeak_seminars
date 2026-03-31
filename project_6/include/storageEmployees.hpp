@@ -15,6 +15,7 @@ public:
     ~SafeVector();
 
     const Employee& at(size_t index) const;
+    Employee& at(size_t index);
     void push_back(const Employee& value);
     Employee* begin() const;
     Employee* end() const;
