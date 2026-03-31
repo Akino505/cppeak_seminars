@@ -9,7 +9,7 @@ void printSalarys(const std::string& filename, const SafeVector& employees,
     std::ofstream outFile(filename);
     outFile << "Employees with salary: " << salary << "\n";
     if(salarys.empty()){
-        outFile << "No employees in dept " << salary << std::endl;    
+        outFile << "No employees with salary: " << salary << std::endl;    
         outFile.close();
         return;
     }

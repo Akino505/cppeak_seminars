@@ -16,7 +16,7 @@ const Employee& SafeVector::at(size_t index) const
 
 void SafeVector::push_back(const Employee& value)
 {
-    Employee* newData = new Employee[size + 1];
+    auto newData = new Employee[size + 1];
     for (size_t idx = 0; idx < size; ++idx){
         newData[idx] = data[idx];
     }

@@ -1,7 +1,7 @@
 #include "printNames.hpp"
 
 void printNames(const std::string& filename, const SafeVector& employees,
-                std::string name)
+                const std::string& name)
 {
     std::vector<size_t> names = findName(employees, name);
     std::ofstream outFile(filename);
