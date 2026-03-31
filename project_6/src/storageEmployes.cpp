@@ -1,5 +1,6 @@
 #include "../include/storageEmployees.hpp"
 #include <cstddef>
+#include <stdexcept>
 
 SafeVector::SafeVector(): data(nullptr), size(0) {}
 SafeVector::~SafeVector() { delete[] data; }
@@ -8,16 +9,14 @@ const Employee& SafeVector::at(size_t index) const
 {
     if(index >= size)
     {
-        std::cout << "Ошибка: индекс вне диапазона!" << std::endl;
-        exit(1);
+        throw std::out_of_range("SafeVector::at out of range");
     }
     return data[index];
 }
 
 Employee& SafeVector::at(size_t index) {
     if (index >= size) {
-        std::cout << "Ошибка: индекс вне диапазона!" << std::endl;
-        exit(1);
+        throw std::out_of_range("SafeVector::at out of range");
     }
     return data[index];
 }
