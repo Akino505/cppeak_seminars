@@ -1,3 +1,6 @@
+#ifndef SMART_LIGHT_HPP
+#define SMART_LIGHT_HPP
+
 #include "SmartDevice.hpp"
 
 class SmartLight: public SmartDevice
@@ -11,3 +14,5 @@ public:
 private:
     int _brightness;
 };
+
+#endif

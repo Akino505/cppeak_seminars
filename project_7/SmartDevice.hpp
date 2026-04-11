@@ -1,3 +1,6 @@
+#ifndef SMART_DEVICE_HPP
+#define SMART_DEVICE_HPP
+
 #include <string>
 
 class SmartDevice
@@ -21,3 +24,5 @@ protected:
     std::string _name;
     bool _isOn;
 };
+
+#endif

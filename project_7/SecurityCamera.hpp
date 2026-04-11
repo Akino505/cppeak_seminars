@@ -1,5 +1,7 @@
+#ifndef SECURITY_CAMERA_HPP
+#define SECURITY_CAMERA_HPP
+
 #include "SmartDevice.hpp"
-#include <sys/types.h>
 
 enum class CameraMode
 {
@@ -18,3 +20,4 @@ public:
 private:
     CameraMode _mode = CameraMode::Motion;
 };
+#endif
