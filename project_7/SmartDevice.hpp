@@ -14,8 +14,6 @@ public:
 
 protected:
     SmartDevice(int id, const std::string& name): _id(id), _name(name), _isOn(false) {}
-
-private:
     int _id;
     std::string _name;
     bool _isOn;
