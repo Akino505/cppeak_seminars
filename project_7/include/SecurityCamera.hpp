@@ -12,6 +12,11 @@ enum class CameraMode
 class SecurityCamera: public SmartDevice
 {
 public:
+    SecurityCamera(int id, const std::string& name,
+                   CameraMode mode = CameraMode::MOTION)
+        : SmartDevice(id, name), _mode(mode)
+    {
+    }
     void turnOn() override;
     void turnOff() override;
     void configure(const std::string& params) override;

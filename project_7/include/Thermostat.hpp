@@ -6,6 +6,10 @@
 class Thermostat: public SmartDevice
 {
 public:
+    Thermostat(int id, const std::string& name, double temperature = 20.0)
+        : SmartDevice(id, name), _temperature(temperature)
+    {
+    }
     void turnOn() override;
     void turnOff() override;
     void configure(const std::string& params) override;
