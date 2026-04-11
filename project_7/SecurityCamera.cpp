@@ -28,6 +28,6 @@ void SecurityCamera::configure(const std::string& params)
 
 std::string SecurityCamera::getStatus() const
 {
-    return "[" + getName() + "] " + (isOn() ? "ON" : "OFF") + ", mode: " +
-           (_mode == CameraMode::MOTION ? "motion" : "continuous") + "\n";
+    return "[" + getName() + "] " + (isOn() ? "ON" : "OFF") + ", MODE: " +
+           (_mode == CameraMode::MOTION ? "Motion" : "Continuous") + "\n";
 }
