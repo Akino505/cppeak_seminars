@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Werror=return-type CMakeFiles/SmartDevicesChecker.dir/src/main.cpp.o -o SmartDevicesChecker  libSmart_Devices.a 
