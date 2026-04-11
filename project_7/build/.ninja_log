@@ -199,3 +199,10 @@
 227	386	1775950674575058719	tests	e5a638a0e4ec1e04
 227	386	1775950674575058719	tests_tests-b12d07c.cmake	e5a638a0e4ec1e04
 227	386	1775950674575058719	/home/akino/cppeak_seminars/project_7/build/tests_tests-b12d07c.cmake	e5a638a0e4ec1e04
+5	207	1775950723505110782	CMakeFiles/Smart_Devices.dir/src/main.cpp.o	670e13ffc4137fef
+5	213	1775950723511110789	CMakeFiles/SmartDevicesChecker.dir/src/main.cpp.o	33c266be7e0e6c76
+207	234	1775950723535487787	libSmart_Devices.a	36bd8cb11bcf6a3
+234	287	1775950723585855805	SmartDevicesChecker	4d531bb4718fdfc9
+235	380	1775950723680110969	tests	e5a638a0e4ec1e04
+235	380	1775950723680110969	tests_tests-b12d07c.cmake	e5a638a0e4ec1e04
+235	380	1775950723680110969	/home/akino/cppeak_seminars/project_7/build/tests_tests-b12d07c.cmake	e5a638a0e4ec1e04

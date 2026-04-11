@@ -1,5 +1,4 @@
 #include "SecurityCamera.hpp"
-#include "SmartDevice.hpp"
 #include "SmartLight.hpp"
 #include "Thermostat.hpp"
 #include <iostream>
