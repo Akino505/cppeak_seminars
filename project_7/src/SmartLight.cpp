@@ -1,5 +1,6 @@
 #include "SmartLight.hpp"
 #include <iostream>
+#include <sstream>
 #include <stdexcept>
 #include <string>
 
@@ -16,24 +17,37 @@ void SmartLight::turnOff()
 }
 
 void SmartLight::configure(const std::string& params)
-{   
-    int brght = 0;
+{
+    int bright = 0;
     if(params.find("brightness=") != 0)
-        throw std::invalid_argument("Parameter shoud be 'brightness=<0-100>'");
-    try{
-        brght = std::stoi(params.substr(11));
+    {
+        std::stringstream error;
+        error << "Smart Light: [" << getName()
+              << "]: Parameter shoud be 'brightness=<0-100>'";
+        throw std::invalid_argument(error.str());
     }
-    catch(...){
-        throw std::invalid_argument("Percent shoud me integer");
+    try
+    {
+        bright = std::stoi(params.substr(11));
     }
-    if(brght < 0 || brght > 100)
-        throw std::invalid_argument(
-            "Brightness must be from 0 to 100 percents");
-    _brightness = brght;
+    catch(...)
+    {
+        std::stringstream error;
+        error << "Smart Light: [" << getName() << "]: Percent shoud me integer";
+        throw std::invalid_argument(error.str());
+    }
+    if(bright < 0 || bright > 100)
+    {
+        std::stringstream error;
+        error << "Smart Light: [" << getName()
+              << "]: Brightness must be from 0 to 100 percents";
+        throw std::out_of_range(error.str());
+    }
+    _brightness = bright;
 }
 
 std::string SmartLight::getStatus() const
 {
-    return "[" + getName() + "]: is " + (isOn() ? "ON" : "OFF") +
+    return "[" + getName() + "]: " + (isOn() ? "ON" : "OFF") +
            ", BRIGHTNESS: " + std::to_string(_brightness) + "%" + "\n";
 }

@@ -37,21 +37,30 @@ int main()
     lamp1.turnOn();
     cam2.turnOn();
     temp1.turnOn();
+    std::cout<<"-----ERRORS-----"<<"\n";
     try
     {
         lamp2.configure("brightneSs=90");
     }
     catch(const std::exception& e)
     {
-        std::cout << "ERROR:" << e.what() << "\n";
+        std::cout << "ERROR: " << e.what() << "\n";
     }
     try
     {
-        lamp2.configure("brightneSs=am9");
+        lamp2.configure("brightness=am9");
     }
     catch(const std::exception& e)
     {
-        std::cout << "ERROR:" << e.what() << "\n";
+        std::cout << "ERROR: " << e.what() << "\n";
+    }
+        try
+    {
+        lamp2.configure("brightness=1000");
+    }
+    catch(const std::exception& e)
+    {
+        std::cout << "ERROR: " << e.what() << "\n";
     }
     try
     {
@@ -59,7 +68,7 @@ int main()
     }
     catch(const std::exception& e)
     {
-        std::cout << "ERROR:" << e.what() << "\n";
+        std::cout << "ERROR: " << e.what() << "\n";
     }
     try
     {
@@ -67,7 +76,7 @@ int main()
     }
     catch(const std::exception& e)
     {
-        std::cout << "ERROR:" << e.what() << "\n";
+        std::cout << "ERROR: " << e.what() << "\n";
     }
     try
     {
@@ -75,7 +84,7 @@ int main()
     }
     catch(const std::exception& e)
     {
-        std::cout << "ERROR:" << e.what() << "\n";
+        std::cout << "ERROR: " << e.what() << "\n";
     }
     try
     {
@@ -83,7 +92,7 @@ int main()
     }
     catch(const std::exception& e)
     {
-        std::cout << "ERROR:" << e.what() << "\n";
+        std::cout << "ERROR: " << e.what() << "\n";
     }
     try
     {
@@ -91,7 +100,7 @@ int main()
     }
     catch(const std::exception& e)
     {
-        std::cout << "ERROR:" << e.what() << "\n";
+        std::cout << "ERROR: " << e.what() << "\n";
     }
     try
     {
@@ -99,7 +108,7 @@ int main()
     }
     catch(const std::exception& e)
     {
-        std::cout << "ERROR:" << e.what() << "\n";
+        std::cout << "ERROR: " << e.what() << "\n";
     }
     lamp1.configure("brightness=10");
     cam1.configure("mode=continuous");
@@ -111,10 +120,10 @@ int main()
     statT1 = temp1.getStatus();
     statT2 = temp2.getStatus();
     std::cout << "-----AFTER CONFIG STATUS-----" << "\n";
-    std::cout << statL1 << "\n"
-              << statL2 << "\n"
-              << statC1 << "\n"
-              << statC2 << "\n"
-              << statT1 << "\n"
-              << statT2 << "\n";
+    std::cout << statL1
+              << statL2
+              << statC1
+              << statC2
+              << statT1
+              << statT2;
 }

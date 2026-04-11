@@ -1,2 +1,0 @@
-/usr/bin/ar qc libSmart_Devices.a CMakeFiles/Smart_Devices.dir/src/SecurityCamera.cpp.o CMakeFiles/Smart_Devices.dir/src/SmartLight.cpp.o CMakeFiles/Smart_Devices.dir/src/Thermostat.cpp.o CMakeFiles/Smart_Devices.dir/src/main.cpp.o
-/usr/bin/ranlib libSmart_Devices.a
