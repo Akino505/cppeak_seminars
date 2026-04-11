@@ -1,0 +1,2 @@
+Employees with salary: 10000
+Name: Ivy | Dept: -1 | Salary: 10000

@@ -1,0 +1,3 @@
+Employees in dept: 5
+Name: Jack | Dept: 5 | Salary: -1
+Name: Peter | Dept: 5 | Salary: 25000
