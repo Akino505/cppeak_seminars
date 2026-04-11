@@ -16,7 +16,7 @@ void SecurityCamera::turnOff()
 
 void SecurityCamera::configure(const std::string& params)
 {
-    if(params.find("mode=") == 0)
+    if(params.find("mode=") != 0)
         throw std::invalid_argument(
             "Parameter shoud be 'mode=[motion|continuous]'");
     std::string stringMode = params.substr(5);

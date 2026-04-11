@@ -17,7 +17,7 @@ void SmartLight::turnOff()
 
 void SmartLight::configure(const std::string& params)
 {
-    if(params.find("brightness=") == 0)
+    if(params.find("brightness=") != 0)
         throw std::invalid_argument("Parameter shoud be 'brightness=<0-100>'");
     int brght = std::stoi(params.substr(11));
     if(brght < 0 || brght > 100)
