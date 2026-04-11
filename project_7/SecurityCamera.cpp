@@ -23,11 +23,11 @@ void SecurityCamera::configure(const std::string& params)
     if(!(stringMode == "motion" || stringMode == "continuous"))
         throw std::invalid_argument("Mode should be 'motion' or 'continuous'");
     _mode =
-        (stringMode == "motion" ? CameraMode::Motion : CameraMode::Continuous);
+        (stringMode == "motion" ? CameraMode::MOTION : CameraMode::CONTINUOUS);
 }
 
 std::string SecurityCamera::getStatus() const
 {
     return "[" + getName() + "] " + (isOn() ? "ON" : "OFF") + ", mode: " +
-           (_mode == CameraMode::Motion ? "motion" : "continuous") + "\n";
+           (_mode == CameraMode::MOTION ? "motion" : "continuous") + "\n";
 }

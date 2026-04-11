@@ -5,8 +5,8 @@
 
 enum class CameraMode
 {
-    Motion,
-    Continuous
+    MOTION,
+    CONTINUOUS
 };
 
 class SecurityCamera: public SmartDevice
@@ -18,6 +18,6 @@ public:
     std::string getStatus() const override;
 
 private:
-    CameraMode _mode = CameraMode::Motion;
+    CameraMode _mode = CameraMode::MOTION;
 };
 #endif
