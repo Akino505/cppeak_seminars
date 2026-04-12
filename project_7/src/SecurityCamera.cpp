@@ -31,7 +31,7 @@ void SecurityCamera::configure(const std::string& params)
         std::stringstream error;
         error << "Security Camera: [" << getName()
               << "]: Mode should be 'motion' or 'continuous'";
-        throw std::out_of_range(error.str());
+        throw std::invalid_argument(error.str());
     }
     _mode =
         (stringMode == "motion" ? CameraMode::MOTION : CameraMode::CONTINUOUS);
