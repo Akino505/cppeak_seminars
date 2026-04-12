@@ -14,6 +14,7 @@ public:
     void turnOff() override;
     void configure(const std::string& params) override;
     std::string getStatus() const override;
+    int getBrightness() const { return _brightness; }
 
 private:
     int _brightness;

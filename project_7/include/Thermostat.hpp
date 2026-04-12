@@ -14,6 +14,7 @@ public:
     void turnOff() override;
     void configure(const std::string& params) override;
     std::string getStatus() const override;
+    double getTemperature() const { return _temperature; }
 
 private:
     double _temperature;

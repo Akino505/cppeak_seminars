@@ -21,6 +21,7 @@ public:
     void turnOff() override;
     void configure(const std::string& params) override;
     std::string getStatus() const override;
+    CameraMode getMode() const { return _mode; }
 
 private:
     CameraMode _mode = CameraMode::MOTION;
