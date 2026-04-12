@@ -1,0 +1,11 @@
+SecurityCamera: 0 0
+SecurityCamera: 0 1
+SecurityCamera: 0 0
+SmartLight: 0 0
+SmartLight: 0 1
+SmartLight: 0 0
+Thermostat: 0 0
+Thermostat: 0 1
+Thermostat: configure with validation. 0 0
+---
+Thermostat: configure with validation.

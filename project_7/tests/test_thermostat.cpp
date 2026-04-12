@@ -23,14 +23,14 @@ TEST_CASE("Thermostat: isOn.", "[isOn][thermostat]")
 TEST_CASE("Thermostat: configure with validation.", "[configure][thermostat]")
 {
     Thermostat temp(1, "Temp");
-    CHECK_NOTHROW(temp.configure("temperature=90"));
+    CHECK_NOTHROW(temp.configure("temperature=10.0"));
     temp.configure("temperature=9.12");
     CHECK(temp.getTemperature() == 9.12);
     CHECK(!temp.isOn());
     temp.turnOn();
-    temp.configure("temperature=0");
+    temp.configure("temperature=-30.0");
     CHECK(temp.getTemperature() == -30.0);
-    temp.configure("temperature=100");
+    temp.configure("temperature=50.0");
     CHECK(temp.getTemperature() == 50.0);
     CHECK_THROWS_AS(temp.configure("wrong_key=90"), std::invalid_argument);
     CHECK_THROWS_AS(temp.configure("temperature=asd1"), std::invalid_argument);

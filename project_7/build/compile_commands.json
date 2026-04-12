@@ -31,9 +31,21 @@
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_7/build",
-  "command": "/usr/bin/clang++ -I/home/akino/cppeak_seminars/project_7/include -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-build/generated-includes -I/home/akino/cppeak_seminars/project_7/src -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/tests.dir/tests/test.cpp.o -c /home/akino/cppeak_seminars/project_7/tests/test.cpp",
-  "file": "/home/akino/cppeak_seminars/project_7/tests/test.cpp",
-  "output": "CMakeFiles/tests.dir/tests/test.cpp.o"
+  "command": "/usr/bin/clang++ -I/home/akino/cppeak_seminars/project_7/include -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-build/generated-includes -I/home/akino/cppeak_seminars/project_7/src -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/tests.dir/tests/test_securityCamera.cpp.o -c /home/akino/cppeak_seminars/project_7/tests/test_securityCamera.cpp",
+  "file": "/home/akino/cppeak_seminars/project_7/tests/test_securityCamera.cpp",
+  "output": "CMakeFiles/tests.dir/tests/test_securityCamera.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_7/build",
+  "command": "/usr/bin/clang++ -I/home/akino/cppeak_seminars/project_7/include -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-build/generated-includes -I/home/akino/cppeak_seminars/project_7/src -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/tests.dir/tests/test_smartLight.cpp.o -c /home/akino/cppeak_seminars/project_7/tests/test_smartLight.cpp",
+  "file": "/home/akino/cppeak_seminars/project_7/tests/test_smartLight.cpp",
+  "output": "CMakeFiles/tests.dir/tests/test_smartLight.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_7/build",
+  "command": "/usr/bin/clang++ -I/home/akino/cppeak_seminars/project_7/include -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-build/generated-includes -I/home/akino/cppeak_seminars/project_7/src -g -O0 -Werror=return-type -std=gnu++17 -o CMakeFiles/tests.dir/tests/test_thermostat.cpp.o -c /home/akino/cppeak_seminars/project_7/tests/test_thermostat.cpp",
+  "file": "/home/akino/cppeak_seminars/project_7/tests/test_thermostat.cpp",
+  "output": "CMakeFiles/tests.dir/tests/test_thermostat.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_7/build",

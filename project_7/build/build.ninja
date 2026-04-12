@@ -147,8 +147,26 @@ build SmartDevicesChecker: CXX_EXECUTABLE_LINKER__SmartDevicesChecker_Debug CMak
 
 build cmake_object_order_depends_target_tests: phony || cmake_object_order_depends_target_Catch2 cmake_object_order_depends_target_Catch2WithMain cmake_object_order_depends_target_Smart_Devices
 
-build CMakeFiles/tests.dir/tests/test.cpp.o: CXX_COMPILER__tests_unscanned_Debug /home/akino/cppeak_seminars/project_7/tests/test.cpp || cmake_object_order_depends_target_tests
-  DEP_FILE = CMakeFiles/tests.dir/tests/test.cpp.o.d
+build CMakeFiles/tests.dir/tests/test_securityCamera.cpp.o: CXX_COMPILER__tests_unscanned_Debug /home/akino/cppeak_seminars/project_7/tests/test_securityCamera.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = CMakeFiles/tests.dir/tests/test_securityCamera.cpp.o.d
+  FLAGS = -g -O0 -Werror=return-type -std=gnu++17
+  INCLUDES = -I/home/akino/cppeak_seminars/project_7/include -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-build/generated-includes -I/home/akino/cppeak_seminars/project_7/src
+  OBJECT_DIR = CMakeFiles/tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/tests.dir/tests
+  TARGET_COMPILE_PDB = CMakeFiles/tests.dir/
+  TARGET_PDB = tests.pdb
+
+build CMakeFiles/tests.dir/tests/test_smartLight.cpp.o: CXX_COMPILER__tests_unscanned_Debug /home/akino/cppeak_seminars/project_7/tests/test_smartLight.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = CMakeFiles/tests.dir/tests/test_smartLight.cpp.o.d
+  FLAGS = -g -O0 -Werror=return-type -std=gnu++17
+  INCLUDES = -I/home/akino/cppeak_seminars/project_7/include -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-build/generated-includes -I/home/akino/cppeak_seminars/project_7/src
+  OBJECT_DIR = CMakeFiles/tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/tests.dir/tests
+  TARGET_COMPILE_PDB = CMakeFiles/tests.dir/
+  TARGET_PDB = tests.pdb
+
+build CMakeFiles/tests.dir/tests/test_thermostat.cpp.o: CXX_COMPILER__tests_unscanned_Debug /home/akino/cppeak_seminars/project_7/tests/test_thermostat.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = CMakeFiles/tests.dir/tests/test_thermostat.cpp.o.d
   FLAGS = -g -O0 -Werror=return-type -std=gnu++17
   INCLUDES = -I/home/akino/cppeak_seminars/project_7/include -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_7/build/_deps/catch2-build/generated-includes -I/home/akino/cppeak_seminars/project_7/src
   OBJECT_DIR = CMakeFiles/tests.dir
@@ -164,7 +182,7 @@ build CMakeFiles/tests.dir/tests/test.cpp.o: CXX_COMPILER__tests_unscanned_Debug
 #############################################
 # Link the executable tests
 
-build tests tests_tests-b12d07c.cmake | ${cmake_ninja_workdir}tests_tests-b12d07c.cmake: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/tests/test.cpp.o | _deps/catch2-build/src/libCatch2Maind.a libSmart_Devices.a _deps/catch2-build/src/libCatch2d.a || _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a libSmart_Devices.a
+build tests tests_tests-b12d07c.cmake | ${cmake_ninja_workdir}tests_tests-b12d07c.cmake: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/tests/test_securityCamera.cpp.o CMakeFiles/tests.dir/tests/test_smartLight.cpp.o CMakeFiles/tests.dir/tests/test_thermostat.cpp.o | _deps/catch2-build/src/libCatch2Maind.a libSmart_Devices.a _deps/catch2-build/src/libCatch2d.a || _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a libSmart_Devices.a
   FLAGS = -g -O0 -Werror=return-type
   LINK_LIBRARIES = _deps/catch2-build/src/libCatch2Maind.a  libSmart_Devices.a  _deps/catch2-build/src/libCatch2d.a
   OBJECT_DIR = CMakeFiles/tests.dir
