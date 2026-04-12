@@ -206,3 +206,10 @@
 235	380	1775950723680110969	tests	e5a638a0e4ec1e04
 235	380	1775950723680110969	tests_tests-b12d07c.cmake	e5a638a0e4ec1e04
 235	380	1775950723680110969	/home/akino/cppeak_seminars/project_7/build/tests_tests-b12d07c.cmake	e5a638a0e4ec1e04
+4	227	1775953642763934839	CMakeFiles/Smart_Devices.dir/src/main.cpp.o	670e13ffc4137fef
+4	242	1775953642777934820	CMakeFiles/SmartDevicesChecker.dir/src/main.cpp.o	33c266be7e0e6c76
+3	249	1775953642785934810	CMakeFiles/Smart_Devices.dir/src/SecurityCamera.cpp.o	5c35e15b7c285b31
+4	276	1775953642812934773	CMakeFiles/Smart_Devices.dir/src/SmartLight.cpp.o	a193024187ca7442
+4	360	1775953642895934661	CMakeFiles/Smart_Devices.dir/src/Thermostat.cpp.o	ceb5b7fb28340732
+3	33	1775953645853158168	libSmart_Devices.a	36bd8cb11bcf6a3
+4	57	1775953649641922113	SmartDevicesChecker	4d531bb4718fdfc9
