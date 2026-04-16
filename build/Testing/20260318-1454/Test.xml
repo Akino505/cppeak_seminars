@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20260318-1454-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.31.6"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="kali"
+	OSRelease="6.8.11-amd64"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Kali 6.8.11-1kali2 (2024-05-30)"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="78"
+	ModelName="Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz"
+	ProcessorCacheSize="3072"
+	NumberOfLogicalCPU="2"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="1023"
+	TotalPhysicalMemory="6616"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2496"
+	>
+	<Testing>
+		<StartDateTime>Mar 18 17:14 EDT</StartDateTime>
+		<StartTestTime>1773868481</StartTestTime>
+		<TestList/>
+		<EndDateTime>Mar 18 17:14 EDT</EndDateTime>
+		<EndTestTime>1773868481</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

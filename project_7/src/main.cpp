@@ -19,12 +19,7 @@ int main()
     std::string statT2 = temp2.getStatus();
     // First status
     std::cout << "-----FIRST STATUS-----" << "\n";
-    std::cout << statL1
-              << statL2
-              << statC1
-              << statC2
-              << statT1
-              << statT2;
+    std::cout << statL1 << statL2 << statC1 << statC2 << statT1 << statT2;
     lamp2.turnOn();
     cam1.turnOn();
     temp2.turnOn();
@@ -32,11 +27,11 @@ int main()
     statC1 = cam1.getStatus();
     statT2 = temp2.getStatus();
     std::cout << "-----ON STATUS-----" << "\n";
-    std::cout << statL2<< statC1<< statT2;
+    std::cout << statL2 << statC1 << statT2;
     lamp1.turnOn();
     cam2.turnOn();
     temp1.turnOn();
-    std::cout<<"-----ERRORS-----"<<"\n";
+    std::cout << "-----ERRORS-----" << "\n";
     try
     {
         lamp2.configure("brightneSs=90");
@@ -53,7 +48,7 @@ int main()
     {
         std::cout << "ERROR: " << e.what() << "\n";
     }
-        try
+    try
     {
         lamp2.configure("brightness=1000");
     }
@@ -119,10 +114,5 @@ int main()
     statT1 = temp1.getStatus();
     statT2 = temp2.getStatus();
     std::cout << "-----AFTER CONFIG STATUS-----" << "\n";
-    std::cout << statL1
-              << statL2
-              << statC1
-              << statC2
-              << statT1
-              << statT2;
+    std::cout << statL1 << statL2 << statC1 << statC2 << statT1 << statT2;
 }
