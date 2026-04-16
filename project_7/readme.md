@@ -38,7 +38,7 @@ cmake --build build
 ```
 # Run  
 ```bash
-./build/project_6
+./build/project_7
 ```
 # Unit tests  
 ```bash
