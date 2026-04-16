@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Werror=return-type -Wl,--dependency-file=CMakeFiles/project_7.dir/link.d CMakeFiles/project_7.dir/src/main.cpp.o -o project_7  libSmart_Devices.a
