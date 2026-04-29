@@ -1,8 +1,5 @@
 #include "ConfigStore.hpp"
-#include "Setting.hpp"
-#include <any>
 #include <cstddef>
-#include <optional>
 
 ConfigStore::ConfigStore(size_t initialCapacity)
 {
