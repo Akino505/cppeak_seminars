@@ -127,30 +127,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named settings
+# Target rules for targets named config
 
 # Build rule for target.
-settings: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 settings
-.PHONY : settings
+config: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 config
+.PHONY : config
 
 # fast build rule for target.
-settings/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/build
-.PHONY : settings/fast
+config/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/build
+.PHONY : config/fast
 
 #=============================================================================
-# Target rules for targets named project_8_settings
+# Target rules for targets named project_8
 
 # Build rule for target.
-project_8_settings: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_8_settings
-.PHONY : project_8_settings
+project_8: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 project_8
+.PHONY : project_8
 
 # fast build rule for target.
-project_8_settings/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8_settings.dir/build.make CMakeFiles/project_8_settings.dir/build
-.PHONY : project_8_settings/fast
+project_8/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8.dir/build.make CMakeFiles/project_8.dir/build
+.PHONY : project_8/fast
 
 #=============================================================================
 # Target rules for targets named tests
@@ -196,7 +196,7 @@ src/ConfigStore.o: src/ConfigStore.cpp.o
 
 # target to build an object file
 src/ConfigStore.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/src/ConfigStore.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/src/ConfigStore.cpp.o
 .PHONY : src/ConfigStore.cpp.o
 
 src/ConfigStore.i: src/ConfigStore.cpp.i
@@ -204,7 +204,7 @@ src/ConfigStore.i: src/ConfigStore.cpp.i
 
 # target to preprocess a source file
 src/ConfigStore.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/src/ConfigStore.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/src/ConfigStore.cpp.i
 .PHONY : src/ConfigStore.cpp.i
 
 src/ConfigStore.s: src/ConfigStore.cpp.s
@@ -212,7 +212,7 @@ src/ConfigStore.s: src/ConfigStore.cpp.s
 
 # target to generate assembly for a file
 src/ConfigStore.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/src/ConfigStore.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/src/ConfigStore.cpp.s
 .PHONY : src/ConfigStore.cpp.s
 
 src/ConfigValidator.o: src/ConfigValidator.cpp.o
@@ -220,7 +220,7 @@ src/ConfigValidator.o: src/ConfigValidator.cpp.o
 
 # target to build an object file
 src/ConfigValidator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/src/ConfigValidator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/src/ConfigValidator.cpp.o
 .PHONY : src/ConfigValidator.cpp.o
 
 src/ConfigValidator.i: src/ConfigValidator.cpp.i
@@ -228,7 +228,7 @@ src/ConfigValidator.i: src/ConfigValidator.cpp.i
 
 # target to preprocess a source file
 src/ConfigValidator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/src/ConfigValidator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/src/ConfigValidator.cpp.i
 .PHONY : src/ConfigValidator.cpp.i
 
 src/ConfigValidator.s: src/ConfigValidator.cpp.s
@@ -236,7 +236,7 @@ src/ConfigValidator.s: src/ConfigValidator.cpp.s
 
 # target to generate assembly for a file
 src/ConfigValidator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/src/ConfigValidator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/src/ConfigValidator.cpp.s
 .PHONY : src/ConfigValidator.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -244,8 +244,8 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/src/main.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8_settings.dir/build.make CMakeFiles/project_8_settings.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8.dir/build.make CMakeFiles/project_8.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -253,8 +253,8 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/src/main.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8_settings.dir/build.make CMakeFiles/project_8_settings.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8.dir/build.make CMakeFiles/project_8.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -262,8 +262,8 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/src/main.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8_settings.dir/build.make CMakeFiles/project_8_settings.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8.dir/build.make CMakeFiles/project_8.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 tests/test_store.o: tests/test_store.cpp.o
@@ -325,8 +325,8 @@ help:
 	@echo "... test"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
-	@echo "... project_8_settings"
-	@echo "... settings"
+	@echo "... config"
+	@echo "... project_8"
 	@echo "... tests"
 	@echo "... src/ConfigStore.o"
 	@echo "... src/ConfigStore.i"

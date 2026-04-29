@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(project_8_settings VERSION 1.0 LANGUAGES CXX)
+project(project_8 VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -24,18 +24,18 @@ FetchContent_MakeAvailable(Catch2)
 # --- 2. Create a Library for shared logic ---
 file(GLOB SOURCES "src/*.cpp") 
 file(GLOB HEADERS "include/*.hpp")
-add_library(settings ${SOURCES} ${HEADERS})
-target_include_directories(settings PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/src)
+add_library(config ${SOURCES} ${HEADERS})
+target_include_directories(config PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 # --- 3. Main Application ---
 add_executable(${CMAKE_PROJECT_NAME} src/main.cpp)
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE settings)
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE config)
 
 #--- 4. Testing Setup ---
 enable_testing()
 file(GLOB TESTS "tests/*.cpp")
 add_executable(tests ${TESTS})
-target_link_libraries(tests PRIVATE Catch2::Catch2WithMain settings)
+target_link_libraries(tests PRIVATE Catch2::Catch2WithMain config)
 target_include_directories(tests PRIVATE include)
 include(Catch)
 catch_discover_tests(tests)

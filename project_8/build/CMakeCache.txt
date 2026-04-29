@@ -331,7 +331,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=project_8_settings
+CMAKE_PROJECT_NAME:STATIC=project_8
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0
@@ -447,6 +447,15 @@ FETCHCONTENT_UPDATES_DISCONNECTED_CATCH2:BOOL=OFF
 
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
+
+//Value Computed by CMake
+project_8_BINARY_DIR:STATIC=/home/akino/cppeak_seminars/project_8/build
+
+//Value Computed by CMake
+project_8_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+project_8_SOURCE_DIR:STATIC=/home/akino/cppeak_seminars/project_8
 
 //Value Computed by CMake
 project_8_settings_BINARY_DIR:STATIC=/home/akino/cppeak_seminars/project_8/build

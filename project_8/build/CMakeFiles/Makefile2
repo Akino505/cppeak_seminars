@@ -63,8 +63,8 @@ CMAKE_BINARY_DIR = /home/akino/cppeak_seminars/project_8/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/settings.dir/all
-all: CMakeFiles/project_8_settings.dir/all
+all: CMakeFiles/config.dir/all
+all: CMakeFiles/project_8.dir/all
 all: CMakeFiles/tests.dir/all
 all: _deps/catch2-build/all
 .PHONY : all
@@ -74,8 +74,8 @@ preinstall: _deps/catch2-build/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/settings.dir/clean
-clean: CMakeFiles/project_8_settings.dir/clean
+clean: CMakeFiles/config.dir/clean
+clean: CMakeFiles/project_8.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: _deps/catch2-build/clean
 .PHONY : clean
@@ -113,64 +113,64 @@ _deps/catch2-build/src/clean: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.d
 .PHONY : _deps/catch2-build/src/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/settings.dir
+# Target rules for target CMakeFiles/config.dir
 
 # All Build rule for target.
-CMakeFiles/settings.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_8/build/CMakeFiles --progress-num=94,95,96,97 "Built target settings"
-.PHONY : CMakeFiles/settings.dir/all
+CMakeFiles/config.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_8/build/CMakeFiles --progress-num=93,94,95 "Built target config"
+.PHONY : CMakeFiles/config.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/settings.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_8/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/settings.dir/all
+CMakeFiles/config.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_8/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/config.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_8/build/CMakeFiles 0
-.PHONY : CMakeFiles/settings.dir/rule
+.PHONY : CMakeFiles/config.dir/rule
 
 # Convenience name for target.
-settings: CMakeFiles/settings.dir/rule
-.PHONY : settings
+config: CMakeFiles/config.dir/rule
+.PHONY : config
 
 # clean rule for target.
-CMakeFiles/settings.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/settings.dir/build.make CMakeFiles/settings.dir/clean
-.PHONY : CMakeFiles/settings.dir/clean
+CMakeFiles/config.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/config.dir/build.make CMakeFiles/config.dir/clean
+.PHONY : CMakeFiles/config.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/project_8_settings.dir
+# Target rules for target CMakeFiles/project_8.dir
 
 # All Build rule for target.
-CMakeFiles/project_8_settings.dir/all: CMakeFiles/settings.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8_settings.dir/build.make CMakeFiles/project_8_settings.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8_settings.dir/build.make CMakeFiles/project_8_settings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_8/build/CMakeFiles --progress-num=93 "Built target project_8_settings"
-.PHONY : CMakeFiles/project_8_settings.dir/all
+CMakeFiles/project_8.dir/all: CMakeFiles/config.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8.dir/build.make CMakeFiles/project_8.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8.dir/build.make CMakeFiles/project_8.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_8/build/CMakeFiles --progress-num=96,97 "Built target project_8"
+.PHONY : CMakeFiles/project_8.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/project_8_settings.dir/rule: cmake_check_build_system
+CMakeFiles/project_8.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_8/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/project_8_settings.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/project_8.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_8/build/CMakeFiles 0
-.PHONY : CMakeFiles/project_8_settings.dir/rule
+.PHONY : CMakeFiles/project_8.dir/rule
 
 # Convenience name for target.
-project_8_settings: CMakeFiles/project_8_settings.dir/rule
-.PHONY : project_8_settings
+project_8: CMakeFiles/project_8.dir/rule
+.PHONY : project_8
 
 # clean rule for target.
-CMakeFiles/project_8_settings.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8_settings.dir/build.make CMakeFiles/project_8_settings.dir/clean
-.PHONY : CMakeFiles/project_8_settings.dir/clean
+CMakeFiles/project_8.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_8.dir/build.make CMakeFiles/project_8.dir/clean
+.PHONY : CMakeFiles/project_8.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
 CMakeFiles/tests.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
-CMakeFiles/tests.dir/all: CMakeFiles/settings.dir/all
 CMakeFiles/tests.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/config.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/akino/cppeak_seminars/project_8/build/CMakeFiles --progress-num=98,99,100 "Built target tests"
@@ -178,7 +178,7 @@ CMakeFiles/tests.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/a
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_8/build/CMakeFiles 99
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_8/build/CMakeFiles 98
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/akino/cppeak_seminars/project_8/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule

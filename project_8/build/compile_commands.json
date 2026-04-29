@@ -1,27 +1,27 @@
 [
 {
   "directory": "/home/akino/cppeak_seminars/project_8/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/settings.dir/src/ConfigStore.cpp.o -c /home/akino/cppeak_seminars/project_8/src/ConfigStore.cpp",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/config.dir/src/ConfigStore.cpp.o -c /home/akino/cppeak_seminars/project_8/src/ConfigStore.cpp",
   "file": "/home/akino/cppeak_seminars/project_8/src/ConfigStore.cpp",
-  "output": "CMakeFiles/settings.dir/src/ConfigStore.cpp.o"
+  "output": "CMakeFiles/config.dir/src/ConfigStore.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_8/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/settings.dir/src/ConfigValidator.cpp.o -c /home/akino/cppeak_seminars/project_8/src/ConfigValidator.cpp",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/config.dir/src/ConfigValidator.cpp.o -c /home/akino/cppeak_seminars/project_8/src/ConfigValidator.cpp",
   "file": "/home/akino/cppeak_seminars/project_8/src/ConfigValidator.cpp",
-  "output": "CMakeFiles/settings.dir/src/ConfigValidator.cpp.o"
+  "output": "CMakeFiles/config.dir/src/ConfigValidator.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_8/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/settings.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_8/src/main.cpp",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/config.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_8/src/main.cpp",
   "file": "/home/akino/cppeak_seminars/project_8/src/main.cpp",
-  "output": "CMakeFiles/settings.dir/src/main.cpp.o"
+  "output": "CMakeFiles/config.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_8/build",
-  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/project_8_settings.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_8/src/main.cpp",
+  "command": "/usr/bin/c++  -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/project_8.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_8/src/main.cpp",
   "file": "/home/akino/cppeak_seminars/project_8/src/main.cpp",
-  "output": "CMakeFiles/project_8_settings.dir/src/main.cpp.o"
+  "output": "CMakeFiles/project_8.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_8/build",

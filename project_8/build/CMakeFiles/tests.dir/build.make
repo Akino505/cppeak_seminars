@@ -109,7 +109,7 @@ tests: CMakeFiles/tests.dir/tests/test_store.cpp.o
 tests: CMakeFiles/tests.dir/tests/test_validator.cpp.o
 tests: CMakeFiles/tests.dir/build.make
 tests: _deps/catch2-build/src/libCatch2Maind.a
-tests: libsettings.a
+tests: libconfig.a
 tests: _deps/catch2-build/src/libCatch2d.a
 tests: CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/akino/cppeak_seminars/project_8/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tests"
