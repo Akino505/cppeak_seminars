@@ -7,11 +7,7 @@ Architecture components:
 3. **ConfigValidator** - checks types, ranges, and required fields via `std::span<const Constraint>`  
 4. **IValidator** - pure virtual interface for custom validation strategies  
 5. **ConfigLoader** - File/string parsing, returns `std::expected<Config, ConfigError>`   
-CMake was used for building, and Catch2 for unit tests.
-
-## Device Configuration Syntax  
-
-
+CMake was used for building, and Catch2 for unit tests.  
 # Build
 ### Configuration (setup) of the project  
 ```bash
