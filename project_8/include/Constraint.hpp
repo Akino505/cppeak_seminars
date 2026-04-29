@@ -2,12 +2,13 @@
 #define CONSTRAINT_HPP
 #include <optional>
 #include <string>
+#include <typeindex>
 struct Constraint
 {
     std::string key;
+    std::type_index expectedType;
     bool isRequired = false;
-    bool checkType = false;
-    std::optional<int> minValue;
-    std::optional<int> maxValue;
+    std::optional<double> minValue;
+    std::optional<double> maxValue;
 };
 #endif

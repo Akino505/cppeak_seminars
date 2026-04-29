@@ -13,6 +13,5 @@ public:
 
 private:
     std::vector<Constraint> _rules;
-    void validateSingle(const std::string& key, const std::any& value) const;
 };
 #endif
