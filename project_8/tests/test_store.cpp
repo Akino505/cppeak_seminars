@@ -1,20 +1,23 @@
-#include <catch2/catch_test_macros.hpp>
 #include "ConfigStore.hpp"
-#include <string>
 #include <any>
+#include <catch2/catch_test_macros.hpp>
 #include <optional>
+#include <string>
 
-TEST_CASE("ConfigStore manages settings correctly") {
-    
-    SECTION("Construction and initial size") {
-        ConfigStore store_default;
-        REQUIRE(store_default.size() == 0);
+TEST_CASE("ConfigStore manages settings correctly")
+{
 
-        ConfigStore store_custom(32);
-        REQUIRE(store_custom.size() == 0);
+    SECTION("Construction and initial size")
+    {
+        ConfigStore storeDefault;
+        REQUIRE(storeDefault.size() == 0);
+
+        ConfigStore storeCustom(32);
+        REQUIRE(storeCustom.size() == 0);
     }
 
-    SECTION("Set and retrieve heterogeneous types") {
+    SECTION("Set and retrieve heterogeneous types")
+    {
         ConfigStore store;
         store.set("server.port", 8080);
         store.set("server.host", std::string("localhost"));
@@ -45,7 +48,8 @@ TEST_CASE("ConfigStore manages settings correctly") {
         REQUIRE(std::any_cast<double>(timeout->value) == 5.5);
     }
 
-    SECTION("Missing key returns std::nullopt") {
+    SECTION("Missing key returns std::nullopt")
+    {
         ConfigStore store;
         store.set("exists", 42);
 
@@ -54,7 +58,8 @@ TEST_CASE("ConfigStore manages settings correctly") {
         REQUIRE(missing == std::nullopt);
     }
 
-    SECTION("Overwriting existing key updates value, size stays same") {
+    SECTION("Overwriting existing key updates value, size stays same")
+    {
         ConfigStore store;
         store.set("key", 10);
         REQUIRE(std::any_cast<int>(store.get("key")->value) == 10);
@@ -65,7 +70,8 @@ TEST_CASE("ConfigStore manages settings correctly") {
         REQUIRE(store.size() == 1);
     }
 
-    SECTION("Type mismatch throws std::bad_any_cast") {
+    SECTION("Type mismatch throws std::bad_any_cast")
+    {
         ConfigStore store;
         store.set("version", std::string("1.0"));
         auto opt = store.get("version");
@@ -73,14 +79,15 @@ TEST_CASE("ConfigStore manages settings correctly") {
         REQUIRE(std::any_cast<std::string>(opt->value) == "1.0");
     }
 
-    SECTION("Const data() access for validation") {
+    SECTION("Const data() access for validation")
+    {
         ConfigStore store;
         store.set("a", 1);
         store.set("b", 2.0);
 
-        const auto& internal_map = store.data();
-        REQUIRE(internal_map.size() == 2);
-        REQUIRE(internal_map.count("a") == 1);
-        REQUIRE(internal_map.count("b") == 1);
+        const auto& internalMap = store.data();
+        REQUIRE(internalMap.size() == 2);
+        REQUIRE(internalMap.count("a") == 1);
+        REQUIRE(internalMap.count("b") == 1);
     }
 }
