@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -O0 -Werror=return-type CMakeFiles/tests.dir/tests/test_store.cpp.o CMakeFiles/tests.dir/tests/test_validator.cpp.o -o tests  _deps/catch2-build/src/libCatch2Maind.a libsettings.a _deps/catch2-build/src/libCatch2d.a 
