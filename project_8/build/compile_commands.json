@@ -7,6 +7,12 @@
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_8/build",
+  "command": "/usr/bin/c++ -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/settings.dir/src/ConfigValidator.cpp.o -c /home/akino/cppeak_seminars/project_8/src/ConfigValidator.cpp",
+  "file": "/home/akino/cppeak_seminars/project_8/src/ConfigValidator.cpp",
+  "output": "CMakeFiles/settings.dir/src/ConfigValidator.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_8/build",
   "command": "/usr/bin/c++ -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/settings.dir/src/main.cpp.o -c /home/akino/cppeak_seminars/project_8/src/main.cpp",
   "file": "/home/akino/cppeak_seminars/project_8/src/main.cpp",
   "output": "CMakeFiles/settings.dir/src/main.cpp.o"
@@ -22,6 +28,12 @@
   "command": "/usr/bin/c++ -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_8/build/_deps/catch2-build/generated-includes -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/tests.dir/tests/test_store.cpp.o -c /home/akino/cppeak_seminars/project_8/tests/test_store.cpp",
   "file": "/home/akino/cppeak_seminars/project_8/tests/test_store.cpp",
   "output": "CMakeFiles/tests.dir/tests/test_store.cpp.o"
+},
+{
+  "directory": "/home/akino/cppeak_seminars/project_8/build",
+  "command": "/usr/bin/c++ -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_8/build/_deps/catch2-build/generated-includes -I/home/akino/cppeak_seminars/project_8/src -g -O0 -Werror=return-type -std=gnu++23 -o CMakeFiles/tests.dir/tests/test_validator.cpp.o -c /home/akino/cppeak_seminars/project_8/tests/test_validator.cpp",
+  "file": "/home/akino/cppeak_seminars/project_8/tests/test_validator.cpp",
+  "output": "CMakeFiles/tests.dir/tests/test_validator.cpp.o"
 },
 {
   "directory": "/home/akino/cppeak_seminars/project_8/build",

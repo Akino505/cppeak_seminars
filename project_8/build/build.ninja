@@ -56,6 +56,13 @@ build CMakeFiles/settings.dir/src/ConfigStore.cpp.o: CXX_COMPILER__settings_unsc
   OBJECT_DIR = CMakeFiles/settings.dir
   OBJECT_FILE_DIR = CMakeFiles/settings.dir/src
 
+build CMakeFiles/settings.dir/src/ConfigValidator.cpp.o: CXX_COMPILER__settings_unscanned_Debug /home/akino/cppeak_seminars/project_8/src/ConfigValidator.cpp || cmake_object_order_depends_target_settings
+  DEP_FILE = CMakeFiles/settings.dir/src/ConfigValidator.cpp.o.d
+  FLAGS = -g -O0 -Werror=return-type -std=gnu++23
+  INCLUDES = -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/src
+  OBJECT_DIR = CMakeFiles/settings.dir
+  OBJECT_FILE_DIR = CMakeFiles/settings.dir/src
+
 build CMakeFiles/settings.dir/src/main.cpp.o: CXX_COMPILER__settings_unscanned_Debug /home/akino/cppeak_seminars/project_8/src/main.cpp || cmake_object_order_depends_target_settings
   DEP_FILE = CMakeFiles/settings.dir/src/main.cpp.o.d
   FLAGS = -g -O0 -Werror=return-type -std=gnu++23
@@ -71,7 +78,7 @@ build CMakeFiles/settings.dir/src/main.cpp.o: CXX_COMPILER__settings_unscanned_D
 #############################################
 # Link the static library libsettings.a
 
-build libsettings.a: CXX_STATIC_LIBRARY_LINKER__settings_Debug CMakeFiles/settings.dir/src/ConfigStore.cpp.o CMakeFiles/settings.dir/src/main.cpp.o
+build libsettings.a: CXX_STATIC_LIBRARY_LINKER__settings_Debug CMakeFiles/settings.dir/src/ConfigStore.cpp.o CMakeFiles/settings.dir/src/ConfigValidator.cpp.o CMakeFiles/settings.dir/src/main.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g -O0 -Werror=return-type
   OBJECT_DIR = CMakeFiles/settings.dir
   POST_BUILD = :
@@ -128,6 +135,13 @@ build CMakeFiles/tests.dir/tests/test_store.cpp.o: CXX_COMPILER__tests_unscanned
   OBJECT_DIR = CMakeFiles/tests.dir
   OBJECT_FILE_DIR = CMakeFiles/tests.dir/tests
 
+build CMakeFiles/tests.dir/tests/test_validator.cpp.o: CXX_COMPILER__tests_unscanned_Debug /home/akino/cppeak_seminars/project_8/tests/test_validator.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = CMakeFiles/tests.dir/tests/test_validator.cpp.o.d
+  FLAGS = -g -O0 -Werror=return-type -std=gnu++23
+  INCLUDES = -I/home/akino/cppeak_seminars/project_8/include -I/home/akino/cppeak_seminars/project_8/build/_deps/catch2-src/src/catch2/.. -I/home/akino/cppeak_seminars/project_8/build/_deps/catch2-build/generated-includes -I/home/akino/cppeak_seminars/project_8/src
+  OBJECT_DIR = CMakeFiles/tests.dir
+  OBJECT_FILE_DIR = CMakeFiles/tests.dir/tests
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target tests
@@ -136,7 +150,7 @@ build CMakeFiles/tests.dir/tests/test_store.cpp.o: CXX_COMPILER__tests_unscanned
 #############################################
 # Link the executable tests
 
-build tests tests_tests-b12d07c.cmake | ${cmake_ninja_workdir}tests_tests-b12d07c.cmake: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/tests/test_store.cpp.o | _deps/catch2-build/src/libCatch2Maind.a libsettings.a _deps/catch2-build/src/libCatch2d.a || _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a libsettings.a
+build tests tests_tests-b12d07c.cmake | ${cmake_ninja_workdir}tests_tests-b12d07c.cmake: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/tests/test_store.cpp.o CMakeFiles/tests.dir/tests/test_validator.cpp.o | _deps/catch2-build/src/libCatch2Maind.a libsettings.a _deps/catch2-build/src/libCatch2d.a || _deps/catch2-build/src/libCatch2Maind.a _deps/catch2-build/src/libCatch2d.a libsettings.a
   FLAGS = -g -O0 -Werror=return-type
   LINK_LIBRARIES = _deps/catch2-build/src/libCatch2Maind.a  libsettings.a  _deps/catch2-build/src/libCatch2d.a
   OBJECT_DIR = CMakeFiles/tests.dir

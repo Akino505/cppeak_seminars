@@ -7,6 +7,16 @@ ConfigValidator::ConfigValidator(std::span<const Constraint> rules)
 {
 }
 
+void checkBoundaries(const auto& rule, const auto& val)
+{
+    if(rule.minValue.has_value() && val < rule.minValue.value())
+        throw ConstraintViolationException(rule.key +
+                                           " value is less than minimum");
+    if(rule.maxValue.has_value() && val > rule.maxValue.value())
+        throw ConstraintViolationException(rule.key +
+                                           " value is greater than maximum");
+}
+
 void ConfigValidator::validate(const ConfigStore& config) const
 {
     for(const auto& rule: _rules)
@@ -20,6 +30,7 @@ void ConfigValidator::validate(const ConfigStore& config) const
                 throw MissingRequiredFieldException("Missing required field: " +
                                                     rule.key);
             }
+            continue; //empty std::optional - UB
         }
         // type
         if(instruction->value.type() != rule.expectedType)
@@ -30,16 +41,19 @@ void ConfigValidator::validate(const ConfigStore& config) const
                 instruction->value.type().name());
         }
         // min & max
-        auto val = std::any_cast<double>(instruction->value);
-        if(rule.minValue.has_value() && val < rule.minValue.value())
+        if(rule.expectedType == typeid(int) ||
+           rule.expectedType == typeid(double))
         {
-            throw ConstraintViolationException(rule.key +
-                                               " value is below minimum");
-        }
-        if(rule.maxValue.has_value() && val > rule.maxValue.value())
-        {
-            throw ConstraintViolationException(rule.key +
-                                               " value is above maximum");
+            if(rule.expectedType == typeid(int))
+            {
+                int val = std::any_cast<int>(instruction->value);
+                checkBoundaries(rule, val);
+            }
+            else
+            {
+                auto val = std::any_cast<double>(instruction->value);
+                checkBoundaries(rule, val);
+            }
         }
     }
 }
