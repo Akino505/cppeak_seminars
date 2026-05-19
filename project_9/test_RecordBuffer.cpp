@@ -5,7 +5,6 @@
 #include <cstdint>
 #include <cstring>
 #include <utility>
-#include <iostream>
 
 TEST_CASE("Construction and alignment", "[RecordBuffer]") {
     RecordBuffer buf(1024, true);
@@ -19,12 +18,12 @@ TEST_CASE("Construction and alignment", "[RecordBuffer]") {
 
 TEST_CASE("Move constructor transfers ownership (zero-copy)", "[RecordBuffer]") {
     RecordBuffer src(512, false);
-    auto orig_memory = src.memory();
-    auto orig_cap = src.capacity();
+    auto origMemory = src.memory();
+    auto origCap = src.capacity();
 
     RecordBuffer dst(std::move(src));
-    REQUIRE(dst.memory() == orig_memory);
-    REQUIRE(dst.capacity() == orig_cap);
+    REQUIRE(dst.memory() == origMemory);
+    REQUIRE(dst.capacity() == origCap);
     REQUIRE(src.memory() == nullptr);
     REQUIRE(src.size() == 0);
 }
@@ -32,10 +31,10 @@ TEST_CASE("Move constructor transfers ownership (zero-copy)", "[RecordBuffer]") 
 TEST_CASE("Move assignment transfers ownership", "[RecordBuffer]") {
     RecordBuffer buf1(256, true);
     RecordBuffer buf2(128, false);
-    auto buf2_ptr = buf2.memory();
+    auto buf2Ptr = buf2.memory();
 
     buf1 = std::move(buf2);
-    REQUIRE(buf1.memory() == buf2_ptr);
+    REQUIRE(buf1.memory() == buf2Ptr);
     REQUIRE(buf2.memory() == nullptr);
 }
 
@@ -74,28 +73,28 @@ TEST_CASE("clear frees memory and clears state", "[RecordBuffer]") {
 TEST_CASE("Self-assignment is safe", "[RecordBuffer]") {
     RecordBuffer buf(512, true);
     std::memcpy(static_cast<void*>(const_cast<void*>(buf.memory())), "SELF_TEST", 10);
-    auto original_ptr = buf.memory();
+    auto origPtr = buf.memory();
 
     buf = buf;
-    REQUIRE(buf.memory() == original_ptr);
+    REQUIRE(buf.memory() == origPtr);
     REQUIRE(std::memcmp(buf.memory(), "SELF_TEST", 10) == 0);
 
     buf = std::move(buf);
     REQUIRE(buf.memory() != nullptr);
-    REQUIRE(buf.memory() == original_ptr);
+    REQUIRE(buf.memory() == origPtr);
 }
 
 TEST_CASE("Friend swap exchanges states correctly", "[RecordBuffer]") {
-    RecordBuffer a(100, false);
-    RecordBuffer b(200, true);
-    auto a_ptr = a.memory();
-    auto b_ptr = b.memory();
+    RecordBuffer lhs(100, false);
+    RecordBuffer rhs(200, true);
+    auto lhsPtr = lhs.memory();
+    auto rhsPtr = rhs.memory();
 
-    swap(a, b);
-    REQUIRE(a.memory() == b_ptr);
-    REQUIRE(b.memory() == a_ptr);
-    REQUIRE(a.capacity() == 200);
-    REQUIRE(b.capacity() == 100);
+    swap(lhs, rhs);
+    REQUIRE(lhs.memory() == rhsPtr);
+    REQUIRE(rhs.memory() == lhsPtr);
+    REQUIRE(lhs.capacity() == 200);
+    REQUIRE(rhs.capacity() == 100);
 }
 
 TEST_CASE("Alignment disabled still allocates valid memory", "[RecordBuffer]") {
