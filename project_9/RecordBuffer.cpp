@@ -1,5 +1,6 @@
 #include "RecordBuffer.hpp"
 #include <cstddef>
+#include <cstdint>
 #include <cstring>
 #include <iostream>
 #include <memory>
@@ -9,10 +10,10 @@ RecordBuffer::RecordBuffer(size_t capacity, bool aligned)
     : _capacity(capacity), _aligned(aligned)
 {
     size_t allocSize = _capacity + alignof(std::max_align_t);
-    _rawAlloc = new size_t[allocSize];
+    _rawAlloc = new uint8_t[allocSize];
     void* ptr = _rawAlloc;
     size_t space = allocSize;
-    if(_aligned && std::align(alignof(max_align_t), _capacity, ptr, space))
+    if(_aligned && std::align(alignof(std::max_align_t), _capacity, ptr, space))
         _memory = ptr;
     else
         _memory = _rawAlloc;
@@ -22,9 +23,10 @@ RecordBuffer::RecordBuffer(size_t capacity, bool aligned)
 
 RecordBuffer::~RecordBuffer()
 {
-    if(_rawAlloc){
+    if(_rawAlloc)
+    {
         delete[] _rawAlloc;
-        std::cout<< "[LOG] RecordBuffer dealloc\n";
+        std::cout << "[LOG] RecordBuffer dealloc\n";
     }
 }
 
@@ -34,11 +36,11 @@ RecordBuffer::RecordBuffer(const RecordBuffer& other)  // CC
 {
     if(!other._rawAlloc)
         return;
-    size_t allocSize = _capacity + alignof(max_align_t);
-    std::unique_ptr<size_t[]> newBuff(new size_t[allocSize]);
+    size_t allocSize = _capacity + alignof(std::max_align_t);
+    std::unique_ptr<uint8_t[]> newBuff(new uint8_t[allocSize]);
     void* ptr = newBuff.get();
     size_t space = allocSize;
-    if(_aligned && std::align(alignof(max_align_t), _capacity, ptr, space))
+    if(_aligned && std::align(alignof(std::max_align_t), _capacity, ptr, space))
         _memory = ptr;
     else
         _memory = newBuff.get();
@@ -48,7 +50,7 @@ RecordBuffer::RecordBuffer(const RecordBuffer& other)  // CC
     _rawAlloc = newBuff.release();
 }
 
-void RecordBuffer::swap(RecordBuffer& lhs, RecordBuffer& rhs) noexcept
+void swap(RecordBuffer& lhs, RecordBuffer& rhs) noexcept
 {
     std::swap(lhs._memory, rhs._memory);
     std::swap(lhs._aligned, rhs._aligned);
@@ -67,9 +69,8 @@ RecordBuffer& RecordBuffer::operator=(const RecordBuffer& other)  // CAO
     return *this;
 }
 
-RecordBuffer::RecordBuffer(RecordBuffer& other)
-    :  // MC
-      _aligned(other._aligned), _capacity(other._capacity),
+RecordBuffer::RecordBuffer(RecordBuffer&& other) noexcept  // MC
+    : _aligned(other._aligned), _capacity(other._capacity),
       _memory(other._memory), _rawAlloc(other._rawAlloc), _size(other._size)
 {
     other._memory = nullptr;
@@ -79,18 +80,22 @@ RecordBuffer::RecordBuffer(RecordBuffer& other)
     other._aligned = false;
 }
 
-RecordBuffer& RecordBuffer::operator=(RecordBuffer& other){
-    if (this != &other){
+RecordBuffer& RecordBuffer::operator=(RecordBuffer&& other) noexcept  // MAO
+{
+    if(this != &other)
+    {
         RecordBuffer newBuff(std::move(other));
         swap(*this, newBuff);
     }
     return *this;
 }
 
-void RecordBuffer::clear(){
-    if(_rawAlloc){
+void RecordBuffer::clear()
+{
+    if(_rawAlloc)
+    {
         delete[] _rawAlloc;
-        std::cout<< "[LOG] RecordBuffer dealloc\n";
+        std::cout << "[LOG] RecordBuffer dealloc\n";
     }
     _memory = nullptr;
     _aligned = false;
