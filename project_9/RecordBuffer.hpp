@@ -15,7 +15,7 @@ public:
     // Getters
     size_t capacity() const { return _capacity; };
     size_t size() const { return _size; };
-    const void* memory() const { return _memory };
+    const void* memory() const { return _memory; };
 
 private:
     void* _memory;
