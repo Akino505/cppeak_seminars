@@ -5,7 +5,7 @@
 class RecordBuffer
 {
 public:
-    RecordBuffer(size_t capacity, bool aligned = true);
+    RecordBuffer(size_t capacity, bool aligned);
     ~RecordBuffer();
     RecordBuffer(const RecordBuffer& other);             // CC
     RecordBuffer& operator=(const RecordBuffer& other);  // CAO
