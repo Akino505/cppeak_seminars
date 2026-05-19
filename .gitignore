@@ -39,3 +39,10 @@
 
 # debug information files
 *.dwo
+# Папки сборки и тестов
+build/
+Testing/
+
+# Логи и временные файлы
+*.log
+Temporary/

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsettings.a CMakeFiles/settings.dir/src/ConfigStore.cpp.o CMakeFiles/settings.dir/src/ConfigValidator.cpp.o CMakeFiles/settings.dir/src/main.cpp.o
+/usr/bin/ranlib libsettings.a
