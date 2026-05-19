@@ -7,7 +7,8 @@
 #include <utility>
 
 RecordBuffer::RecordBuffer(size_t capacity, bool aligned)
-    : _capacity(capacity), _aligned(aligned)
+    : _capacity(capacity), _aligned(aligned), _size(0), _rawAlloc(nullptr),
+      _memory(nullptr)
 {
     size_t allocSize = _capacity + alignof(std::max_align_t);
     _rawAlloc = new uint8_t[allocSize];
