@@ -1,7 +1,4 @@
 #include "UserRecord.hpp"
-#include <cstdint>
-#include <cstring>
-#include <iostream>
 
 UserRecord::UserRecord(int id, const std::string& name): id_(id), name_(name)
 {
