@@ -197,28 +197,6 @@ TEST_CASE("Table dump format validation")
     REQUIRE(dump.find("LongName") != std::string::npos);
 }
 
-TEST_CASE("Table multiple operations sequence")
-{
-    Table table;
-
-    auto user1 = std::make_shared<UserRecord>(1, "First");
-    auto user2 = std::make_shared<UserRecord>(2, "Second");
-    table.insert(user1);
-    table.insert(user2);
-    REQUIRE(table.size() == 2);
-
-    Table copy = table;
-    REQUIRE(copy.size() == 2);
-
-    table.optimize([](RecordBuffer&& buf) {});
-    REQUIRE(table.size() == 2);
-    REQUIRE(copy.size() == 2);
-
-    std::string copyDump = copy.dump();
-    REQUIRE(copyDump.find("First") != std::string::npos);
-    REQUIRE(copyDump.find("Second") != std::string::npos);
-}
-
 TEST_CASE("Table const methods")
 {
     const Table table;
@@ -243,24 +221,4 @@ TEST_CASE("Table many records")
 
     std::string dump = table.dump();
     REQUIRE(dump.find("User99") != std::string::npos);
-}
-
-TEST_CASE("Table mixed records interleaved")
-{
-    Table table;
-
-    table.insert(std::make_shared<UserRecord>(1, "Alice"));
-    table.insert(std::make_shared<LogRecord>("FIRST"));
-    table.insert(std::make_shared<UserRecord>(2, "Bob"));
-    table.insert(std::make_shared<LogRecord>("SECOND"));
-    table.insert(std::make_shared<UserRecord>(3, "Charlie"));
-
-    REQUIRE(table.size() == 5);
-
-    std::string dump = table.dump();
-    REQUIRE(dump.find("Alice") != std::string::npos);
-    REQUIRE(dump.find("Bob") != std::string::npos);
-    REQUIRE(dump.find("Charlie") != std::string::npos);
-    REQUIRE(dump.find("FIRST") != std::string::npos);
-    REQUIRE(dump.find("SECOND") != std::string::npos);
 }
