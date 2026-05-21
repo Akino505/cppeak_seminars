@@ -42,7 +42,7 @@ cmake --build build
 ```
 # Run  
 ```bash
-./build/project_7
+./build/project_9
 ```
 # Unit tests  
 ```bash
